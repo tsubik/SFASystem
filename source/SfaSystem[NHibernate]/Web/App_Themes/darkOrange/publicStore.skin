@@ -1,0 +1,77 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:TextBox runat="server" CssClass="textBox" />
+<asp:TextBox runat="server" SkinID="SearchText" CssClass="searchtext" />
+<asp:TextBox runat="server" SkinID="SearchBoxText" CssClass="searchboxtext" />
+<asp:TextBox runat="server" SkinID="NewsAddCommentTitleText" CssClass="newsaddcommenttitletext" />
+<asp:TextBox runat="server" SkinID="NewsAddCommentCommentText" CssClass="newsaddcommentcommenttext" />
+<asp:TextBox runat="server" SkinID="BlogAddCommentCommentText" CssClass="blogaddcommentcommenttext" />
+<asp:TextBox runat="server" SkinID="NopNumericTextBoxText" CssClass="nopnumerictextboxtext" />
+<asp:TextBox runat="server" SkinID="ContactUsEnquiryText" Height="150px" Width="500px"/>
+
+
+<asp:Button runat="server" SkinID="SearchBoxButton" CssClass="searchboxbutton"/>
+<asp:Button runat="server" SkinID="ContactUsButton" CssClass="contactusbutton"/>
+<asp:Button runat="server" SkinID="ProductListProductDetailButton" CssClass="productlistproductdetailbutton"/>
+<asp:Button runat="server" SkinID="ProductListAddToCartButton" CssClass="productlistaddtocartbutton"/>
+<asp:Button runat="server" SkinID="ProductGridProductDetailButton" CssClass="productgridproductdetailbutton"/>
+<asp:Button runat="server" SkinID="ProductGridAddToCartButton" CssClass="productgridaddtocartbutton"/>
+<asp:Button runat="server" SkinID="NewsItemAddCommentButton" CssClass="newsitemaddcommentbutton"/>
+<asp:Button runat="server" SkinID="BlogPostAddCommentButton" CssClass="blogpostaddcommentbutton"/>
+<asp:Button runat="server" SkinID="ProductEmailAFriendButton" CssClass="productemailafriendbutton"/>
+<asp:Button runat="server" SkinID="ProductAddToCompareListButton" CssClass="productaddtocomparelistbutton"/>
+<asp:Button runat="server" SkinID="ProductVariantAddToCartButton" CssClass="productvariantaddtocartbutton"/>
+<asp:Button runat="server" SkinID="ProductVariantAddToWishlistButton" CssClass="productvariantaddtowishlistbutton"/>
+<asp:Button runat="server" SkinID="ProductWriteReviewButton" CssClass="productwritereviewbutton"/>
+<asp:Button runat="server" SkinID="LoginButton" CssClass="loginbutton"/>
+<asp:Button runat="server" SkinID="RegisterButton" CssClass="registerbutton"/>
+<asp:Button runat="server" SkinID="SaveCustomerInfoButton" CssClass="savecustomerinfobutton"/>
+<asp:Button runat="server" SkinID="AddBillingAddressButton" CssClass="addbillingaddressbutton"/>
+<asp:Button runat="server" SkinID="AddShippingAddressButton" CssClass="addshippingaddressbutton"/>
+<asp:Button runat="server" SkinID="EditAddressButton" CssClass="editaddressbutton"/>
+<asp:Button runat="server" SkinID="DeleteAddressButton" CssClass="deleteaddressbutton"/>
+<asp:Button runat="server" SkinID="OrderDetailsButton" CssClass="orderdetailsbutton"/>
+<asp:Button runat="server" SkinID="ChangePasswordButton" CssClass="changepasswordbutton"/>
+<asp:Button runat="server" SkinID="RegisterNextStepButton" CssClass="registernextstepbutton"/>
+<asp:Button runat="server" SkinID="CompleteRegistrationButton" CssClass="completeregistrationbutton"/>
+<asp:Button runat="server" SkinID="PasswordRecoveryButton" CssClass="passwordrecoverybutton"/>
+<asp:Button runat="server" SkinID="NewPasswordButton" CssClass="newpasswordbutton"/>
+<asp:Button runat="server" SkinID="SaveAddressButton" CssClass="saveaddressbutton"/>
+<asp:Button runat="server" SkinID="SearchButton" CssClass="searchbutton"/>
+<asp:Button runat="server" SkinID="UpdateWishListButton" CssClass="updatewishlistbutton"/>
+<asp:Button runat="server" SkinID="SendEmailAFriendButton" CssClass="sendemailafriendbutton"/>
+<asp:Button runat="server" SkinID="ApplyCouponCodeButton" CssClass="applycouponcodebutton"/>
+<asp:Button runat="server" SkinID="UpdateCartButton" CssClass="updatecartbutton"/>
+<asp:Button runat="server" SkinID="ContinueShoppingButton" CssClass="continueshoppingbutton"/>
+<asp:Button runat="server" SkinID="CheckoutButton" CssClass="checkoutbutton"/>
+<asp:Button runat="server" SkinID="SelectShippingAddressButton" CssClass="selectshippingaddressbutton"/>
+<asp:Button runat="server" SkinID="NewAddressNextStepButton" CssClass="newaddressnextstepbutton"/>
+<asp:Button runat="server" SkinID="SelectBillingAddressButton" CssClass="selectbillingaddressbutton"/>
+<asp:Button runat="server" SkinID="SameAsShippingAddressButton" CssClass="sameasshippingaddressbutton"/>
+<asp:Button runat="server" SkinID="ShippingMethodNextStepButton" CssClass="shippingmethodnextstepbutton"/>
+<asp:Button runat="server" SkinID="PaymentMethodNextStepButton" CssClass="paymentmethodnextstepbutton"/>
+<asp:Button runat="server" SkinID="PaymentInfoNextStepButton" CssClass="paymentinfonextstepbutton"/>
+<asp:Button runat="server" SkinID="ConfirmOrderNextStepButton" CssClass="confirmordernextstepbutton"/>
+<asp:Button runat="server" SkinID="OrderProcessedContinueButton" CssClass="orderprocessedcontinuebutton"/>
+<asp:Button runat="server" SkinID="SubmitPollVoteButton" CssClass="submitpollvotebutton"/>
+
+<asp:DropDownList runat="server" SkinID="CurrencyList" CssClass="currencylist"/>
+<asp:DropDownList runat="server" SkinID="LanguageList" CssClass="languagelist"/>
+
+
+<ajaxtoolkit:tabcontainer runat="server" SkinID="TabContainer-MyAccount" CssClass="grey"/>
+<ajaxtoolkit:tabcontainer runat="server" SkinID="TabContainer-ProductDetails" CssClass="grey"/>

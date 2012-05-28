@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.ProductGroup,SFASystem.Domain" table="ProductGroup" lazy="true">
+    <id name="ProductGroupid" column="ProductGroupID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <many-to-one name="ProductGroupMember" column="Pro_ProductGroupID" cascade="save-update" />
+	  <bag name="ChildProductGroups" inverse="false" table="ProductGroup" lazy="true" cascade="delete">
+		  <key column="ProductGroupID" />
+		  <many-to-many class="SFASystem.Domain.ProductGroup,SFASystem.Domain">
+			  <column name="Pro_ProductGroupID" />
+		  </many-to-many>
+	  </bag>
+    <property name="Name" column="Name" type="string" not-null="true" />
+    <property name="Description" column="Description" type="string" />
+	<property name="IsDeleted" column="IsDeleted" type="Boolean" />
+  </class>
+</hibernate-mapping>

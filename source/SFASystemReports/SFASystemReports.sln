@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SFASystemReports", "SFASystemReports\SFASystemReports.rptproj", "{C0AD3CB9-541D-4E6A-A688-04C8849FA169}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Production|Default = Production|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0AD3CB9-541D-4E6A-A688-04C8849FA169}.Debug|Default.ActiveCfg = Debug
+		{C0AD3CB9-541D-4E6A-A688-04C8849FA169}.Debug|Default.Build.0 = DebugLocal
+		{C0AD3CB9-541D-4E6A-A688-04C8849FA169}.Debug|Default.Deploy.0 = DebugLocal
+		{C0AD3CB9-541D-4E6A-A688-04C8849FA169}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{C0AD3CB9-541D-4E6A-A688-04C8849FA169}.DebugLocal|Default.Build.0 = DebugLocal
+		{C0AD3CB9-541D-4E6A-A688-04C8849FA169}.Production|Default.ActiveCfg = Production
+		{C0AD3CB9-541D-4E6A-A688-04C8849FA169}.Production|Default.Build.0 = Production
+		{C0AD3CB9-541D-4E6A-A688-04C8849FA169}.Production|Default.Deploy.0 = Production
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

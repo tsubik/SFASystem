@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<script runat="server">
+    public ASP.administration_controls_messagebox_ascx MessageBox { get { return this.messageBox; } }
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>SFASystem Web Administration</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager runat="server" ID="sm" EnablePartialRendering="true" ScriptMode="Release"  />
+    <div class="master-wrapper-page">
+        <div class="master-wrapper-content">
+            <div class="header">
+                <div class="logo">
+                </div>
+                <div class="links">
+                    <asp:LoginStatus ID="loginStatus" runat="server" LogoutAction="RedirectToLoginPage"
+                        LogoutText="Wyloguj" />
+                    <%--<a href="<%=Page.ResolveUrl("~/Administration/Logout.aspx")%>">Log
+                        Out</a>--%>
+                </div>
+                <div class="version">
+                    <a runat="server" id="linkOrderMode" href="~/Administration/Sales/CreateOrder.aspx" >
+                        [Tryb tworzenia zamówienia włączony]
+                    </a>
+                    <asp:Label runat="server" ID="lblHeader" />
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="header-menu">
+                <asp:Menu ID="mnuAdmin" runat="server" DataSourceID="smdsMenu" Orientation="Horizontal"
+                    OnMenuItemDataBound="mnuAdmin_MenuItemDataBound" CssSelectorClass="AdminMenu">
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="smdsMenu" runat="server" ShowStartingNode="false" SiteMapProvider="XmlSiteMapProvider" />
+            </div>
+            <div class="status-bar">
+                <div class="help">
+                    <asp:SiteMapPath ID="smp" runat="server" RenderCurrentNodeAsLink="true" PathSeparatorStyle-Font-Bold="true" />
+                </div>
+                <div class="breadcrumb">
+                    <%=DateTime.Now.ToString("f")%>
+                    <asp:HyperLink runat="server" ID="lnkHelp" />
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="content">
+                <asp:UpdatePanel ID="updatePanelMain" runat="server">
+                <ContentTemplate>
+                <div class="errors">
+                    <asp:Literal runat="server" ID="lErrorTitle" EnableViewState="false" />
+                    <asp:Literal runat="server" ID="lErrorComplete" EnableViewState="false" />
+                </div>
+                <div class="cph">
+                    <sfasystem:MessageBox ID="messageBox" runat="server" Visible="false" ShowCloseButton="true" />
+                    <asp:ContentPlaceHolder ID="cph1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  Build: with lujan99@usa.net Nhibernate template
+  <class name="SFASystem.Domain.ImageType,SFASystem.Domain" table="ImageType" lazy="true">
+    <id name="ImageTypeid" column="ImageTypeID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <property name="Width" column="Width" type="int" not-null="true" />
+    <property name="Name" column="Name" type="string" not-null="true" />
+    <property name="Height" column="Height" type="int" not-null="true" />
+  </class>
+</hibernate-mapping>

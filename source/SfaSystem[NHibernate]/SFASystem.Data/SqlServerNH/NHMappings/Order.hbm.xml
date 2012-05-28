@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.Order,SFASystem.Domain" table="[Order]" lazy="true">
+    <id name="Orderid" column="OrderID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <many-to-one name="CustomerFacility" column="CustomerFacilityID" cascade="save-update" not-null="true" />
+    <many-to-one name="Territory" column="TerritoryID" cascade="save-update" not-null="true" />
+    <many-to-one name="Employee" column="EmployeeID" cascade="save-update" not-null="true" />
+    <many-to-one name="OrderStatus" column="OrderStatus" cascade="save-update" not-null="true" />
+    <property name="Identifier" column="Identifier" type="string" not-null="true" />
+    <property name="OrderDate" column="OrderDate" type="DateTime" not-null="true" />
+    <property name="DateModified" column="DateModified" type="DateTime" />
+    <property name="SubTotal" column="SubTotal" type="Decimal" not-null="true" />
+    <property name="TaxAmount" column="TaxAmount" type="Decimal" not-null="true" />
+    <property name="Total" column="Total" type="Decimal" not-null="true" />
+    <property name="Comment" column="Comment" type="string" />
+	<property name="IsDeleted" column="IsDeleted" type="Boolean" />
+    <bag name="OrderLines" inverse="true" lazy="true"  cascade="delete">
+      <key column="OrderID" />
+      <one-to-many class="SFASystem.Domain.OrderLine,SFASystem.Domain" />
+    </bag>
+  </class>
+</hibernate-mapping>

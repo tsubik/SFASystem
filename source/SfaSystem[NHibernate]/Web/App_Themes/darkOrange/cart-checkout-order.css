@@ -1,0 +1,612 @@
+﻿.foo{}/****************************************************************************************************/
+/* The contents of this file are subject to the nopCommerce Public License Version 1.0 ("License"); you may not use this file except in compliance with the License.
+/* You may obtain a copy of the License at  http://www.nopCommerce.com/License.aspx. 
+/* 
+/* Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. 
+/* See the License for the specific language governing rights and limitations under the License.
+/* 
+/* The Original Code is nopCommerce.
+/* The Initial Developer of the Original Code is NopSolutions.
+/* All Rights Reserved.
+/* 
+/* Contributor(s): RetroViz Design. 
+/****************************************************************************************************/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ORDER SUMMARY
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.OrderSummaryContent
+{
+	margin: 0px;
+	padding: 10px 10px 10px 10px;
+	font-size: 11px;
+	color: #555;
+}
+
+.OrderSummaryContent .CouponBox
+{
+	margin: 0px;
+	padding: 10px 10px 10px 10px;
+	font-size: 11px;
+	color: #555;
+	background: 	background: rgb(247, 245, 232);
+	margin-bottom: 10px;
+	border: dotted 1px #d3d3d3;
+}
+
+.OrderSummaryContent .cart
+{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.OrderSummaryContent .cart td
+{
+	padding: 3px 0 3px 0;
+}
+
+.OrderSummaryContent .cart .cart-header-row
+{
+	font-weight: bold;
+}
+
+.OrderSummaryContent .cart .cart-header-row td
+{
+	background: url('images/cart_line_y.gif') repeat-y right;
+}
+
+.OrderSummaryContent .cart .cart-header-row td.end
+{
+	background: none;
+}
+
+.OrderSummaryContent .cart .cart-item-row
+{
+/*background: url('images/cart_line_x.gif') repeat-x top; - tr background does not work in ie*/
+}
+
+.OrderSummaryContent .cart .cart-item-row td
+{
+	background: url('images/cart_line_y.gif') repeat-y right;
+	border-top: 1px dotted #c5c5c5;
+}
+
+.OrderSummaryContent .cart .cart-item-row td.product
+{
+	text-align: left;
+	padding: 5px 10px 0 10px;
+}
+
+
+.OrderSummaryContent .cart .cart-item-row td.end
+{
+	border-top: 1px dotted #c5c5c5;
+	background: none;
+	text-align: right;
+	font-weight: bold;
+	color: Green;
+}
+
+.OrderSummaryContent .TotalInfo
+{
+	margin: 0px;
+	padding: 10px 0px 10px 0px;
+}
+
+.OrderSummaryContent .WarningBox .WarningText
+{
+	color: Red;	
+}
+
+.cart_total_left
+{
+	width: 100%;
+	text-align: right;
+	vertical-align: middle;
+	height: 21px;
+	font-weight: bold;
+	color: #353434;
+}
+
+.cart_total_right
+{
+	text-align: right;
+	vertical-align: middle;
+	padding-left: 5px;
+}
+
+.OrderSummaryContent .Buttons
+{
+	margin: 0px;
+	padding: 10px 10px 10px 10px;
+}
+
+.OrderSummaryContent .Buttons .CommonButtons
+{
+	float: left;
+	margin: 0px;
+	padding: 10px 10px 10px 10px;
+}
+
+.OrderSummaryContent .Buttons .AddonButtons
+{
+	float: right;
+	margin: 0px;
+	padding: 10px 10px 10px 10px;
+	text-align: right;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SHOPPING CART
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.shoppingcart
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.shoppingcart .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.shoppingcart .body
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	WISHLIST
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.WishlistContent
+{
+	margin: 0px;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+
+.WishlistContent .cart
+{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 25px;
+}
+
+.WishlistContent .cart td
+{
+	padding: 5px 5px 5px 5px;
+}
+
+.WishlistContent .cart .cart-header-row
+{
+	font-weight: bold;
+}
+
+.WishlistContent .cart .cart-header-row td
+{
+	background: url('images/cart_line_y.gif') repeat-y right;
+}
+
+.WishlistContent .cart .cart-header-row td.end
+{
+	background: none;
+}
+
+.WishlistContent .cart .cart-item-row
+{
+	/*background: url('images/cart_line_x.gif') repeat-x top;*/
+}
+
+.WishlistContent .cart .cart-item-row td
+{
+	background: url('images/cart_line_y.gif') repeat-y right;
+	border-top: 1px dotted #c5c5c5;
+}
+
+.WishlistContent .cart .cart-item-row td.product
+{
+	text-align: left;
+	padding: 0 10px 0 10px;
+}
+
+.WishlistContent .cart .cart-item-row td.end
+{
+	border-top: 1px dotted #c5c5c5;
+	background: none;
+	text-align: right;
+	font-weight: bold;
+	color: Green;
+}
+
+.WishlistContent .WarningBox .WarningText
+{
+	color: Red;	
+}
+
+.wishlist
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.wishlist .title
+{
+	padding: 10px 10px 15px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.wishlist .body
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CHECKOUT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CheckoutPage
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+.CheckoutPage .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+.CheckoutPage .CheckoutData
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+
+.CheckoutData .OrderSummaryTitle
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+}
+.CheckoutData .OrderSummaryBody
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ADDRESSES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CheckoutData .SelectAddressTitle
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+}
+
+.CheckoutData .AddressGrid
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.CheckoutData .AddressGrid .ItemBox
+{
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: text-top;
+}
+
+.CheckoutData .AddressGrid .AddressItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid #d7d7d7;
+	width: 200px;
+	height: auto;
+}
+
+.CheckoutData .AddressGrid .AddressItem .SelectButton
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.CheckoutData .AddressGrid .AddressItem .AddressBox
+{
+	text-align: left;
+}
+
+.CheckoutData .EnterAddressTitle
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+}
+
+.CheckoutData .EnterAddress
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.CheckoutData .EnterAddress .EnterAddressBody
+{
+	text-align: left;
+	margin: 10px 10px 10px 10px;
+}
+
+.CheckoutData .EnterAddress .Button
+{
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+.CheckoutData .EnterAddress .TheSameAddress
+{
+	text-align: left;
+	margin: 10px 10px 10px 10px;
+}
+
+.CheckoutData .EnterAddress .ErrorBlock
+{
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SHIPPING OPTIONS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CheckoutData .ShippingOptions
+{
+	text-align: left;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.CheckoutData .ShippingOptions .ShippingOptionItem
+{
+	text-align: left;
+	vertical-align: text-top;
+	padding: 5px 0  0 5px;
+}
+
+.CheckoutData .ShippingOptions .ShippingOptionItem .OptionName
+{
+	font-weight: bold;
+}
+
+.CheckoutData .ShippingOptions .ShippingOptionItem .OptionDescription
+{
+	padding: 5px 0 5px 16px;
+}
+
+.CheckoutData .ShippingOptions .SelectButton
+{
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+.CheckoutData .ShippingOptions .ErrorBlock
+{
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+.CheckoutData .ShippingNotAllowed
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PAYMENT METHODS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CheckoutData .PaymentMethods
+{
+	text-align: left;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.CheckoutData .PaymentMethods .PaymentMethodItem
+{
+	padding: 10px;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.CheckoutData .PaymentMethods .SelectButton
+{
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+.CheckoutData .NoPaymentMethods
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+}
+
+
+.CheckoutData .PaymentInfo
+{
+	text-align: left;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.CheckoutData .PaymentInfo .Body
+{
+	padding: 10px;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.CheckoutData .PaymentInfo .SelectButton
+{
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CONFIRM ORDER
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CheckoutData .ConfirmOrder
+{
+	text-align: left;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.CheckoutData .ConfirmOrder .SelectButton
+{
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+.CheckoutData .ConfirmOrder .ErrorBlock
+{
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	COMPLETED
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CheckoutData .OrderCompleted
+{
+	text-align: left;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.CheckoutData .OrderCompleted .Body
+{
+	padding: 10px;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.CheckoutData .OrderCompleted .SelectButton
+{
+	margin: 10px 10px 10px 10px;
+	text-align: left;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ORDER DETAILS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.OrderDetails
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+.OrderDetails .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+.OrderDetails .info
+{
+	border: 1px solid #d7d7d7;
+	padding: 10px;
+}
+.OrderDetails .SectionTitle
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+}
+.OrderDetails .OrderOverview
+{
+	text-align: left;
+	padding-bottom: 10px;
+}
+.OrderDetails .ShippingBox
+{
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+.OrderDetails .BillingBox
+{
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+.OrderDetails .ProductsBox
+{
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+

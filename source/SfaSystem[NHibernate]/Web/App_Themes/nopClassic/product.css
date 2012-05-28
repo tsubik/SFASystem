@@ -1,0 +1,764 @@
+﻿.foo
+{
+}
+/****************************************************************************************************/
+/* The contents of this file are subject to the nopCommerce Public License Version 1.0 ("License"); you may not use this file except in compliance with the License.
+/* You may obtain a copy of the License at  http://www.nopCommerce.com/License.aspx. 
+/* 
+/* Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. 
+/* See the License for the specific language governing rights and limitations under the License.
+/* 
+/* The Original Code is nopCommerce.
+/* The Initial Developer of the Original Code is NopSolutions.
+/* All Rights Reserved.
+/* 
+/* Contributor(s): RetroViz Design. 
+/****************************************************************************************************/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HOME PAGE PRODUCTS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.HomePageProductGrid
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+}
+
+.HomePageProductGrid .ItemBox
+{
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: text-top;
+}
+
+.HomePageProductGrid .ProductItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	border: solid 1px rgb(232, 230, 210);
+	width: 200px;
+	height: 200px;
+}
+
+.HomePageProductGrid .ProductItem .title
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.HomePageProductGrid .ProductItem .picture
+{
+	text-align: center;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	RECENTLY ADDED PRODUCTS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.RecentlyAddedProducts
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.RecentlyAddedProducts .title
+{
+	padding: 10px 10px 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.RecentlyAddedProducts .ProductGrid
+{
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	text-align: center;
+}
+
+.RecentlyAddedProducts .ProductGrid .ItemBox
+{
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	width: 250px;
+	border: 1px solid rgb(232, 230, 210);
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem .title
+{
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	text-transform: none;
+	font-size: 1em;
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem .title a
+{
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem .picture
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem .description
+{
+	margin: 5px 5px 0 5px;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	border-top: solid 1px 	rgb(232, 230, 210);
+	color: #555;
+	height: 50px;
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem .addInfo
+{
+	vertical-align: bottom;
+	text-align: right;
+	width: 250px;
+	height: 85px;
+	position: relative;
+	background: rgb(247, 245, 232);
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem .addInfo .prices
+{
+	text-align: right;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem .addInfo .buttons
+{
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	text-align: left;
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem .addInfo .prices .productPrice
+{
+	color: green;
+}
+
+.RecentlyAddedProducts .ProductGrid .ProductItem .addInfo .prices .oldproductPrice
+{
+	color: Red;
+	text-decoration: line-through;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	RECENTLY VIEWED PRODUCTS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.RecentlyViewedProducts
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.RecentlyViewedProducts .title
+{
+	padding: 10px 10px 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.RecentlyViewedProducts .ProductGrid
+{
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	text-align: center;
+}
+
+.RecentlyViewedProducts .ProductGrid .ItemBox
+{
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	width: 250px;
+	border: 1px solid rgb(232, 230, 210);
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem .title
+{
+	font-weight: bold;
+	padding: 0 0 0 10px;
+	text-transform: none;
+	font-size: 1em;
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem .title a
+{
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem .picture
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem .description
+{
+	margin: 5px 5px 0 5px;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	border-top: solid 1px rgb(232, 230, 210);
+	color: #555;
+	height: 50px;
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem .addInfo
+{
+	vertical-align: bottom;
+	text-align: right;
+	width: 250px;
+	height: 85px;
+	position: relative;
+	background: rgb(247, 245, 232);
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem .addInfo .prices
+{
+	text-align: right;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem .addInfo .buttons
+{
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	text-align: left;
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem .addInfo .prices .productPrice
+{
+	color: green;
+}
+
+.RecentlyViewedProducts .ProductGrid .ProductItem .addInfo .prices .oldproductPrice
+{
+	color: Red;
+	text-decoration: line-through;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCT DETAILS PAGE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ProductDetailsPage
+{
+	border: 1px solid #C4C6C8;
+	margin-top: 10px;
+	padding: 10px 10px 10px 10px;
+}
+
+.ProductCollateral
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCT DETAILS INFO - PRODUCT INFO CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ProductEssential
+{
+}
+
+.ProductDetailsInfo
+{
+}
+
+.ProductDetailsInfo .picture
+{
+	float: left;
+	width: 300px;
+	margin-bottom: 15px;
+}
+
+.ProductDetailsInfo .overview
+{
+	float: right;
+	width: 230px;
+	margin-right: 15px;
+	margin-top: 25px;
+	padding: 5px 5px 5px 5px;
+	border: dashed 1px #C4C6C8;
+}
+
+.ProductDetailsInfo .overview .productname
+{
+	color: #3664A5;
+	font-size: 1.2em;
+	margin-bottom: 0.3em;
+}
+
+.ProductDetailsInfo .overview .shortdescription
+{
+	color: #555;
+	margin-bottom: 0.3em;
+	font-size: 1.1em;
+}
+
+.ProductDetailsInfo .fulldescription
+{
+	border-top: 1px solid rgb(232, 230, 210);
+	clear: both;
+	color: #555;
+	margin-bottom: 0.3em;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCT RATING
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ProductRatingBox
+{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCT VARIANT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ProductVariantList
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.ProductVariantLine
+{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	margin-top: 10px;
+	border-bottom: dashed 1px #C4C6C8;
+}
+
+.ProductVariantLine .picture
+{
+	float: left;
+	width: 300px;
+	margin-bottom: 15px;
+}
+
+.ProductVariantLine .overview
+{
+	float: right;
+	width: 200px;
+	margin-right: 25px;
+}
+
+.ProductVariantLine .overview .productname
+{
+	color: #3664A5;
+	font-size: 1.2em;
+	margin-bottom: 0.3em;
+}
+
+.ProductVariantLine .description
+{
+	clear: both;
+	color: #555;
+	margin-bottom: 0.3em;
+}
+
+.ProductVariantLine .price
+{
+	float: left;
+	margin-right: 10px;
+}
+
+.ProductVariantLine .price .productPrice
+{
+	color: green;
+}
+
+.ProductVariantLine .price .oldProductPrice
+{
+	color: red;
+	text-decoration: line-through;
+}
+
+.ProductVariantLine .addinfo
+{
+	padding: 10px 10px 10px 10px;
+	background: rgb(247, 245, 232);
+}
+
+.ProductVariantLine .attributes
+{
+}
+
+.ProductVariantLine .error
+{
+	color: Red;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	RELATED PRODUCTS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.RelatedProductsGrid
+{
+}
+
+.RelatedProductsGrid .title
+{
+	padding: 10px 10px 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.RelatedProductsGrid .ItemBox
+{
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: text-top;
+}
+.RelatedProductsGrid .RelatedItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid rgb(232, 230, 210);
+	width: 200px;
+	height: 200px;
+}
+
+.RelatedProductsGrid .RelatedItem .title
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
+	font-weight: bold;
+	text-transform: none;
+	font-size: 1em;
+	padding: 0;
+}
+
+.RelatedProductsGrid .RelatedItem .picture
+{
+	text-align: center;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCT REVIEWS LIST
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.productReviewBox
+{
+	margin-bottom: 15px;
+	padding: 10px 5px 10px 5px;
+}
+
+
+.productReviewList
+{
+	margin: 10px 0 0 0;
+	font-size: 11px;
+	color: #555;
+}
+
+.productReviewList .productReviewItem
+{
+	border: 1px solid rgb(232, 230, 210);
+	margin-top: 10px;
+	padding: 10px;
+	clear: both;
+}
+
+.productReviewList .productReviewItem .title
+{
+	font-weight: bold;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.productReviewList .productReviewItem .rating
+{
+	float: right;
+}
+
+.productReviewHelpfulness
+{
+	color: #333;
+}
+
+.productReviewHelpfulness a, .productReviewHelfulness a:hover
+{
+	color: #3664A5;
+	text-decoration: none;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCT SPEC
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.productSpecBox
+{
+	padding: 5px 5px 5px 5px;
+	clear: both;
+	color: #555;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SLIM BOX (PRODUCT IMAGES)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#lbOverlay
+{
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	cursor: pointer;
+}
+
+#lbCenter, #lbBottomContainer
+{
+	position: absolute;
+	z-index: 9999;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.lbLoading
+{
+	background: #fff url(images/loading.gif) no-repeat center;
+}
+
+#lbImage
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 10px solid #fff;
+	background-repeat: no-repeat;
+}
+
+#lbPrevLink, #lbNextLink
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	outline: none;
+}
+
+#lbPrevLink
+{
+	left: 0;
+}
+
+#lbPrevLink:hover
+{
+	background: transparent url(images/prevlabel.gif) no-repeat 0 15%;
+}
+
+#lbNextLink
+{
+	right: 0;
+}
+
+#lbNextLink:hover
+{
+	background: transparent url(images/nextlabel.gif) no-repeat 100% 15%;
+}
+
+#lbBottom
+{
+	font-size: 10px;
+	color: #666;
+	line-height: 1.4em;
+	text-align: left;
+	border: 10px solid #fff;
+	border-top-style: none;
+}
+
+#lbCloseLink
+{
+	display: block;
+	float: right;
+	width: 66px;
+	height: 22px;
+	background: transparent url(images/closelabel.gif) no-repeat center;
+	margin: 5px 0;
+	outline: none;
+}
+
+#lbCaption, #lbNumber
+{
+	margin-right: 71px;
+}
+
+#lbCaption
+{
+	font-weight: bold;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SLIM BOX (PRODUCT IMAGES) 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.compareProducts
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.compareProducts .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.compareProducts .body
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+
+.compareProductsTable
+{
+}
+
+.compareProductsTable .removeButton
+{
+	float: right;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.compareProductsTable tr.productName
+{
+	background-color: #CCCCCC;
+	font-weight: bold;
+}
+
+.compareProductsTable td
+{
+	border-width: 1px;
+	border-color: #BFBFBF;
+	border-style: solid;
+	padding: 3px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRICE RANGE FILTER
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.PriceRangeFilter
+{
+}
+
+.PriceRangeFilter .title
+{
+	color: #555;
+	font-weight: bold;
+	background: url('images/ico-arrow-r.gif') no-repeat;
+	padding: 1px 0px 5px 20px;
+}
+
+.PriceRangeFilter ul
+{
+	margin: 0;
+	padding-left: 20px;
+}
+
+.PriceRangeFilter li
+{
+	list-style: none;
+	padding-bottom: 2px;
+}
+
+.PriceRangeFilter .SelectedPriceRange
+{
+	padding-left: 20px;
+}
+
+.PriceRangeFilter .RemovePriceRangeFilter
+{
+	font-weight: bold;
+}

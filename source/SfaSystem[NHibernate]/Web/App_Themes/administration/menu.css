@@ -1,0 +1,212 @@
+﻿.foo
+{
+}
+/* W3C CSS validator likes CSS files to start with a class rather than a comment. Soooooo.... */
+
+.AdminMenu
+{
+	vertical-align: middle;
+	font-family: Arial;
+	display: inline;
+}
+
+/* The menu adapter generates a list item (li) in HTML for each menu item. */
+/* Use this rule create the common appearance of each menu item. */
+
+.AdminMenu ul.AspNet-Menu li a img
+{
+	border: none;
+	padding-right: 7px;
+	margin-bottom: 2px;
+	vertical-align: middle;
+}
+
+/* TOP TIER */
+.AdminMenu ul.AspNet-Menu li
+{
+	padding: 0 3px 0 3px;
+	line-height: 29px;
+}
+
+.AdminMenu ul.AspNet-Menu li:hover
+{
+	background: url(images/menu-item-left.png) no-repeat left center;
+}
+
+.AdminMenu ul.AspNet-Menu li:hover a
+{
+	background: url(images/menu-item-right.png) no-repeat right center;
+}
+/* END TOP TIER */
+
+/* Within each menu item is a link or a span, depending on whether or not the MenuItem has defined it's */
+/* NavigateUrl property. By setting a transparent background image here you can effectively layer two images */
+/* in each menu item.  One comes from the CSS rule (above) governing the li tag that each menu item has. */
+/* The second image comes from this rule (below). */
+.AdminMenu ul.AspNet-Menu li a, .AdminMenu ul.AspNet-Menu li span
+{
+	color: #FFF;
+	padding: 0 5px 0px 5px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+/* When a menu item contains no submenu items it is marked as a "leaf" and can be styled specially by this rule. */
+.AdminMenu ul.AspNet-Menu li.AspNet-Menu-Leaf a, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Leaf span
+{
+	color: #FFF; /*Home*/
+	font-size: 12px;
+}
+
+/* When you hover over a menu item, this rule comes into play. */
+/* Browsers that do not support the CSS hover pseudo-class, use JavaScript to dynamically change the */
+/* menu item's li tag so it has the AspNet-Menu-Hover class when the cursor is over that li tag. */
+/* See MenuAdapter.js (in the JavaScript folder). */
+.AdminMenu ul.AspNet-Menu li:hover, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover
+{
+	/* not required */
+}
+
+.AdminMenu ul.AspNet-Menu li:hover a, .AdminMenu ul.AspNet-Menu li:hover span, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover a, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover span, .AdminMenu ul.AspNet-Menu li:hover li:hover a, .AdminMenu ul.AspNet-Menu li:hover li:hover span, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover a, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover span, .AdminMenu ul.AspNet-Menu li:hover li:hover ul a:hover, .AdminMenu ul.AspNet-Menu li:hover li:hover ul span.Asp-Menu-Hover, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul a:hover, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul span.Asp-Menu-Hover
+{
+	/*bf - this is hover on all items*/
+}
+
+.AdminMenu ul.AspNet-Menu li:hover ul a, .AdminMenu ul.AspNet-Menu li:hover ul span, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover ul a, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover ul span, .AdminMenu ul.AspNet-Menu li:hover li:hover ul a, .AdminMenu ul.AspNet-Menu li:hover li:hover ul span, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul a, .AdminMenu ul.AspNet-Menu li.AspNet-Menu-Hover li.AspNet-Menu-Hover ul span
+{
+	color: #555; /* this is individual items below parent*/
+	border-top: solid 1px #e0e0e0;
+	text-align: left;
+	text-decoration: none;
+	background: none;
+}
+
+
+/* While you hover over a list item (li) you are also hovering over a link or span because */
+/* the link or span covers the interior of the li.  So you can set some hover-related styles */
+/* in the rule (above) for the li but set other hover-related styles in this (below) rule. */
+.AdminMenu ul.AspNet-Menu li a:hover, .AdminMenu ul.AspNet-Menu li span.Asp-Menu-Hover
+{
+}
+
+.AdminMenu ul.AspNet-Menu ul li:hover, .AdminMenu ul.AspNet-Menu ul li.AspNet-Menu-Leaf a:hover /* hover styles for lower tiers */
+{
+	background-image: none;
+	background-color: #FDEFD5;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* When the Menu control's Orientation property is Horizontal the adapter wraps the menu with DIV */
+/* whose class is AspNet-Menu-Horizontal. */
+
+.AdminMenu .AspNet-Menu-Horizontal
+{
+	position: relative;
+}
+
+/* This rule controls the width of the top tier of the horizontal menu. */
+/* BE SURE TO MAKE THIS WIDE ENOUGH to accommodate all of the top tier menu items that are lined */
+/* up from left to right. In other words, this width needs to be the width of the individual */
+/* top tier menu items multiplied by the number of items. */
+.AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu
+{
+	width: 1000px;
+}
+
+/* This rule effectively says: style all tiers EXCEPT THE TOP TIER in the menu this way... */
+/* In other words, this rule can be used to style the second and third tiers of the menu without impacting */
+/* the topmost tier's appearance. */
+/* Remember that only the topmost tier of the menu is horizontal.  The second and third tiers are vertical. */
+/* So, they need a much smaller width than the top tier.  Effectively, the width specified here is simply */
+/* the width of a single menu item in the second and their tiers. */
+
+
+
+.AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul
+{
+	width: 170px;
+	left: 0;
+	top: 100%;
+	background-color: #f0f0f0;
+	border: solid 1px #6b798c;
+	margin-left: 1px;
+}
+
+
+.AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul ul
+{
+	width: 170px;
+}
+
+.AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul ul
+{
+	width: 170px;
+}
+
+/* Generally, you use this rule to set style properties that pertain to all menu items. */
+/* One exception is the width set here.  We will override this width with a more specific rule (below) */
+/* That sets the width for all menu items from the second tier downward in the menu. */
+.AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu li
+{
+	/*this is the top one */
+	padding-top: 1px;
+}
+
+
+*html .AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu li
+{
+	width: 1%;
+	vertical-align: middle;
+	margin: 5px 0;
+}
+
+/* This rule establishes the width of menu items below the top tier.  This allows the top tier menu items */
+/* to be narrower, for example, than the sub-menu items. */
+/* This value you set here should be slightly larger than the left margin value in the next rule. See */
+/* its comment for more details. */
+.AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul li
+{
+	text-align: left;
+	width: 170px;
+	padding: 0;
+	margin: 0;
+}
+
+.AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu ul ul li
+{
+	text-align: left;
+	width: 170px;
+	padding: 0;
+	margin: 0;
+}
+
+/* Third tier menus have to be positioned differently than second (or top) tier menu items because */
+/* they drop to the side, not below, their parent menu item. This is done by setting the last margin */
+/* value (which is equal to margin-left) to a value that is slightly smaller than the WIDTH of the */
+/* menu item. So, if you modify the rule above, then you should modify this (below) rule, too. */
+.AdminMenu .AspNet-Menu-Horizontal ul.AspNet-Menu li ul li ul
+{
+	margin: -31px 0 0 170px;
+}
+
+/* selected / active link */
+
+.AdminMenu .AspNet-Menu-Selected /* this tier is selected */
+{
+	font-weight: bold !important;
+}
+
+.AdminMenu .AspNet-Menu-ChildSelected /* a tier below this one is selected */
+{
+	font-weight: bold !important;
+}
+
+.AdminMenu .AspNet-Menu-ParentSelected /* a tier above this one is selected */
+{
+
+}
+
+
+
+

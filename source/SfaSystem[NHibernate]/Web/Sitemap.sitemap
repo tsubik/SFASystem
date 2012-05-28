@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap enableLocalization="true" xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0"  >
+	<siteMapNode title="Home"  description="Administration Home" roles="*">
+		<!-- Home -->
+		<siteMapNode title="Pulpit"
+							 url="~/Administration/SalesRepresentative/Dashboard.aspx"
+							 IconUrl="~/Administration/Common/ico-dashboard.png"
+							 description="View the dashboard"/>
+		<siteMapNode title="Pulpit"
+							 url="~/Administration/SalesManager/Dashboard.aspx"
+							 IconUrl="~/Administration/Common/ico-dashboard.png"
+							 description="View the dashboard"/>
+		<siteMapNode title="Pulpit" 
+					 url="~/Administration/SalesDirector/Dashboard.aspx"
+					 IconUrl="~/Administration/Common/ico-dashboard.png"
+					 description="View the dashboard"/>
+		<!-- End Home -->
+
+		<!-- Catalog -->
+		<siteMapNode title="Produkty" IconUrl="~/Administration/Common/ico-products.png" description="Produkty" url="~/Administration/Products/ProductsHome.aspx" >
+			<siteMapNode title="Grupy produktów" url="~/Administration/Products/ProductGroups.aspx" description="Zarządzaj grupami produktów"/>
+			<siteMapNode title="Produkty" url="~/Administration/Products/Products.aspx" description="Zarządzaj produktami" />
+      <siteMapNode title="Producenci" url="~/Administration/Products/Manufacturers.aspx" description="Zarządzaj producentami" />
+		</siteMapNode>
+		<!-- End Catalog -->
+
+		<!-- Sales -->
+		<siteMapNode title="Sprzedaż"
+			   IconUrl="~/Administration/Common/ico-sales.png" description="Sales Home" url="~/Administration/Sales/SalesHome.aspx">
+			<siteMapNode title="Zamówienia" url="~/Administration/Sales/Orders.aspx" description="Zarządzanie zamówieniami"/>
+      <siteMapNode title="Faktury" url="~/Administration/Sales/Invoices.aspx" description="Zarządzanie fakturami"/>
+      <siteMapNode title="Regiony" url="~/Administration/Sales/Territories.aspx" description="Zarządzanie regionami" />
+		
+    </siteMapNode>
+		<!-- End Sales -->
+
+		<!-- Customers -->
+		<siteMapNode title="Klienci" IconUrl="~/Administration/Common/ico-customers.png" url="~/Administration/Customers/Customers.aspx" description="Customers Home">
+			<siteMapNode title="Placówki" url="~/Administration/Customers/CustomerFacilities.aspx" description="Placówki klientów" />
+			<siteMapNode title="Kontakty" url="~/Administration/Customers/CustomerContacts.aspx" description="Osoby kontatkowe" />
+		</siteMapNode>
+		<!-- End Customers -->
+
+		<!-- Customers -->
+		<siteMapNode title="Pracownicy" IconUrl="~/Administration/Common/ico-employees.png" url="~/Administration/Employees/EmployeesHome.aspx" description="Employees Home">
+      <siteMapNode title="Pracownicy" url="~/Administration/Employees/Employees.aspx" description="Employees Home" />
+      <siteMapNode title="Zadania pracowników" url="~/Administration/Employees/Tasks.aspx" description="Przeglądaj zadania pracowników" />
+			<siteMapNode title="Motywacja" url="~/Administration/SalesDirector/Quotes.aspx" description="Cytaty motywacyjne" />
+		</siteMapNode>
+		<!-- End Customers -->
+
+		<!-- Promotions -->
+		<siteMapNode title="Raporty" IconUrl="~/Administration/Common/ico-reports.png" description="Promotions Home" url="~/Administration/Reports/ReportsHome.aspx" >
+      <siteMapNode title="Zestawienie klientów" url="~/Administration/Reports/CustomerReport.aspx" description="Manage Discounts"  />
+      <siteMapNode title="Zestawienie produktów" url="~/Administration/Reports/ProductReport.aspx" description="Manage Discounts"  />
+      <siteMapNode title="Najlepsze produkty" url="~/Administration/Reports/BProductByTerritory.aspx" description="Manage Affiliates" />
+      <siteMapNode title="Sprzedaż - pracownik" url="~/Administration/Reports/EmployeeReport.aspx" description="Manage Affiliates" />
+      <siteMapNode title="Najlepsi klienci" url="~/Administration/Reports/BestCustomers.aspx" description="Manage Affiliates" />
+      <siteMapNode title="Najlepsi przedstawiciele handlowi" url="~/Administration/Reports/BestSalesReps.aspx" description="Manage Affiliates" />
+			<siteMapNode title="Sprzedaż - grupy produktów" url="~/Administration/Reports/SalesByProductGroup.aspx" description="Manage Campaigns" />
+			<siteMapNode title="Sprzedaż - regiony" url="~/Administration/Reports/SalesByTerritory.aspx" description="Manage Discounts"  />
+		</siteMapNode>
+		<!-- End Promotions -->
+
+		<!-- Configuration -->
+		<siteMapNode title="Konfiguracja"
+		  IconUrl="~/Administration/Common/ico-configuration.png" description="Configuration Home" url="~/Administration/Admin/SettingsHome.aspx" roles="Administrator">
+			<siteMapNode title="Ustawienia globalne" url="~/Administration/Admin/GlobalSettings.aspx" description="Configure Global Settings"/>
+			<siteMapNode title="Słowniki" url="~/Administration/Admin/Dictionaries.aspx" description="Zarządzanie słownikami" />
+		</siteMapNode>
+		<!-- End Configuration -->
+
+		<!-- My account -->
+		<siteMapNode title="Moje konto" url="~/Administration/Account.aspx"
+		  IconUrl="~/Administration/Common/ico-account.png" description="Moje konto">
+		</siteMapNode>
+		<!-- My account-->
+		</siteMapNode>
+	</siteMap>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.Invoice,SFASystem.Domain" table="Invoice" lazy="true">
+    <id name="Invoiceid" column="InvoiceID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <many-to-one name="Order" column="OrderID" cascade="save-update" not-null="true" />
+    <many-to-one name="InvoiceStatus" column="InvoiceStatus" cascade="save-update" not-null="true" />
+    <property name="Number" column="Number" type="string" not-null="true" />
+    <property name="Date" column="Date" type="DateTime" not-null="true" />
+    <property name="DatePayment" column="DatePayment" type="DateTime" />
+    <property name="IsPaid" column="IsPaid" type="Boolean" not-null="true" />
+  </class>
+</hibernate-mapping>

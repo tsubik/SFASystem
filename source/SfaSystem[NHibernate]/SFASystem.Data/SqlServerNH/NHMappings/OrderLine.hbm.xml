@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.OrderLine,SFASystem.Domain" table="OrderLine" lazy="true">
+    <composite-id name="Id" class="SFASystem.Domain.OrderLineId,SFASystem.Domain">
+      <key-many-to-one name="Order" class="SFASystem.Domain.Order,SFASystem.Domain" column="OrderID" />
+      <key-many-to-one name="Product" class="SFASystem.Domain.Product,SFASystem.Domain" column="ProductID" />
+    </composite-id>
+    <property name="Quantity" column="Quantity" type="int" not-null="true" />
+    <property name="ItemPrice" column="ItemPrice" type="Decimal" not-null="true" />
+    <property name="ItemPriceDiscount" column="ItemPriceDiscount" type="Decimal" not-null="true" />
+    <property name="Tax" column="Tax" type="Decimal" not-null="true" />
+    <property name="Total" column="Total" type="Decimal" not-null="true" />
+    <!--<many-to-one name="Order" column="OrderID" cascade="save-update" not-null="true" />
+    <many-to-one name="Product" column="ProductID" cascade="save-update" not-null="true" />-->
+  </class>
+</hibernate-mapping>

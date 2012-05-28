@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.Address,SFASystem.Domain" table="Address" lazy="true">
+    <id name="Addressid" column="AddressID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <many-to-one name="Country" column="CountryID" cascade="save-update" not-null="true" />
+    <many-to-one name="City" column="CityID" cascade="save-update" not-null="true" />
+    <property name="Street" column="Street" type="string" not-null="true" />
+    <property name="ZipCode" column="ZipCode" type="string" not-null="true" />
+    <property name="HouseNr" column="HouseNr" type="string" not-null="true" />
+    <property name="ApartmentNr" column="ApartmentNr" type="string" />
+	<property name="IsDeleted" column="IsDeleted" type="Boolean" />
+  </class>
+</hibernate-mapping>

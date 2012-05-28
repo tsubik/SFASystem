@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<!--Build: with lujan99@usa.net Nhibernate template-->
+	<class name="SFASystem.Domain.Role,SFASystem.Domain" table="Role" lazy="true">
+		<id name="Roleid" column="RoleID" type="Guid">
+			<generator class="guid.comb" />
+		</id>
+
+		<property name="Name" column="Name" type="string" not-null="true" />
+		<bag name="Employees" inverse="false" table="EmployeeRoles" lazy="true" cascade="delete">
+			<key column="RoleID" />
+			<many-to-many class="SFASystem.Domain.Employee,SFASystem.Domain">
+				<column name="EmployeeID" />
+			</many-to-many>
+		</bag>
+
+	</class>
+</hibernate-mapping>

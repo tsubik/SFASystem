@@ -1,0 +1,179 @@
+﻿
+body
+{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+.container_main
+{
+	background-image: url(images/bodybg.gif);
+	background-repeat: repeat-x;
+	background-color: #f4f4f4;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.container_footer
+{
+	margin: auto;
+	width: 700px;
+}
+
+.container_error
+{
+	padding-top: 10px;
+	margin: auto;
+	width: 629px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.errorLabel
+{
+	color: #ff0000;
+	display: block;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.wizardStep
+{
+	margin: auto;
+	width: 600px;
+	height: 340px;
+	text-align: left;
+	padding: 10px 10px 10px 10px;
+}
+
+.wizardStep td
+{
+	height: 20px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.headerText
+{
+	font-size: 18px;
+	color: #ff5a00;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.headerImg
+{
+	margin: 20px 0px 10px 0px;
+}
+
+
+.content
+{
+	padding-top: 10px;
+	margin: auto;
+	width: 629px;
+	text-align: center;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.textBox
+{
+	width: 150px;
+}
+
+.title
+{
+	font-weight: bold;
+}
+
+
+.log
+{
+	width: 600px;
+	height: 90px;
+	margin: 0px auto;
+}
+
+.container_installer
+{
+	margin: auto;
+}
+
+.container_installer .Top .Left
+{
+	width: 22px;
+	height: 22px;
+	background-image: url(images/topleft.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.container_installer .Top .Center
+{
+	width: 699px;
+	height: 22px;
+	background-image: url(images/top.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.container_installer .Top .Right
+{
+	width: 22px;
+	height: 22px;
+	background-image: url(images/topright.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+.container_installer .Middle .Left
+{
+	width: 22px;
+	height: 516px;
+	background-image: url(images/left.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.container_installer .Middle .Center
+{
+	background-image: url(images/bg.gif);
+	background-repeat: repeat-y;
+	background-position: top;
+	text-align: center;
+	vertical-align: top;
+}
+.container_installer .Middle .Right
+{
+	width: 22px;
+	height: 516px;
+	background-image: url(images/right.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.container_installer .Bottom .Left
+{
+	width: 22px;
+	height: 22px;
+	background-image: url(images/bottomleft.gif);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}
+.container_installer .Bottom .Center
+{
+	width: 699px;
+	height: 22px;
+	background-image: url(images/bottom.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.container_installer .Bottom .Right
+{
+	width: 22px;
+	height: 22px;
+	background-image: url(images/bottomright.gif);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+}

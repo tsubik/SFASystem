@@ -1,0 +1,625 @@
+﻿.foo{}/****************************************************************************************************/
+/* The contents of this file are subject to the nopCommerce Public License Version 1.0 ("License"); you may not use this file except in compliance with the License.
+/* You may obtain a copy of the License at  http://www.nopCommerce.com/License.aspx. 
+/* 
+/* Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. 
+/* See the License for the specific language governing rights and limitations under the License.
+/* 
+/* The Original Code is nopCommerce.
+/* The Initial Developer of the Original Code is NopSolutions.
+/* All Rights Reserved.
+/* 
+/* Contributor(s): RetroViz Design. 
+/****************************************************************************************************/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SEARCH PAGE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.searchPanel
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.searchPanel .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.searchPanel .searchInput
+{
+	border: 1px solid rgb(232, 230, 210);
+	padding: 10px;
+}
+
+.searchPanel .searchResults
+{
+	padding-top: 10px;
+}
+
+.searchPanel .searchResults .result
+{
+	font-weight: bold;
+	color: #555;
+}
+
+.searchResults .ProductList1
+{
+	width: 600px;
+	margin: 0 auto 0 auto;
+}
+
+.searchResults .ProductList1 .ItemBox
+{
+	text-align: left;
+	clear: both;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.searchResults .ProductList1 .ProductItem
+{
+	width: 600px;
+	height: 177px;
+	border: 1px solid rgb(232, 230, 210);
+}
+
+.searchResults .ProductList1 .ProductItem .title
+{
+	font-weight: bold;
+	margin:0;
+	padding: 0 0 0 10px;
+}
+
+.searchResults .ProductList1 .ProductItem .title a
+{
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.searchResults .ProductList1 .ProductItem .picture
+{
+	float: left;
+	margin: 10px 0 10px 10px;
+}
+
+.searchResults .ProductList1 .ProductItem .description
+{
+	padding: 0px 0 0 10px;
+	margin: 10px 150px 0px 140px;
+	text-align: left;
+	border-left: solid 1px rgb(232, 230, 210);
+	color: #555;
+}
+
+.searchResults .ProductList1 .ProductItem .prices-wrapper
+{
+	float: right;
+	text-align: right;
+	position: absolute;
+	bottom: 20px;
+	right: 5px;
+}
+
+.searchResults .ProductList1 .ProductItem .prices
+{
+	font-size: 11px;
+}
+
+.searchResults .ProductList1 .ProductItem .prices .productPrice
+{
+	color: green;
+}
+
+.searchResults .ProductList1 .ProductItem .prices .oldproductPrice
+{
+	color: Red;
+	text-decoration: line-through;
+}
+
+.searchResults .ProductList1 .ProductItem .buttons
+{
+	padding-top: 20px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CONTACT US FORM
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.contactform
+{
+}
+
+.contactform .title
+{
+	padding: 0 0 5px 0;
+	font-weight: bold;
+	clear: both;
+	text-transform: uppercase;
+}
+
+.contactform .button
+{
+	text-align: right;
+}
+
+.contactform .info
+{
+}
+
+.contactform .sendEmail
+{
+}
+
+.contactform .contactform
+{
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	BREADCRUMB
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.breadcrumb
+{
+	float: left;
+	padding: 0px;
+	margin: 10px 0px 0px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.breadcrumb a
+{
+	text-decoration: none;
+	color: #3A4045;
+}
+
+.breadcrumb a:hover
+{
+	text-decoration: underline;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	NEWS LIST
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.newslist
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.newslist .title
+{
+	padding: 10px 0px 1px 0px;
+	margin: 0 5px 10px 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+	font-size: 1.1em;
+	border-bottom: solid 1px #C4C6C8;
+}
+
+.newslist .newsitems
+{
+	margin: 0px 5px 0 5px;
+	padding: 0px 0 0 0;
+}
+
+.newslist .newsitems .item
+{
+	border-bottom: dashed 1px #C4C6C8;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.newslist .newsitems .newsDate
+{
+	color: #9a9a9a;
+	font-style: italic;
+}
+
+.newslist .newsitems a.newsTitle
+{
+	color: #555;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.newslist .newsitems a.newsTitle:hover
+{
+	text-decoration: underline;
+}
+
+.newslist .newsitems .newsDetails
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.newslist .newsitems .newsReadMore
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #3664A5;
+	background-color: inherit;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	NEWS DETAILS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.newsitem
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.newsitem .title
+{
+	padding: 10px 10px 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+.newsitem .newsDate
+{
+	color: #9a9a9a;
+	font-style: italic;
+}
+
+.newsitem .newsbody
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+}
+
+.newsComments
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.newsComments .title
+{
+	padding: 10px 10px 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.newsComments .newComment
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+}
+
+.newsComments .newComment td.leaveTitle
+{
+	padding: 0px 10px 10px 0px;
+	font-weight: bold;
+	color: #3a3a3a;
+}
+
+.newsComments .newComment td.button
+{
+	text-align: right;
+}
+
+.newsComments .commentList
+{
+	margin: 10px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555D65;
+	background-color: inherit;
+}
+
+.newsComments .commentList .comment
+{
+	border: 1px solid rgb(232, 230, 210);
+	margin-top: 10px;
+	padding: 10px;
+	clear: both;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	BLOG LIST
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.blog
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.blog .title
+{
+	padding: 10px 0px 1px 0px;
+	margin: 0 5px 10px 5px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+	font-size: 1.1em;
+	border-bottom: solid 1px #C4C6C8;
+}
+
+.blogposts .post .blogDate
+{
+	color: #9a9a9a;
+	font-style: italic;
+}
+
+.blogposts .post a.blogTitle
+{
+	color: #444;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.blogposts .post a.blogTitle:Hover
+{
+	text-decoration: underline;
+}
+
+.blog .blogposts
+{
+	margin: 0px 5px 0 5px;
+	padding: 0px 0 0 0;
+}
+
+.blog .blogposts .post
+{
+	border-bottom: dashed 1px #C4C6C8;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.blog .blogposts .blogBody
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.blog .blogposts .blogDetails
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #3664A5;
+	background-color: inherit;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	BLOG DETAILS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.blogpost
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.blogpost .title
+{
+	padding: 10px 10px 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1.1em;
+}
+
+.blogpost .postDate
+{
+	color: #9a9a9a;
+	font-style: italic;
+}
+
+.blogpost .postbody
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+}
+
+.blogComments
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.blogComments .title
+{
+	padding: 10px 10px 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.blogComments .newComment
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+}
+
+
+.blogComments .newComment td.leaveTitle
+{
+	padding: 0px 10px 10px 0px;
+	font-weight: bold;
+}
+
+.blogComments .newComment td.button
+{
+	text-align: right;
+}
+
+.blogComments .commentList
+{
+	margin: 10px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555D65;
+	background-color: inherit;
+}
+
+.blogComments .commentList .comment
+{
+	border: 1px solid rgb(232, 230, 210);
+	margin-top: 10px;
+	padding: 10px;
+	clear: both;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	POLLS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.todaysPollBox
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.todaysPollBox .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.todaysPollBox .pollItem
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+
+.pollBlock
+{
+	float: left;
+	text-align: left;
+	vertical-align: top;
+	padding-top: 10px;
+}
+
+.pollTakePoll, .pollResults
+{
+	border: dashed 1px #666;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.pollDisplayText
+{
+	font-weight: bold;
+}
+
+.pollTotalVotes
+{
+	font-style: italic;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	EMAIL A FRIEND PAGE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.emailafriendBox
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.emailafriendBox .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.emailafriendBox .sendEmail
+{
+	border: 1px solid rgb(232, 230, 210);
+	margin-top: 10px;
+	padding: 0 0 10px 10px;
+}
+
+.emailafriendBox .sendEmail .product
+{
+	font-weight: bold;
+}
+
+.emailafriendBox .sendEmail .description
+{
+	font-style: italic;
+}
+
+.emailafriendBox .sendEmail .confirm
+{
+	font-weight: bold;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	RATING
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ratingStar
+{
+	font-size: 0pt;
+	width: 13px;
+	height: 12px;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	display: block;
+	background-repeat: no-repeat;
+}
+.filledRatingStar
+{
+	background-image: url(Images/FilledStar.png);
+}
+.emptyRatingStar
+{
+	background-image: url(Images/EmptyStar.png);
+}
+.savedRatingStar
+{
+	background-image: url(Images/SavedStar.png);
+}
+

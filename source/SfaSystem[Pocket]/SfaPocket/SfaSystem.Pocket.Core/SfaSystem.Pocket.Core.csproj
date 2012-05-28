@@ -1,0 +1,142 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0344D074-E7B2-4BB6-BF59-C9AE2BEFE4E6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SFASystem.Pocket.Core</RootNamespace>
+    <AssemblyName>SfaSystem.Pocket.Core</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>SfaSystem.Pocket.Core</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="OpenNETCF, Version=2.3.0.39, Culture=neutral, PublicKeyToken=e60dbea84bb431b7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dependencies\OpenNETCF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLogic\AddressManager.cs" />
+    <Compile Include="BusinessLogic\ContactManager.cs" />
+    <Compile Include="BusinessLogic\CustomerManager.cs" />
+    <Compile Include="BusinessLogic\DictionaryManager.cs" />
+    <Compile Include="BusinessLogic\EmployeeManager.cs" />
+    <Compile Include="BusinessLogic\OrderManager.cs" />
+    <Compile Include="BusinessLogic\ProductManager.cs" />
+    <Compile Include="BusinessLogic\RoleManager.cs" />
+    <Compile Include="BusinessLogic\TaskManager.cs" />
+    <Compile Include="BusinessLogic\TerritoryManager.cs" />
+    <Compile Include="Common\Address.cs" />
+    <Compile Include="Common\City.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\Contact.cs" />
+    <Compile Include="Common\Country.cs" />
+    <Compile Include="Common\Customer.cs" />
+    <Compile Include="Common\CustomerFacility.cs" />
+    <Compile Include="Common\Dictionary.cs" />
+    <Compile Include="Common\DictionaryType.cs" />
+    <Compile Include="Common\Employee.cs" />
+    <Compile Include="Common\FieldCall.cs" />
+    <Compile Include="Common\Image.cs" />
+    <Compile Include="Common\ImageType.cs" />
+    <Compile Include="Common\Invoice.cs" />
+    <Compile Include="Common\Manufacturer.cs" />
+    <Compile Include="Common\Order.cs" />
+    <Compile Include="Common\OrderLine.cs" />
+    <Compile Include="Common\OrderLineId.cs" />
+    <Compile Include="Common\Product.cs" />
+    <Compile Include="Common\ProductGroup.cs" />
+    <Compile Include="Common\Quote.cs" />
+    <Compile Include="Common\Role.cs" />
+    <Compile Include="Common\SFAException.cs" />
+    <Compile Include="Common\Singleton.cs" />
+    <Compile Include="Common\Task.cs" />
+    <Compile Include="Common\Territory.cs" />
+    <Compile Include="DataAccess\AddressDB.cs" />
+    <Compile Include="DataAccess\CityDB.cs" />
+    <Compile Include="DataAccess\ContactDB.cs" />
+    <Compile Include="DataAccess\CountryDB.cs" />
+    <Compile Include="DataAccess\CustomerDB.cs" />
+    <Compile Include="DataAccess\CustomerFacilityDB.cs" />
+    <Compile Include="DataAccess\DBHelper.cs" />
+    <Compile Include="DataAccess\DictionaryDB.cs" />
+    <Compile Include="DataAccess\DictionaryTypeID.cs" />
+    <Compile Include="DataAccess\EmployeeDB.cs" />
+    <Compile Include="DataAccess\InvoiceDB.cs" />
+    <Compile Include="DataAccess\ManufacturerDB.cs" />
+    <Compile Include="DataAccess\OrderDB.cs" />
+    <Compile Include="DataAccess\OrderLineDB.cs" />
+    <Compile Include="DataAccess\ProductDB.cs" />
+    <Compile Include="DataAccess\ProductGroupDB.cs" />
+    <Compile Include="DataAccess\RoleDB.cs" />
+    <Compile Include="DataAccess\TaskDB.cs" />
+    <Compile Include="DataAccess\TemplateDB.cs" />
+    <Compile Include="DataAccess\TerritoryDB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SfaSystem.Pocket.Utils\SfaSystem.Pocket.Utils.csproj">
+      <Project>{06E6AE2A-7DCE-4DDB-B6E8-ACA5F901DF15}</Project>
+      <Name>SfaSystem.Pocket.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

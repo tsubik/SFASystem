@@ -1,0 +1,77 @@
+﻿body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, form, input
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 12px;
+	background: #FFF;
+	color: #000000;
+	margin: 10px 10px 10px 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ORDER DETAILS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.OrderDetails
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.OrderDetails .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.OrderDetails .info
+{
+	border: 1px solid #d7d7d7;
+	padding: 10px;
+}
+
+.OrderDetails .SectionTitle
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+}
+
+.OrderDetails .OrderOverview
+{
+	text-align: left;
+	padding-bottom: 10px;
+}
+.OrderDetails .ShippingBox
+{
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.OrderDetails .BillingBox
+{
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.OrderDetails .ProductsBox
+{
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+

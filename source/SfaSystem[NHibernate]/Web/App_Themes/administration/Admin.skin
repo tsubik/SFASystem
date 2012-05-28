@@ -1,0 +1,23 @@
+﻿<asp:GridView runat="server" CssClass="tablestyle" >
+	<AlternatingRowStyle CssClass="altrowstyle" />
+    <HeaderStyle CssClass="headerstyle" />
+    <RowStyle CssClass="rowstyle" />  
+    <PagerStyle CssClass="PagerStyle" />
+</asp:GridView>
+
+
+<asp:Menu StaticSubMenuIndent="20px" CssClass="topMenu" runat="server"
+Orientation="Horizontal" runat="server" 
+MaximumDynamicDisplayLevels="4" Height="20px" Width="90%" 
+DynamicEnableDefaultPopOutImage="False" StaticEnableDefaultPopOutImage="False" SkinID="oldMenu">
+<DynamicHoverStyle CssClass="topMenu_DynamicHoverStyle" />
+<DynamicMenuStyle CssClass="topMenu_DynamicMenuStyle" />
+<DynamicSelectedStyle CssClass="topMenu_DynamicSelectedStyle" />
+<DynamicMenuItemStyle CssClass="topMenu_DynamicMenuItemStyle" />
+<StaticHoverStyle CssClass="topMenu_StaticHoverStyle" />
+<StaticMenuStyle CssClass="topMenu_StaticMenuStyle" />
+<StaticMenuItemStyle CssClass="topMenu_StaticMenuItemStyle" />
+</asp:Menu>
+<asp:Button runat="server" SkinID="LoginButton" CssClass="loginbutton"/>
+
+<ajaxtoolkit:tabcontainer runat="server" CssClass="grey"/>

@@ -1,0 +1,522 @@
+﻿.foo{}/****************************************************************************************************/
+/* The contents of this file are subject to the nopCommerce Public License Version 1.0 ("License"); you may not use this file except in compliance with the License.
+/* You may obtain a copy of the License at  http://www.nopCommerce.com/License.aspx. 
+/* 
+/* Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. 
+/* See the License for the specific language governing rights and limitations under the License.
+/* 
+/* The Original Code is nopCommerce.
+/* The Initial Developer of the Original Code is NopSolutions.
+/* All Rights Reserved.
+/* 
+/* Contributor(s): RetroViz Design. 
+/****************************************************************************************************/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HOME PAGE CATEGORIES - DONE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.HomePageCategoryGrid
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 520px;
+}
+
+.HomePageCategoryGrid a
+{
+	color: #555;
+}
+
+.HomePageCategoryGrid .ItemBox
+{
+	text-align: center;
+	vertical-align: text-top;
+}
+
+.HomePageCategoryGrid .HomePageCategoryItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	width: 150px;
+	height: auto;
+	background: url('images/home-cat-bg.gif') no-repeat 0 100%;
+}
+
+.HomePageCategoryGrid .HomePageCategoryItem .title
+{
+	text-align: center;
+	font-weight: bold;
+	background: url('images/home-cat-title.gif');
+	font-size: 0.9em;
+	display: block;
+	overflow: hidden hidden;
+	height: 1.8em;
+	padding: 8px 0 5px 0;
+}
+
+.HomePageCategoryGrid .HomePageCategoryItem .picture
+{
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CATEGORY DETAILS PAGE - DONE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CategoryPage
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+.CategoryPage .CategoryTitle
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.CategoryPage .CategoryDescription
+{
+	color: #555;
+	font-size: 1.1em;
+}
+
+.CategoryPage .ProductPager
+{
+	text-align: center;
+}
+
+.CategoryPage .ProductPager a
+{
+	font-size: 1em;
+}
+
+.CategoryPage .ProductPager a:link
+{
+	text-align: center;
+	color: #555;
+}
+
+.CategoryPage .ProductPager span
+{
+	color: #ff9933;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SUB CATEGORIES - PRODUCTS IN GRID TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CategoryPage .SubCategoryGrid
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 520px;
+}
+
+.CategoryPage .SubCategoryGrid a
+{
+	color: #555;
+}
+
+.CategoryPage .SubCategoryGrid .ItemBox
+{
+	text-align: center;
+	vertical-align: text-top;
+}
+
+.CategoryPage .SubCategoryGrid .SubCategoryItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	width: 150px;
+	height: auto;
+	background: url('images/home-cat-bg.gif') no-repeat 0 100%;
+}
+
+.CategoryPage .SubCategoryGrid .SubCategoryItem .title
+{
+	text-align: center;
+	font-weight: bold;
+	background: url('images/home-cat-title.gif');
+	font-size: 0.9em;
+	display: block;
+	overflow: hidden hidden;
+	height: 1.8em;
+	padding: 8px 0 5px 0;
+}
+
+.CategoryPage .SubCategoryGrid .SubCategoryItem .picture
+{
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+.CategoryPage .SubCategoryList
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	FEATURED PRODUCTS IN CATEGORY
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CategoryPage .FeaturedProductGrid
+{
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	text-align: center;
+}
+
+.CategoryPage .FeaturedProductGrid .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+	margin: 0;
+	color: #ff9933;
+}
+
+.CategoryPage .FeaturedProductGrid .ItemBox
+{
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: text-top;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	width: 250px;
+	background: url('images/prod_grid_box_bg.gif') no-repeat 0 100%;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem .title
+{
+	font-weight: bold;
+	background: url('images/deal_box_hl.gif') no-repeat 0 0;
+	padding: 0 0 0 10px;
+	text-transform: none;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem .title a
+{
+	background: url('images/deal_box_hr.gif') no-repeat 100% 0;
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem .picture
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem .description
+{
+	margin: 5px 5px 0 5px;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	border-top: solid 1px #e3e3e3;
+	color: #555;
+	height: 50px;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem .addInfo
+{
+	vertical-align: bottom;
+	text-align: right;
+	width: 250px;
+	height: 85px;
+	position: relative;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem .addInfo .prices
+{
+	text-align: right;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem .addInfo .buttons
+{
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	text-align: left;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem .addInfo .prices .productPrice
+{
+	color: green;
+}
+
+.CategoryPage .FeaturedProductGrid .ProductItem .addInfo .prices .oldproductPrice
+{
+	color: Red;
+	text-decoration: line-through;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCTS IN GRID - TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CategoryPage .ProductGrid
+{
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	text-align: center;
+}
+
+.CategoryPage .ProductGrid .ItemBox
+{
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: text-top;
+}
+
+.CategoryPage .ProductGrid .ProductItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	width: 250px;
+	background: url('images/prod_grid_box_bg.gif') no-repeat 0 100%;
+}
+
+.CategoryPage .ProductGrid .ProductItem .title
+{
+	font-weight: bold;
+	background: url('images/deal_box_hl.gif') no-repeat 0 0;
+	padding-left: 10px;
+}
+
+.CategoryPage .ProductGrid .ProductItem .title a
+{
+	background: url('images/deal_box_hr.gif') no-repeat 100% 0;
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.CategoryPage .ProductGrid .ProductItem .picture
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.CategoryPage .ProductGrid .ProductItem .description
+{
+	margin: 5px 5px 0 5px;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	border-top: solid 1px #e3e3e3;
+	color: #555;
+	height: 50px;
+}
+
+.CategoryPage .ProductGrid .ProductItem .addInfo
+{
+	vertical-align: bottom;
+	text-align: right;
+	width: 250px;
+	height: 85px;
+	position: relative;
+}
+
+.CategoryPage .ProductGrid .ProductItem .addInfo .prices
+{
+	text-align: right;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+
+.CategoryPage .ProductGrid .ProductItem .addInfo .buttons
+{
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	text-align: left;
+}
+
+.CategoryPage .ProductGrid .ProductItem .addInfo .prices .productPrice
+{
+	color: green;
+}
+
+.CategoryPage .ProductGrid .ProductItem .addInfo .prices .oldproductPrice
+{
+	color: Red;
+	text-decoration: line-through;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCTS IN LINES 1 - TEMPLATE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CategoryPage .ProductList1
+{
+	width: 600px;
+	margin: 0 auto 0 auto;
+}
+
+.CategoryPage .ProductList1 .ItemBox
+{
+	text-align: left;
+	clear: both;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.CategoryPage .ProductList1 .ProductItem
+{
+	width: 600px;
+	height: 177px;
+	background: url('images/pb_s_bg.gif') no-repeat 0 100%;
+	margin-top: 10px;
+	position: relative;
+}
+
+.CategoryPage .ProductList1 .ProductItem .title
+{
+	font-weight: bold;
+	background: url('images/deal_box_hl.gif') no-repeat 0 0;
+	padding-left: 10px;
+}
+
+.CategoryPage .ProductList1 .ProductItem .title a
+{
+	background: url('images/deal_box_hr.gif') no-repeat 100% 0;
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.CategoryPage .ProductList1 .ProductItem .picture
+{
+	float: left;
+	margin: 10px 0 10px 10px;
+}
+
+.CategoryPage .ProductList1 .ProductItem .description
+{
+	padding: 0px 0 0 10px;
+	margin: 10px 150px 0px 140px;
+	text-align: left;
+	border-left: solid 1px #e3e3e3;
+	color: #555;
+}
+
+.CategoryPage .ProductList1 .ProductItem .prices-wrapper
+{
+	float: right;
+	text-align: right;
+	position: absolute;
+	bottom: 20px;
+	right: 5px;
+}
+
+.CategoryPage .ProductList1 .ProductItem .prices
+{
+
+}
+
+.CategoryPage .ProductList1 .ProductItem .prices .productPrice
+{
+	color: green;
+}
+
+.CategoryPage .ProductList1 .ProductItem .prices .oldproductPrice
+{
+	color: Red;
+	text-decoration: line-through;
+}
+
+.CategoryPage .ProductList1 .ProductItem .buttons
+{
+	padding-top: 20px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCTS IN LINES 2 - TEMPLATE (JUST SHOWS HYPERLINKS)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CategoryPage .ProductList2
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCT FILTERS BOX
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.CategoryPage .ProductFilters
+{
+	width: 600px;
+	background: url('images/fb_s_bg.gif') no-repeat 0 100%;
+	margin-left: 5px;
+}
+
+.CategoryPage .ProductFilters .FilterTitle
+{
+	font-weight: bold;
+	background: url('images/deal_box_hl.gif') no-repeat 0 0;
+	padding-left: 10px;	
+	color: #555;
+}
+
+.CategoryPage .ProductFilters .FilterTitle span
+{
+	background: url('images/deal_box_hr.gif') no-repeat 100% 0;
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.CategoryPage .ProductFilters .FilterItem
+{
+	padding: 5px 10px 5px 10px;
+}

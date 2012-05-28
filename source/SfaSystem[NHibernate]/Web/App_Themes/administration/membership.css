@@ -1,0 +1,351 @@
+﻿
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CUSTOMER ACCOUNT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.AccountPage
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.AccountPage .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.AccountPage .body
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CUSTOMER INFO
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.EmployeeInfoBox
+{
+	margin: 0px 0 0 0;
+	padding: 5px 5px 5px 5px;
+	font-size: 11px;
+	color: #555;
+}
+
+.EmployeeInfoBox .SectionTitle
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+	font-size: 12px;
+}
+
+.EmployeeInfoBox .SectionBody
+{
+	text-align: left;
+	padding: 10px;
+	height: auto;
+}
+
+.EmployeeInfoBox .Button
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.CustomerAddresses
+{
+	margin: 0px 0 0 0;
+	padding: 5px 5px 5px 5px;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+
+.CustomerAddresses .SectionTitle
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+	font-size: 12px;
+}
+
+.CustomerAddresses .AdressList
+{
+}
+
+.CustomerAddresses .AdressList .AddressItem
+{
+	text-align: left;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.CustomerAddresses .AddButton
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	float: right;
+	text-align: right;
+}
+
+.CustomerOrders
+{
+	margin: 0px 0 0 0;
+	padding: 5px 5px 5px 5px;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+
+.CustomerOrders .OrderList
+{
+}
+
+.CustomerOrders .OrderList .OrderItem
+{
+	text-align: left;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.CustomerPassRecovery
+{
+	padding: 5px 5px 5px 5px;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+
+.EmployeeInfoBox .SectionBody
+{
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.blockBordered
+{
+	border: 1px solid rgb(232, 230, 210);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	LOGIN PAGE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+.LoginBlock
+{
+	position:absolute;
+	text-align: left;
+	margin-left: -150px;
+	margin-top: -50px;
+	top: 50%;
+	left: 50%;
+	width: 300px;
+}
+
+.LoginTableContainer
+{
+	border: 1px solid #808080;
+	background: #c7c7c7;
+}
+
+.LoginTableContainer .RowHeaderStyle th
+{
+	background: url('images/admin-gvw-bg.gif') repeat-x 50%;
+	color: #fff;
+	padding: 5px 10px 5px 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	border: solid 1px #676767;
+}
+
+
+
+.LoginTableContainer .Row
+{
+
+}
+
+.LoginTableContainer .LoginTitleRow
+{
+	font-weight: bold;
+	font-size: 14px;
+	color: #ffffff;
+	background: #666666;
+}
+
+
+.LoginTableContainer .Row .ItemName
+{
+	padding: 10px 10px 10px 0px;
+	display: block;
+	white-space: nowrap;
+	padding-right: 10px;
+	padding-left: 10px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.LoginTableContainer .Row .ItemValue
+{
+	padding: 10px 0px 10px 0px;
+	vertical-align: middle;
+}
+
+.LoginPage .ForgotPassword
+{
+	font-weight: bold;
+}
+
+.LoginBlock .LoginButton
+{
+	float: right;
+	margin-bottom: 10px;
+	margin-right: 5px;
+	margin-top: 5px;
+	text-align: center;
+	clear: both;
+}
+.messageError
+{
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	padding-left: 10px;
+	color: red;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	REGISTRATION
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.RegistrationPage
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.RegistrationPage .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.RegistrationPage .body
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+
+.RegistrationPage .SectionTitle
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	clear: both;
+	font-size: 12px;
+}
+
+.RegistrationPage .SectionBody
+{
+	text-align: left;
+	padding: 10px;
+	border: 1px solid #d7d7d7;
+	height: auto;
+}
+
+.RegistrationPage .Button
+{
+	float: right;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	text-align: center;
+	clear: both;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PASSWORD RECOVERY
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.PasswordRecoveryPage
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.PasswordRecoveryPage .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.PasswordRecoveryPage .body
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ADDRESS EDIT PAGE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.AddressEditPage
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.AddressEditPage .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+}
+
+.AddressEditPage .body
+{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0;
+	font-size: 11px;
+	color: #555;
+	background-color: inherit;
+}
+

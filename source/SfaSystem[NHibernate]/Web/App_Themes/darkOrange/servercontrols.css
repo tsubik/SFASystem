@@ -1,0 +1,730 @@
+﻿.foo
+{
+}
+/****************************************************************************************************/
+/* The contents of this file are subject to the nopCommerce Public License Version 1.0 ("License"); you may not use this file except in compliance with the License.
+/* You may obtain a copy of the License at  http://www.nopCommerce.com/License.aspx. 
+/* 
+/* Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. 
+/* See the License for the specific language governing rights and limitations under the License.
+/* 
+/* The Original Code is nopCommerce.
+/* The Initial Developer of the Original Code is NopSolutions.
+/* All Rights Reserved.
+/* 
+/* Contributor(s): RetroViz Design. 
+/****************************************************************************************************/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	html
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+checkbox, input, radio, select
+{
+	font-size: 11px;
+}
+
+/* fix ie button padding bug  - apply to all button classes
+input
+{
+	width: auto;
+	overflow: visible;
+}*/
+
+textarea
+{
+	width: 100%;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 11px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	TEXTBOX CONTROLS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.textbox
+{
+}
+
+.searchtext
+{
+	border: solid 1px #d3d3d3;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.searchboxtext
+{
+	background: #e3e3e3;
+	width: 110px;
+	border: solid 1px #E3E3E3;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.newsaddcommenttitletext
+{
+	width: 250px;
+	border: solid 1px #E3E3E3;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.newsaddcommentcommenttext
+{
+	height: 150px;
+	width: 500px;
+	border: solid 1px #E3E3E3;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.blogaddcommentcommenttext
+{
+	height: 150px;
+	width: 500px;
+	border: solid 1px #E3E3E3;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+.nopnumerictextboxtext
+{
+	border: solid 1px #E3E3E3;
+	vertical-align: top;
+	font-size: 12px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	BUTTON CONTROLS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.searchboxbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 18px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.searchbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.contactusbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.productlistproductdetailbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	margin-bottom: 3px;
+	color: #FFF;
+	text-align: right;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.productlistaddtocartbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	margin-bottom: 3px;
+	color: #FFF;
+	text-align: right;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.productgridproductdetailbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.productgridaddtocartbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.newsitemaddcommentbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.blogpostaddcommentbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.productemailafriendbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.productaddtocomparelistbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.productvariantaddtocartbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.productvariantaddtowishlistbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.productwritereviewbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.loginbutton
+{
+	cursor: pointer;
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.registerbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.savecustomerinfobutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.addbillingaddressbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.addshippingaddressbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.editaddressbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.deleteaddressbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.orderdetailsbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	margin-bottom: 3px;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.changepasswordbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.registernextstepbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.completeregistrationbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.passwordrecoverybutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.newpasswordbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.saveaddressbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.orderdetailsprintbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.updatewishlistbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.sendemailafriendbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.applycouponcodebutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.updatecartbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.continueshoppingbutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.checkoutbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.selectshippingaddressbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.newaddressnextstepbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.selectbillingaddressbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.sameasshippingaddressbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.shippingmethodnextstepbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.paymentmethodnextstepbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.paymentinfonextstepbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.confirmordernextstepbutton
+{
+	background: url(images/orange_button_bg.gif) no-repeat 25% 50% rgb(255, 136, 0);
+	border: 1px solid rgb(255, 136, 0);
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.orderprocessedcontinuebutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+.submitpollvotebutton
+{
+	background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+	border: 1px solid #333;
+	color: #FFF;
+	height: 20px;
+	padding: 0 5px 0 5px;
+	width: auto;
+	overflow: visible;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	DROP DOWN LISTS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.currencylist
+{
+	background: #e3e3e3;
+	border: solid 1px #3a3a3a;
+}
+
+.languagelist
+{
+	background: #e3e3e3;
+	border: solid 1px #3a3a3a;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	AJAX CONTROL TOOLKIT - TAB CONTROL CLASSES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.orange
+{
+	font-family: arial,helvetica;
+}
+
+.orange .ajax__tab_body
+{
+	font-size: 10pt;
+	border: 1px solid #333;
+	border-top: none;
+	background-color: #ffffff;
+	padding: 10px 10px 10px 10px;
+}
+
+.orange .ajax__tab_header
+{
+	background-color: #333;
+	border: solid 2px #333;
+	border-bottom: none;
+	padding: 2px 2px 4px 2px;
+}
+
+.orange .ajax__tab_tab
+{
+	font-size: 1em;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	border: solid 1px #FFF;
+	padding: 5px;
+	background: #404040;
+}
+
+.orange .ajax__tab_active .ajax__tab_tab, .orange .ajax__tab_hover .ajax__tab_tab
+{
+	color: #ff9933;
+	border: solid 1px #ff9933;
+}
+
+/* GREY THEME */
+
+.grey .ajax__tab_header
+{
+	font-family: "Helvetica Neue" , Arial, Sans-Serif;
+	background: url(images/tab-line.png) repeat-x bottom;
+	font-size: 12px;
+	display: block;
+}
+.grey .ajax__tab_header .ajax__tab_outer
+{
+	background: url(images/tab.png) no-repeat left top;
+	border-color: #222;
+	color: #222;
+	padding-left: 10px;
+	margin-right: 3px;
+}
+.grey .ajax__tab_header .ajax__tab_inner
+{
+	background: url(images/tab.png) no-repeat right top;
+	border-color: #666;
+	color: #666;
+	padding: 3px 10px 2px 0px;
+}
+.grey .ajax__tab_hover .ajax__tab_inner
+{
+	color: #000;
+}
+.grey .ajax__tab_active .ajax__tab_outer
+{
+	background: url(images/tab.png) no-repeat 0pt -40px;
+	border-bottom-color: #ffffff;
+}
+.grey .ajax__tab_active .ajax__tab_inner
+{
+	background: url(images/tab.png) no-repeat right -40px;
+	color: #000;
+	border-color: #333;
+}
+.grey .ajax__tab_body
+{
+	font-family: arial,helvetica;
+	font-size: 10pt;
+	background-color: #fff;
+	border: solid 1px #d7d7d7;
+	border-top-width: 0;
+}

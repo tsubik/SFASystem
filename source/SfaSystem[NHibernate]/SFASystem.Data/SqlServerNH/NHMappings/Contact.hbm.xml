@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.Contact,SFASystem.Domain" table="Contact" lazy="true">
+    <id name="Contactid" column="ContactID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <property name="FirstName" column="FirstName" type="string" not-null="true" />
+    <property name="LastName" column="LastName" type="string" not-null="true" />
+    <property name="Email" column="Email" type="string" not-null="true" />
+    <property name="Phone" column="Phone" type="string" not-null="true" />
+	<property name="IsDeleted" column="IsDeleted" type="Boolean" />
+  </class>
+</hibernate-mapping>

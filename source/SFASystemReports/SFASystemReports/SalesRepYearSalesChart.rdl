@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <rd:DataSourceID>68f5265d-e617-443b-bf84-c02b3263f5a2</rd:DataSourceID>
+      <DataSourceReference>DataSource1</DataSourceReference>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="ReportYear">
+      <DataType>String</DataType>
+      <Prompt>ReportYear</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EmpID">
+      <DataType>String</DataType>
+      <Prompt>EmpID</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>8a3ca080-6f01-41e8-b626-960f6bd89a73</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="OrderYear">
+          <DataField>OrderYear</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OrderMonthNum">
+          <DataField>OrderMonthNum</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OrderMonth">
+          <DataField>OrderMonth</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Sales">
+          <DataField>Sales</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandText>SELECT       DATEPART(Year, O.OrderDate) AS OrderYear, DATEPART(Month, O.OrderDate) AS OrderMonthNum, DATENAME(Month, O.OrderDate) AS OrderMonth, SUM(O.Total)/1000 AS Sales
+FROM        [Order] O
+      INNER JOIN [Employee] E ON O.EmployeeID=E.EmployeeID
+WHERE       (DATEPART(Year, O.OrderDate) &lt;= @ReportYear - 1 OR
+            DATEPART(Year, O.OrderDate) = @ReportYear)  AND E.EmployeeID = @EmpID
+
+GROUP BY  DATEPART(Year, O.OrderDate),  DATEPART(Month, O.OrderDate), DATENAME(Month, O.OrderDate)</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@ReportYear">
+            <Value>=Parameters!ReportYear.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@EmpID">
+            <Value>=Parameters!EmpID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
+  <Width>10.25001cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Chart Name="SalesComparison">
+        <Legend>
+          <Visible>true</Visible>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+            <FontFamily>Verdana</FontFamily>
+            <FontSize>8pt</FontSize>
+          </Style>
+          <Position>BottomCenter</Position>
+          <Layout>Table</Layout>
+        </Legend>
+        <CategoryAxis>
+          <Axis>
+            <Title />
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <FontSize>8pt</FontSize>
+            </Style>
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <Visible>true</Visible>
+          </Axis>
+        </CategoryAxis>
+        <NoRows>No data found for YTD Sales Comparison chart</NoRows>
+        <DataSetName>DataSet1</DataSetName>
+        <PlotArea>
+          <Style>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <BorderColor>
+              <Default>#e7efef</Default>
+            </BorderColor>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+        </PlotArea>
+        <ThreeDProperties>
+          <Rotation>30</Rotation>
+          <Inclination>30</Inclination>
+          <Shading>Simple</Shading>
+          <WallThickness>50</WallThickness>
+        </ThreeDProperties>
+        <PointWidth>0</PointWidth>
+        <SeriesGroupings>
+          <SeriesGrouping>
+            <DynamicSeries>
+              <Grouping Name="SalesComparison_OrderYear">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!OrderYear.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Label>=Fields!OrderYear.Value</Label>
+            </DynamicSeries>
+          </SeriesGrouping>
+          <SeriesGrouping>
+            <StaticSeries>
+              <StaticMember>
+                <Label>Sprzedaż</Label>
+              </StaticMember>
+            </StaticSeries>
+          </SeriesGrouping>
+        </SeriesGroupings>
+        <Subtype>Plain</Subtype>
+        <ValueAxis>
+          <Axis>
+            <Title />
+            <Style>
+              <FontFamily>Verdana</FontFamily>
+              <FontSize>8pt</FontSize>
+              <Format>0.00 tys zł</Format>
+            </Style>
+            <MajorGridLines>
+              <ShowGridLines>true</ShowGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+            <Scalar>true</Scalar>
+          </Axis>
+        </ValueAxis>
+        <Type>Line</Type>
+        <CategoryGroupings>
+          <CategoryGrouping>
+            <DynamicCategories>
+              <Grouping Name="SalesComparison_OrderMonth">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!OrderMonthNum.Value</GroupExpression>
+                </GroupExpressions>
+              </Grouping>
+              <Sorting>
+                <SortBy>
+                  <SortExpression>=Fields!OrderMonthNum.Value</SortExpression>
+                  <Direction>Ascending</Direction>
+                </SortBy>
+              </Sorting>
+              <Label>=Fields!OrderMonth.Value</Label>
+            </DynamicCategories>
+          </CategoryGrouping>
+        </CategoryGroupings>
+        <Palette>Default</Palette>
+        <ChartData>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!Sales.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel>
+                  <Position>Top</Position>
+                </DataLabel>
+                <Marker>
+                  <Type>Diamond</Type>
+                  <Size>5pt</Size>
+                </Marker>
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+        </ChartData>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+          <BorderColor>
+            <Default>#e7efef</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <TextAlign>Center</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+        </Style>
+        <Title>
+          <Style>
+            <FontSize>8pt</FontSize>
+          </Style>
+        </Title>
+      </Chart>
+    </ReportItems>
+    <Height>6.25001cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

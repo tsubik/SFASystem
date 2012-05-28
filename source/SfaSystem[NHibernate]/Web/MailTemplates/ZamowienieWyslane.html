@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <title>SFASystem - zmiana statusu zamówienia</title>
+    <style type="text/css">
+        .html
+        {
+        }
+        .body h1, h2, h3, h4, h5
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        body
+        {
+            /*font-family: arial, verdana, helvetica, sans-serif;*/
+        }
+        .wrapper
+        {
+            width: 600px;
+        }
+        .header
+        {
+            font-family: Sans-seriff;
+            width: 100%;
+            height: 100px;
+            
+        }
+        .logosystem h1, .logofirma h1
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        .header .logosystem
+        {
+            float: left;
+            height: 70px;
+            width: 200px;
+            padding: 5px 0px 5px 10px;
+        }
+        .header .logofirma
+        {
+            float: right;
+            height: 70px;
+            width: 200px;
+            padding: 5px 10px 5px 0px;
+        }
+        .content
+        {
+            font-family: Tahoma, Verdana;
+            font-size: 12px;
+            padding: 10px 8px 10px 8px;
+            border: solid 1px #cbcbcb;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <table width="100%" style="background-color: #696a6d;">
+                <tr>
+                    <td class="logosystem">
+                        <h1>
+                            <span style="color: #ffffff;">SFA</span><span style="color: #ffcd66;">system</span></h1>
+                        <h5 style="color: #cbcbcb;">
+                            system wsparcia sprzedaży</h5>
+                    </td>
+                    <td class="logofirma" align="right">
+                        <h1 style="color: #ffcd66;">
+                            Nazwa firmy</h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="content">
+            <p>
+                Ta wiadomość została wygenerowana automatycznie. Prosimy nie odpowiadać.</p>
+            <p>
+                Państwa zamówienie z dnia <%OrderDate%> złożone na adres: <%Address%> na kwotę
+                całkowitą <%Total%> zostało wysłane.
+            </p>
+            <p>
+                Dziękujemy, <br />
+                Firma Demonstracyjna <br />
+                Z siedzibą <br />
+                ul. Testowa 12A <br />
+                44-100 Testowo, Polska    
+            </p>
+        </div>
+    </div>
+</body>
+</html>

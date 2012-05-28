@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<!--Build: with lujan99@usa.net Nhibernate template-->
+	<class name="SFASystem.Domain.Territory,SFASystem.Domain" table="Territory" lazy="true">
+		<id name="Territoryid" column="TerritoryID" type="Guid">
+			<generator class="guid.comb" />
+		</id>
+		<many-to-one name="ParentTerritory" column="ParentTerritoryID" cascade="save-update" />
+		<property name="FullDescription" column="FullDescription" type="string" />
+		<property name="Name" column="Name" type="string" not-null="true" />
+		<property name="IsDeleted" column="IsDeleted" type="Boolean" />
+		<bag name="SubTerritories" inverse="true" lazy="true" cascade="delete">
+			<key column="ParentTerritoryID" />
+			<one-to-many class="SFASystem.Domain.Territory,SFASystem.Domain" />
+		</bag>
+		<bag name="CustomerFacilities" inverse="true" lazy="true" cascade="delete">
+			<key column="TerritoryID" />
+			<one-to-many class="SFASystem.Domain.CustomerFacility,SFASystem.Domain" />
+		</bag>
+		<bag name="Employees" inverse="true" lazy="true" cascade="delete">
+			<key column="TerritoryID" />
+			<one-to-many class="SFASystem.Domain.Employee,SFASystem.Domain" />
+		</bag>
+		<bag name="Orders" inverse="true" lazy="true" cascade="delete">
+			<key column="TerritoryID" />
+			<one-to-many class="SFASystem.Domain.Order,SFASystem.Domain" />
+		</bag>
+	</class>
+</hibernate-mapping>

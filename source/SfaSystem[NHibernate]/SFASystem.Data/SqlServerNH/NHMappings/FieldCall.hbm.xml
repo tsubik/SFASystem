@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.FieldCall,SFASystem.Domain" table="FieldCall" lazy="true">
+    <id name="FieldCallid" column="FieldCallID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <many-to-one name="FieldCallStatus" column="FieldCallStatus" cascade="save-update" not-null="true" />
+    <many-to-one name="Employee" column="EmployeeID" cascade="save-update" not-null="true" />
+    <many-to-one name="Contact" column="ContactID" cascade="save-update" not-null="true" />
+    <many-to-one name="CustomerFacility" column="CustomerFacilityID" cascade="save-update" not-null="true" />
+    <property name="FullDescription" column="FullDescription" type="string" />
+    <property name="Date" column="Date" type="DateTime" />
+    <property name="StartTime" column="StartTime" type="DateTime" />
+    <property name="EndTime" column="EndTime" type="DateTime" />
+	<property name="IsDeleted" column="IsDeleted" type="Boolean" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="SelectOrderStatus.ascx.cs" Inherits="Administration_Controls_Sale_SelectOrderStatus" %>
+<asp:DropDownList ID="ddlOrderStatus" runat="server" />

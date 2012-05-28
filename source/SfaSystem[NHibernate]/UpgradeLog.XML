@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SFASystem">
+</Property><Property Name="Solution File" Value="D:\Inne\Projekty\Prywatne\Tommy\Studia\Magisterka\Solucja\SfaSystem[NHibernate]\SFASystem.sln">
+</Property><Property Name="Date" Value="30 czerwca 2011">
+</Property><Property Name="Time" Value="12:03">
+</Property></Properties><Event ErrorLevel="0" Project="SFASystem.WebUtils" Source="Libraries\SFASystem.WebUtils\SFASystem.WebUtils.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SFASystem.WebUtils" Source="Libraries\SFASystem.WebUtils\SFASystem.WebUtils.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SFASystem.Domain" Source="SFASystem.Domain\SFASystem.Domain.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SFASystem.Domain" Source="SFASystem.Domain\SFASystem.Domain.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SFASystem.DataAccess" Source="SFASystem.Data\SFASystem.DataAccess.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SFASystem.DataAccess" Source="SFASystem.Data\SFASystem.DataAccess.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SFASystem.Services" Source="SFASystem.Services\SFASystem.Services.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SFASystem.Services" Source="SFASystem.Services\SFASystem.Services.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SFASystem.Test" Source="Test\SFASystem.Test.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SFASystem.Test" Source="Test\SFASystem.Test.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="SFASystem.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SFASystem.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SFASystem.WebUtils" Source="Libraries\SFASystem.WebUtils\SFASystem.WebUtils.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SFASystem.Domain" Source="SFASystem.Domain\SFASystem.Domain.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SFASystem.DataAccess" Source="SFASystem.Data\SFASystem.DataAccess.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SFASystem.Services" Source="SFASystem.Services\SFASystem.Services.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="SFASystem.Test" Source="Test\SFASystem.Test.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

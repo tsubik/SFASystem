@@ -1,0 +1,665 @@
+﻿.foo
+{
+}
+/****************************************************************************************************/
+/* The contents of this file are subject to the nopCommerce Public License Version 1.0 ("License"); you may not use this file except in compliance with the License.
+/* You may obtain a copy of the License at  http://www.nopCommerce.com/License.aspx. 
+/* 
+/* Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. 
+/* See the License for the specific language governing rights and limitations under the License.
+/* 
+/* The Original Code is nopCommerce.
+/* The Initial Developer of the Original Code is NopSolutions.
+/* All Rights Reserved.
+/* 
+/* Contributor(s): RetroViz Design. 
+/****************************************************************************************************/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HTML GENERAL 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, form, input
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    /*font-family: arial, verdana, helvetica, sans-serif;*/
+    font-family: Tahoma, Verdana;
+    font-size: 12px;
+}
+
+
+hr
+{
+    border-bottom: 1px solid #CCC;
+    color: #FFF;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	LINKS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+a
+{
+    color: #009FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color: #009FFF;
+    font-weight: bold;
+}
+
+a img
+{
+    border: 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	IMAGES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+img
+{
+    border: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HEADINGS & TEXT
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: arial, helvetica, sans-serif;
+}
+
+h2, h3
+{
+    font-size: 16px;
+}
+
+.smallprint
+{
+    font-size: x-small;
+}
+
+.rssNopCommerceNewsTitle
+{
+    width: 100%;
+    border-bottom: solid 1px #BBBBBB;
+    font-weight: bold;
+}
+
+.rssNopCommerceNewsTitle a
+{
+    text-decoration: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SECTION HEADERS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.section-title
+{
+    border-bottom: solid 3px #dfdfdf;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    color: #009FFF;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+.section-title img
+{
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+
+.section-header .title a
+{
+    text-decoration: none;
+    font-size: 11px;
+    color: #555;
+}
+
+
+.section-header
+{
+    border-bottom: solid 3px #dfdfdf;
+    padding-bottom: 1px;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+.section-header .title
+{
+    float: left;
+    color: #009FFF;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: bottom;
+    padding-top: 5px;
+}
+
+.section-header .title img
+{
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+
+.section-header .options
+{
+    text-align: right;
+    float: right;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	TABLES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+td
+{
+    vertical-align: middle;
+}
+
+td.fieldname
+{
+    font-size: 12px;
+}
+
+.TableContainer
+{
+}
+
+.TableContainer .Row
+{
+}
+
+.TableContainer .Row .ItemName
+{
+    padding: 3px 10px 0px 0px;
+    display: block;
+    white-space: nowrap;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.TableContainer .Row .ItemValue
+{
+    padding: 3px 0px 0px 0px;
+    vertical-align: middle;
+}
+
+table.adminContent
+{
+    border-collapse: collapse;
+    color: #333;
+    font-size: 12px;
+    margin: 0px;
+    width: 100%;
+    vertical-align: middle;
+    text-align: left;
+}
+
+table.adminContent td
+{
+    padding: 4px 4px 4px 4px;
+}
+
+tr.adminGroup td
+{
+    border-top: solid 1px #d3d3d3;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+td.adminTitle
+{
+    text-align: left;
+    vertical-align: middle;
+    width: 175px;
+}
+
+td.adminTitle img
+{
+    vertical-align: bottom;
+    padding-right: 2px;
+}
+
+td.adminData
+{
+    text-align: left;
+    vertical-align: middle;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	TAB CONTROL
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.grey .ajax__tab_header
+{
+    font-family: "Helvetica Neue" , Arial, Sans-Serif;
+    background: url(images/tab-line.png) repeat-x bottom;
+    font-size: 12px;
+    display: block;
+}
+
+.grey .ajax__tab_header .ajax__tab_outer
+{
+    background: url(images/tab.png) no-repeat left top;
+    border-color: #222;
+    color: #222;
+    padding-left: 10px;
+    margin-right: 3px;
+}
+
+.grey .ajax__tab_header .ajax__tab_inner
+{
+    background: url(images/tab.png) no-repeat right top;
+    border-color: #666;
+    color: #666;
+    padding: 3px 10px 2px 0px;
+}
+
+.grey .ajax__tab_hover .ajax__tab_inner
+{
+    color: #000;
+}
+
+.grey .ajax__tab_active .ajax__tab_outer
+{
+    background: url(images/tab.png) no-repeat 0pt -40px;
+    border-bottom-color: #ffffff;
+}
+
+.grey .ajax__tab_active .ajax__tab_inner
+{
+    background: url(images/tab.png) no-repeat right -40px;
+    color: #009FFF;
+    border-color: #333;
+}
+
+.grey .ajax__tab_body
+{
+    background-color: #fff;
+    border: solid 1px #d7d7d7;
+    border-top-width: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	SERVER CONTROLS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.adminButtonBlue
+{
+    background: url(images/blue_button_bg.gif) no-repeat 25% 50% #333;
+    border: 1px solid #0f72ac;
+    margin-bottom: 3px;
+    color: #FFF;
+    height: 22px;
+    padding: 0 10px 0 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.adminButtonRed
+{
+    background: url(images/red_button_bg.gif) no-repeat 25% 50% #333;
+    border: 1px solid #b63232;
+    margin-bottom: 3px;
+    color: #FFF;
+    height: 20px;
+    padding: 0 10px 0 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.adminButtonGreen
+{
+    background: url(images/green_button_bg.gif) no-repeat 25% 50% #333;
+    border: 1px solid #333;
+    margin-bottom: 3px;
+    color: #fff;
+    height: 20px;
+    padding: 0 10px 0 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+.adminButton
+{
+    background: url(images/grey_button_bg.gif) no-repeat 25% 50% #333;
+    border: 1px solid #333;
+    margin-bottom: 3px;
+    color: #FFF;
+    text-align: right;
+    height: 20px;
+    padding: 0 10px 0 10px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.adminInput
+{
+    border: 1px solid #acacac;
+    width: 250px;
+}
+
+label
+{
+    padding-left: 3px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	ADMIN GRID VIEW
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.tablestyle
+{
+    font-family: arial;
+    font-size: 11px;
+    border: 1px solid #808080;
+    background-color: #FFFFFF;
+    margin-left: 0px;
+    color: #245D75;
+}
+
+.tablestyle td a
+{
+    color: #D16400;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.altrowstyle
+{
+    background-color: #F4FAFF;
+}
+
+.headerstyle th
+{
+    background: url('images/admin-gvw-bg.gif') repeat-x 50%;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    border: solid 1px #676767;
+}
+
+.headerstyle th a
+{
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-right: 10px;
+}
+
+.rowstyle td, .altrowstyle td
+{
+    padding: 4px 10px 4px 10px;
+    border-right: solid 1px #A0C0E7;
+    border-right-color: #808080;
+}
+
+.mainContact td
+{
+    padding: 4px 10px 4px 10px;
+    border-right: solid 1px #A0C0E7;
+    border-right-color: #808080;
+    background-color: #FFCC66;
+}
+
+.PagerStyle
+{
+    height: 28px;
+    background: url(Images/grid_header_back.png) repeat-x;
+    background: #EEEEEE;
+    vertical-align: middle;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+    DASHBOARDS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.task_box
+{
+    background: #e7efef;
+    border: solid 1px #5794ef;
+}
+
+.top10_box
+{
+    background: whilte;
+    border: solid 1px #5794ef;
+}
+
+.task_to_approve_box
+{
+    background: #beffa5;
+    border: solid 1px #336666;
+}
+
+.chart_box
+{
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    width: 400px;
+    /*background: #e7efef;*/
+    border: solid 1px #5794ef;
+}
+.chart_box .title
+{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.chart_box .content
+{
+}
+
+.dashboard_box
+{
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    width: 100%;
+    float: left;
+}
+
+.dashboard_box .title
+{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dashboard_box .content
+{
+}
+.dashboard_box .content ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard_box .content ul li
+{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	HOME PAGES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.homepage
+{
+}
+
+.homepage .quote
+{
+    font-weight: bold;
+    padding: 5px 5px 5px 5px;
+    background: #fcfabc;
+    border: dashed 1px #dfdfdf;
+    margin-bottom: 10px;
+}
+
+.homepage .options
+{
+    padding: 10px 10px 10px 10px;
+    background: #e7efef;
+}
+
+.homepage .options ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+.homepage .options ul li
+{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+.homepage .options .title
+{
+}
+
+.homepage .options .description p
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.lefsidewrapper
+{
+    width: 100%;
+    float: left;
+}
+
+.leftside
+{
+    margin-right: 480px;
+}
+.rightside
+{
+    width: 440px;
+    margin-left: -440px;
+    float: left;
+}
+
+
+/*Top products table style */
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	RATING
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ratingStar
+{
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar
+{
+    background-image: url(Images/FilledStar.png);
+}
+
+.emptyRatingStar
+{
+    background-image: url(Images/EmptyStar.png);
+}
+
+.savedRatingStar
+{
+    background-image: url(Images/SavedStar.png);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MISC. CLASSES
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.clear
+{
+    border: medium none;
+    clear: both;
+    float: none;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.validatorCalloutHighlight
+{
+    background-color: #FFFBD5;
+}
+
+.progress
+{
+    text-align: center;
+}
+
+.filter_tip
+{
+    vertical-align: bottom;
+}
+
+
+.modalTitle
+{
+    background: url('images/admin-gvw-bg.gif') repeat-x 50%;
+    color: #fff;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    border: solid 1px #676767;
+}

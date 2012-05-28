@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<!--Build: with lujan99@usa.net Nhibernate template-->
+	<class name="SFASystem.Domain.Task,SFASystem.Domain" table="Task" lazy="true">
+		<id name="Taskid" column="TaskID" type="Guid">
+			<generator class="guid.comb" />
+		</id>
+		<property name="Name" column="Name" type="string" not-null="true" />
+		<many-to-one name="CreatedBy" column="CreatedBy" cascade="save-update" not-null="true" />
+		<many-to-one name="AssignedTo" column="AssignedTo" cascade="save-update" />
+		<many-to-one name="GivenBy" column="GivenBy" cascade="save-update" />
+		<many-to-one name="ApprovedBy" column="ApprovedBy" cascade="save-update" />
+		<property name="FullDescription" column="FullDescription" type="string" />
+		<property name="DateCreated" column="DateCreated" type="DateTime" not-null="true" />
+		<property name="DateModified" column="DateModified" type="DateTime" />
+		<property name="DateExecuted" column="DateExecuted" type="DateTime" />
+		<property name="DateToEndTask" column="DateToEndTask" type="DateTime" />
+		<property name="IsApproved" column="IsApproved" type="Boolean" not-null="true" />
+		<property name="IsDeleted" column="IsDeleted" type="Boolean" />
+		<many-to-one name="TaskStatus" column="TaskStatus" cascade="save-update" not-null="true" />
+
+	</class>
+</hibernate-mapping>

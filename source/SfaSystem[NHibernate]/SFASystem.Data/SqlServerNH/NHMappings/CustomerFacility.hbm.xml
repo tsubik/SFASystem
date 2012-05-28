@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.CustomerFacility,SFASystem.Domain" table="CustomerFacility" lazy="true">
+    <id name="CustomerFacilityid" column="CustomerFacilityID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+	<property name="Name" column="Name" type="string" not-null="true" />
+	<property name="IsDeleted" column="IsDeleted" type="Boolean" />
+    <property name="Email" column="Email" type="string" />
+    <property name="Phone" column="Phone" type="string"  />
+    <many-to-one name="Address" column="AddressID" cascade="save-update" not-null="true" />
+    <many-to-one name="Territory" column="TerritoryID" cascade="save-update" not-null="true" />
+    <many-to-one name="Customer" column="CustomerID" cascade="save-update" not-null="true" />
+    <bag name="Contact" inverse="false" table="FacilityContacts" lazy="true" cascade="delete">
+      <key column="CustomerFacilityID" />
+      <many-to-many class="SFASystem.Domain.Contact,SFASystem.Domain">
+        <column name="ContactID" />
+      </many-to-many>
+    </bag>
+    <bag name="FieldCall" inverse="true" lazy="true" cascade="delete">
+      <key column="CustomerFacilityID" />
+      <one-to-many class="SFASystem.Domain.FieldCall,SFASystem.Domain" />
+    </bag>
+    <bag name="Order" inverse="true" lazy="true" cascade="delete">
+      <key column="CustomerFacilityID" />
+      <one-to-many class="SFASystem.Domain.Order,SFASystem.Domain" />
+    </bag>
+  </class>
+</hibernate-mapping>

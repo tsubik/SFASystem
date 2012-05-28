@@ -1,0 +1,533 @@
+﻿.foo{}/****************************************************************************************************/
+/* The contents of this file are subject to the nopCommerce Public License Version 1.0 ("License"); you may not use this file except in compliance with the License.
+/* You may obtain a copy of the License at  http://www.nopCommerce.com/License.aspx. 
+/* 
+/* Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. 
+/* See the License for the specific language governing rights and limitations under the License.
+/* 
+/* The Original Code is nopCommerce.
+/* The Initial Developer of the Original Code is NopSolutions.
+/* All Rights Reserved.
+/* 
+/* Contributor(s): RetroViz Design. 
+/****************************************************************************************************/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER PAGE WRAPPERS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.master-wrapper-page
+{
+	margin: 10px auto;
+	width: 830px;
+}
+
+.master-wrapper-content
+{
+	float: left;
+	width: 830px;
+	margin: 15px 0 0;
+	text-align: left;
+	background: #555 url(images/bg_container.gif) repeat-x;
+}
+
+.master-wrapper-side
+{
+	float: left;
+	width: 180px;
+	margin: 15px 0 0 10px;
+	font-family: arial, helvetica, sans-serif;
+	display: inline;
+}
+
+.master-wrapper-center
+{
+	float: left;
+	width: 630px;
+	margin: 0px 0 0 10px;
+	background: url(images/bg_maincolumn.gif) no-repeat left bottom;
+	display: inline;
+}
+
+.master-wrapper-cph
+{
+	float: left;
+	width: 610px;
+	background: #fff url(images/bg_content.gif) no-repeat right top;
+	color: #000;
+	min-height: 400px;
+	padding: 10px 10px 10px 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER HEADER
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.header
+{
+	padding: 6px 6px 10px 5px;
+	height: 60px;
+}
+
+.header .icon
+{
+	vertical-align: bottom;
+}
+
+.header .ico-register
+{
+	background: url('images/ico-register.gif') no-repeat;
+	padding-left: 20px;
+}
+
+.header .ico-login
+{
+	background: url('images/ico-login.gif') no-repeat;
+	padding-left: 20px;
+}
+
+.header .ico-logout
+{
+	background: url('images/ico-logout.gif') no-repeat;
+	padding-left: 20px;
+}
+
+.header .ico-cart
+{
+	background: url('images/ico-cart.gif') no-repeat;
+	padding-left: 20px;
+}
+
+.header .ico-wishlist
+{
+	background: url('images/ico-wishlist.gif') no-repeat;
+	padding-left: 20px;
+}
+
+.header .ico-admin
+{
+	background: url('images/ico-admin.gif') no-repeat;
+	padding-left: 20px;
+}
+
+.header-logo
+{
+	margin-top: 5px;
+	float: left;
+	text-align: left;
+}
+
+a.logo
+{
+	background: url('images/logo.gif');
+	display: block;
+	width: 225px;
+	height: 60px;
+	text-decoration: none;
+}
+
+.header-selectors-wrapper
+{
+	text-align: right;
+	float: right;
+	width: 400px;
+}
+
+.header-currencyselector
+{
+	float: right;
+}
+
+.header-languageselector
+{
+	float: left;
+}
+
+.header-links-wrapper
+{
+	float: right;
+	text-align: right;
+	width: 570px;
+}
+
+.header-links
+{
+	border: solid 1px #9a9a9a;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 5px;
+	display: inline-table;
+}
+
+.header-links ul
+{
+	padding: 0;
+	margin: 0;
+}
+
+.header-links ul li
+{
+	list-style: none;
+	display: inline;
+	padding-right: 2px;
+}
+
+.header-links a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.headerlinks a:hover
+{
+	color: #ff9933;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER HEADER MENU
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.headermenu
+{
+	color: #FFFFFF;
+	background: #3a3a3a;
+	padding: 8px 5px 9px 5px;
+	text-align: center;
+	height: 100%;
+	vertical-align: middle;
+	letter-spacing: 2px;
+}
+
+.headermenu ul
+{
+	padding: 0;
+	margin: 0;
+}
+
+.headermenu li
+{
+	list-style: none;
+	display: inline;
+}
+
+.headermenu a
+{
+	color: #FFF;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	font-weight: bold;
+	vertical-align: middle;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MASTER HEADER MENU - SEARCH BOX 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.searchbox
+{
+	float: left;
+	width: 180px;
+	display: inline;
+	padding-left: 5px;
+}
+
+.searchbox ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.searchbox ul li
+{
+	list-style: none;
+	float: left;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	CATEGORY NAVIGATION
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.category-navigation
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.category-navigation li
+{
+	list-style: none;
+}
+
+.category-navigation a
+{
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.category-navigation .li_selected a
+{
+	color: #ff9933;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.category-navigation .title
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 7px 10px;
+	color: #ff9933;
+	background: #333 url(images/bg_sidebar_title.gif) no-repeat;
+}
+
+.category-navigation .treeview
+{
+	font-size: 11px;
+	padding: 5px 10px 10px;
+	line-height: 18px;
+	background: #404040 url(images/bg_sidebar_block.gif) no-repeat left bottom;
+	margin: 0px;
+}
+
+.category-navigation .treeview ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
+	color: #3664A5;
+	background-color: inherit;
+}
+
+.category-navigation .treeview ul .li_selected
+{
+	font-weight: bold;
+}
+
+.category-navigation .treeview ul .li_unselected
+{
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MANUFACTURER NAVIGATION
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.manufacturer-navigation
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.manufacturer-navigation li
+{
+	list-style: none;
+}
+
+.manufacturer-navigation a.inactive
+{
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.manufacturer-navigation a.active
+{
+	color: #ff9933;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.manufacturer-navigation .title
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 7px 10px;
+	color: #ff9933;
+	background: #333 url(images/bg_sidebar_title.gif) no-repeat;
+}
+
+.manufacturer-navigation .listbox
+{
+	font-size: 11px;
+	padding: 5px 10px 10px;
+	line-height: 18px;
+	background: #404040 url(images/bg_sidebar_block.gif) no-repeat left bottom;
+	margin: 0px;
+}
+
+.manufacturer-navigation .listbox ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
+	color: #3664A5;
+	background-color: inherit;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	RECENTLY VIEWED PRODUCTS BOX
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.RecentlyViewedProductsBox
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.RecentlyViewedProductsBox li
+{
+	list-style: none;
+}
+
+.RecentlyViewedProductsBox a
+{
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.RecentlyViewedProductsBox a:hover
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #ff9933;
+}
+
+.RecentlyViewedProductsBox .title
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 7px 10px;
+	color: #ff9933;
+	background: #333 url(images/bg_sidebar_title.gif) no-repeat;
+}
+
+.RecentlyViewedProductsBox .listbox
+{
+	font-size: 11px;
+	padding: 5px 10px 10px;
+	line-height: 18px;
+	background: #404040 url(images/bg_sidebar_block.gif) no-repeat left bottom;
+	margin: 0px;
+}
+
+.RecentlyViewedProductsBox .listbox ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
+	color: #3664A5;
+	background-color: inherit;
+}
+
+.RecentlyViewedProductsBox .separator
+{
+	height: 1px;
+	line-height: 1px;
+	background: #ff9933;
+	width: 140px;
+	font-size: 1px;
+	margin: 5px 0 5px 0;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	INFO BLOCK NAVIGATION
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.infoblock-navigation
+{
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+
+.infoblock-navigation li
+{
+	list-style: none;
+}
+
+.infoblock-navigation a
+{
+	color: #FFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.infoblock-navigation .title
+{
+	font-size: 0.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 7px 10px;
+	color: #ff9933;
+	background: #333 url(images/bg_sidebar_title.gif) no-repeat;
+}
+
+.infoblock-navigation .listbox
+{
+	font-size: 11px;
+	padding: 5px 10px 10px;
+	line-height: 18px;
+	background: #404040 url(images/bg_sidebar_block.gif) no-repeat left bottom;
+	margin: 0px;
+}
+
+.infoblock-navigation .listbox ul
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 10px;
+	color: #3664A5;
+	background-color: inherit;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	FOOTER
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.footer
+{
+	clear: both;
+	height: 30px;
+	padding: 5px 3px 5px 3px;
+}
+
+.footer a
+{
+	text-decoration: none;
+	color: #FFF;
+}
+
+.footer-disclaimer
+{
+	float: right;
+	font-size: 11px;
+}
+
+.footer-poweredby
+{
+	float: left;
+	font-size: 11px;
+}

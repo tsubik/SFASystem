@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.Image,SFASystem.Domain" table="Image" lazy="true">
+    <id name="Imageid" column="ImageID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <property name="File" column="ImageFile" type="BinaryBlob" not-null="true" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.Manufacturer,SFASystem.Domain" table="Manufacturer" lazy="true">
+    <id name="ManufacturerID" column="ManufacturerID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <many-to-one name="Address" column="AddressID" cascade="save-update" />
+    <property name="Name" column="Name" type="string" not-null="true" />
+    <property name="Description" column="Description" type="string" />
+    <property name="Email" column="Email" type="string"/>
+    <property name="Phone" column="Phone" type="string"/>
+  </class>
+</hibernate-mapping>

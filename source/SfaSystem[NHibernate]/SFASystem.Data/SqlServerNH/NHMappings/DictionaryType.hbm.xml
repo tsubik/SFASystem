@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<!--Build: with lujan99@usa.net Nhibernate template-->
+	<class name="SFASystem.Domain.DictionaryType,SFASystem.Domain" table="DictionaryType" lazy="true">
+		<id name="DictionaryTypeid" column="DictionaryTypeID" type="Guid">
+			<generator class="guid.comb" />
+		</id>
+		<property name="Name" column="Name" type="string" not-null="true" />
+		<bag name="Dictionaries" inverse="false" table="Dictionary" lazy="true" cascade="delete">
+			<key column="DictionaryTypeID" />
+			<many-to-many class="SFASystem.Domain.Dictionary,SFASystem.Domain">
+				<column name="DictionaryID" />
+			</many-to-many>
+		</bag>
+	</class>
+</hibernate-mapping>

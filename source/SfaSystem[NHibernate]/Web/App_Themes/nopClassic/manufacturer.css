@@ -1,0 +1,305 @@
+﻿.foo{}/****************************************************************************************************/
+/* The contents of this file are subject to the nopCommerce Public License Version 1.0 ("License"); you may not use this file except in compliance with the License.
+/* You may obtain a copy of the License at  http://www.nopCommerce.com/License.aspx. 
+/* 
+/* Software distributed under the License is distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. 
+/* See the License for the specific language governing rights and limitations under the License.
+/* 
+/* The Original Code is nopCommerce.
+/* The Initial Developer of the Original Code is NopSolutions.
+/* All Rights Reserved.
+/* 
+/* Contributor(s): RetroViz Design. 
+/****************************************************************************************************/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MANUFACTURER PAGE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ManufacturerPage
+{
+	margin-bottom: 15px;
+	padding: 0px;
+}
+.ManufacturerPage .ManufacturerTitle
+{
+	padding:10px 10px 10px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear:both;
+	color: #3A4045;
+}
+
+.ManufacturerPage .ManufacturerDescription
+{
+	color: #0A263C;
+	font-size: 1.1em;
+}
+
+.ManufacturerPage .ProductPager
+{
+	text-align: center;
+}
+
+.ManufacturerPage .ProductPager a
+{
+	font-size: 1em;
+	color: #555;
+}
+
+.ManufacturerPage .ProductPager a:link
+{
+	text-align: center;
+}
+
+.ManufacturerPage .ProductPager span
+{
+	color: #3664A5;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	MANUFACTURER FEATURED PRODUCTS
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ManufacturerPage .FeaturedProductGrid
+{
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	text-align: center;
+}
+
+.ManufacturerPage .FeaturedProductGrid .title
+{
+	padding: 10px 10px 5px 0px;
+	font-weight: bold;
+	text-transform: uppercase;
+	clear: both;
+	margin: 0;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ItemBox
+{
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: text-top;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	width: 250px;
+	border: 1px solid rgb(232, 230, 210);
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem .title
+{
+	font-weight: bold;
+	padding: 0 0 0 10px;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem .title a
+{
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem .picture
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem .description
+{
+	margin: 5px 5px 0 5px;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	border-top: solid 1px rgb(232, 230, 210);
+	color: #555;
+	height: 50px;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem .addInfo
+{
+	vertical-align: bottom;
+	text-align: right;
+	width: 250px;
+	height: 85px;
+	position: relative;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem .addInfo .prices
+{
+	text-align: right;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem .addInfo .buttons
+{
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	text-align: left;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem .addInfo .prices .productPrice
+{
+	color: green;
+}
+
+.ManufacturerPage .FeaturedProductGrid .ProductItem .addInfo .prices .oldproductPrice
+{
+	color: Red;
+	text-decoration: line-through;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCTS IN GRID - TEMPLATE - DONE
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ManufacturerPage .ProductGrid
+{
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 550px;
+	text-align: center;
+}
+
+.ManufacturerPage .ProductGrid .ItemBox
+{
+	padding-bottom: 10px;
+	text-align: center;
+	vertical-align: text-top;
+}
+
+.ManufacturerPage .ProductGrid .ProductItem
+{
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	width: 250px;
+	border: 1px solid rgb(232, 230, 210);
+}
+
+.ManufacturerPage .ProductGrid .ProductItem .title
+{
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.ManufacturerPage .ProductGrid .ProductItem .title a
+{
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.ManufacturerPage .ProductGrid .ProductItem .picture
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.ManufacturerPage .ProductGrid .ProductItem .description
+{
+	margin: 5px 5px 0 5px;
+	text-align: center;
+	padding: 10px 5px 10px 5px;
+	border-top: solid 1px rgb(232, 230, 210);
+	color: #555;
+	height: 50px;
+}
+
+.ManufacturerPage .ProductGrid .ProductItem .addInfo
+{
+	vertical-align: bottom;
+	text-align: right;
+	width: 250px;
+	height: 85px;
+	position: relative;
+	background: rgb(247, 245, 232);
+}
+
+.ManufacturerPage .ProductGrid .ProductItem .addInfo .prices
+{
+	text-align: right;
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+}
+
+.ManufacturerPage .ProductGrid .ProductItem .addInfo .buttons
+{
+	vertical-align: middle;
+	position: absolute;
+	bottom: 15px;
+	left: 10px;
+	text-align: left;
+}
+
+.ManufacturerPage .ProductGrid .ProductItem .addInfo .prices .productPrice
+{
+	color: green;
+}
+
+ManufacturerPage .ProductGrid .ProductItem .addInfo .prices .oldproductPrice
+{
+	color: Red;
+	text-decoration: line-through;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+
+	PRODUCT FILTERS BOX
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.ManufacturerPage .ProductFilters
+{
+	width: 600px;
+	margin-left: 5px;
+	border: 1px solid rgb(232, 230, 210);
+	background: rgb(247, 245, 232);
+}
+
+.ManufacturerPage .ProductFilters .FilterTitle
+{
+	font-weight: bold;
+	padding-left: 10px;	
+	color: #3A4045;
+}
+
+.ManufacturerPage .ProductFilters .FilterTitle span
+{
+	display: block;
+	height: 2em;
+	line-height: 1.3em;
+	overflow: hidden hidden;
+	padding: 4px 10px 8px 0px;
+}
+
+.ManufacturerPage .ProductFilters .FilterItem
+{
+	padding: 5px 10px 5px 10px;
+}

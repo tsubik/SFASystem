@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+	<!--Build: with lujan99@usa.net Nhibernate template-->
+	<!--nazwa klasy, przestrzeń nazw, nazwa tabeli oraz czy włączony lazy loading -->
+  <class name="SFASystem.Domain.Customer,SFASystem.Domain" table="Customer" lazy="true">
+		<!--opis kolumny klucza głównego tabeli -->
+    <id name="Customerid" column="CustomerID" type="Guid">
+			<generator class="guid.comb" /> <!-- Rodzaj generatora identyfikatorów-->
+		</id>
+    <!--Opis relacji wiele do jednego -->
+		<many-to-one name="Contact" column="ContactID" cascade="save-update" />
+		<!--opis mapowania kolumny, name(property w klasie Customer), column(nazwa kolumny w tabeli),
+    type(typ mapowanej kolumny)-->
+    <property name="IsDeleted" column="IsDeleted" type="Boolean" />
+		<property name="FullDescription" column="FullDescription" type="string" not-null="true" />
+		<property name="CustomerSince" column="CustomerSince" type="DateTime" />
+		<property name="CustomerTo" column="CustomerTo" type="DateTime" />
+		<property name="Code" column="Code" type="string" not-null="true" />
+		<property name="Name" column="Name" type="string" not-null="true" />
+    <property name="Email" column="Email" type="string"  />
+    <property name="Phone" column="Phone" type="string"  />
+    <property name="NIP" column="NIP" type="string" not-null="true" />
+		<property name="KRS" column="KRS" type="string"/>
+		<property name="REGON" column="REGON" type="string" />
+    <!--Opis relacji jeden do wielu, Klient posiada wiele placówek 
+    lazy(okreslenie, czy kolekcja wypelniana od razu, czy dopiero przy
+    użyciu)-->
+		<bag name="CustomerFacility" inverse="true" lazy="true" cascade="delete">
+			<key column="CustomerID" />
+			<one-to-many class="SFASystem.Domain.CustomerFacility,SFASystem.Domain" />
+		</bag>
+	</class>
+</hibernate-mapping>

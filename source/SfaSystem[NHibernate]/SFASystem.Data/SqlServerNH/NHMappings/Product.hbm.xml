@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <!--Build: with lujan99@usa.net Nhibernate template-->
+  <class name="SFASystem.Domain.Product,SFASystem.Domain" table="Product" lazy="true">
+    <id name="Productid" column="ProductID" type="Guid">
+      <generator class="guid.comb" />
+    </id>
+    <many-to-one name="ProductGroup" column="ProductGroupID" cascade="save-update" />
+    <many-to-one name="Manufacturer" column="ManufacturerID" cascade="save-update" />
+
+    <property name="Code" column="Code" type="string" not-null="true" length="40" />
+    <property name="Name" column="Name" type="string" not-null="true" />
+    <property name="ShortDescription" column="ShortDescription" type="string" not-null="true" />
+    <property name="FullDescription" column="FullDescription" type="string" />
+    <property name="Price" column="Price" type="Decimal" not-null="true" />
+    <property name="IsDeleted" column="IsDeleted" type="Boolean" />
+    <many-to-one name="Tax" column="Tax" cascade="save-update" not-null="true" />
+    
+    <bag name="Images" inverse="false" table="ProductImages" lazy="true" cascade="all">
+      <key column="ProductID" />
+      <many-to-many class="SFASystem.Domain.Image,SFASystem.Domain">
+        <column name="ImageID" />
+      </many-to-many>
+    </bag>
+
+  </class>
+</hibernate-mapping>
