@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SfaPocket">
+</Property><Property Name="Solution File" Value="D:\dev\.net\web\SFASystem\source\SfaSystem[Pocket]\SfaPocket\SfaPocket.sln">
+</Property><Property Name="Date" Value="2 października 2012">
+</Property><Property Name="Time" Value="12:17">
+</Property></Properties><Event ErrorLevel="0" Project="SfaSystem.Pocket.Core" Source="SfaSystem.Pocket.Core\SfaSystem.Pocket.Core.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SfaSystem.Pocket.Core" Source="SfaSystem.Pocket.Core\SfaSystem.Pocket.Core.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SfaSystem.Pocket.App" Source="SfaSystem.Pocket.App\SfaSystem.Pocket.App.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SfaSystem.Pocket.App" Source="SfaSystem.Pocket.App\SfaSystem.Pocket.App.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="SfaSystem.Pocket.Utils" Source="SfaSystem.Pocket.Utils\SfaSystem.Pocket.Utils.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="SfaSystem.Pocket.Utils" Source="SfaSystem.Pocket.Utils\SfaSystem.Pocket.Utils.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="SfaSystem.Pocket.Core" Source="SfaSystem.Pocket.Core\SfaSystem.Pocket.Core.csproj" Description="The project file 'D:\dev\.net\web\SFASystem\source\SfaSystem[Pocket]\SfaPocket\SfaSystem.Pocket.Core\SfaSystem.Pocket.Core.csproj' cannot be opened.&#xA;&#xA;The project type is not supported by this installation.">
+</Event><Event ErrorLevel="2" Project="SfaSystem.Pocket.App" Source="SfaSystem.Pocket.App\SfaSystem.Pocket.App.csproj" Description="The project file 'D:\dev\.net\web\SFASystem\source\SfaSystem[Pocket]\SfaPocket\SfaSystem.Pocket.App\SfaSystem.Pocket.App.csproj' cannot be opened.&#xA;&#xA;The project type is not supported by this installation.">
+</Event><Event ErrorLevel="2" Project="SfaSystem.Pocket.Utils" Source="SfaSystem.Pocket.Utils\SfaSystem.Pocket.Utils.csproj" Description="The project file 'D:\dev\.net\web\SFASystem\source\SfaSystem[Pocket]\SfaPocket\SfaSystem.Pocket.Utils\SfaSystem.Pocket.Utils.csproj' cannot be opened.&#xA;&#xA;The project type is not supported by this installation.">
+</Event><Event ErrorLevel="0" Project="" Source="SfaPocket.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SfaPocket.sln" Description="Converted">
+</Event></UpgradeLog>

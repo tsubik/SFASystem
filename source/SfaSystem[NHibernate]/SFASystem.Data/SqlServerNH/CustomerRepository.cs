@@ -14,11 +14,9 @@ namespace SFASystem.DataAccess.SqlServerNH
         public IList<Customer> GetCustomers(string name, string nip, string regon)
         {
             ISession session = HBManager.Instance.GetSession();
-            var query = from c in session.Linq<Customer>()
-                        where c.Name.Contains(name) &&
-                        c.NIP.Contains(nip) && c.REGON.Contains(regon)
-                        select c;
-            return query.ToList();
+            return session.Query<Customer>().Where(c=> c.Name.Contains(name)
+                && c.NIP.Contains(nip) && c.REGON.Contains(regon))
+                .ToList();
         }
     }
 }

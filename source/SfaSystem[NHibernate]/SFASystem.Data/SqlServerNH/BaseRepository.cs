@@ -20,13 +20,13 @@ namespace SFASystem.DataAccess.SqlServerNH
         public virtual IList<T> GetAll()
         {
             ISession session = HBManager.Instance.GetSession();
-            return session.Linq<T>().ToList();
+            return session.Query<T>().ToList();
         }
 
         public IQueryable<T> GetQueryable()
         {
             ISession session = HBManager.Instance.GetSession();
-            return session.Linq<T>();
+            return session.Query<T>();
         }
 
         public virtual void SaveOrUpdate(T entity)

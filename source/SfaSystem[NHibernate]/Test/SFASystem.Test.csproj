@@ -53,8 +53,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ArtOfTest.Common, Version=2.0.2.0, Culture=neutral, PublicKeyToken=14a0200bfcbb7b62" />
-    <Reference Include="ArtOfTest.WebAii, Version=2.0.2.0, Culture=neutral, PublicKeyToken=4fd5f65be123776c" />
+    <Reference Include="ArtOfTest.WebAii.AspNet">
+      <HintPath>..\Dependencies\ArtOfTest.WebAii.AspNet.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core">
