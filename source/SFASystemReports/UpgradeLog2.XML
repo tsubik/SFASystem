@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SFASystemReports">
+</Property><Property Name="Solution File" Value="D:\dev\.net\web\SFASystem\source\SFASystemReports\SFASystemReports.sln">
+</Property><Property Name="Date" Value="14 października 2012">
+</Property><Property Name="Time" Value="16:33">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="SFASystemReports.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SFASystemReports.sln" Description="Converted">
+</Event></UpgradeLog>

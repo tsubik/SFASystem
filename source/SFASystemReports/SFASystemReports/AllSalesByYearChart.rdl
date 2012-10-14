@@ -1,34 +1,339 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Chart Name="SalesComparison">
+        <ChartCategoryHierarchy>
+          <ChartMembers>
+            <ChartMember>
+              <Group Name="SalesComparison_OrderMonth">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!OrderMonthNum.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!OrderMonthNum.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <Label>=Fields!OrderMonth.Value</Label>
+              <DataElementOutput>Output</DataElementOutput>
+            </ChartMember>
+          </ChartMembers>
+        </ChartCategoryHierarchy>
+        <ChartSeriesHierarchy>
+          <ChartMembers>
+            <ChartMember>
+              <Group Name="SalesComparison_OrderYear">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!OrderYear.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <Label>=Fields!OrderYear.Value</Label>
+              <DataElementOutput>Output</DataElementOutput>
+            </ChartMember>
+          </ChartMembers>
+        </ChartSeriesHierarchy>
+        <ChartData>
+          <ChartSeriesCollection>
+            <ChartSeries Name="Series1">
+              <ChartDataPoints>
+                <ChartDataPoint>
+                  <ChartDataPointValues>
+                    <Y>=Sum(Fields!Sales.Value)</Y>
+                  </ChartDataPointValues>
+                  <ChartDataLabel>
+                    <Style />
+                    <Position>Top</Position>
+                  </ChartDataLabel>
+                  <Style>
+                    <Border>
+                      <Width>2.25pt</Width>
+                    </Border>
+                  </Style>
+                  <ChartMarker>
+                    <Type>Diamond</Type>
+                    <Size>5pt</Size>
+                    <Style />
+                  </ChartMarker>
+                </ChartDataPoint>
+              </ChartDataPoints>
+              <Type>Line</Type>
+              <Style />
+              <ChartEmptyPoints>
+                <Style />
+                <ChartMarker>
+                  <Style />
+                </ChartMarker>
+                <ChartDataLabel>
+                  <Style />
+                </ChartDataLabel>
+              </ChartEmptyPoints>
+              <ValueAxisName>Primary</ValueAxisName>
+              <CategoryAxisName>Primary</CategoryAxisName>
+              <ChartSmartLabel>
+                <Disabled>true</Disabled>
+              </ChartSmartLabel>
+            </ChartSeries>
+          </ChartSeriesCollection>
+        </ChartData>
+        <ChartAreas>
+          <ChartArea Name="Default">
+            <ChartCategoryAxes>
+              <ChartAxis Name="Primary">
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                    <Width>0.75pt</Width>
+                  </Border>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <ChartAxisTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </ChartAxisTitle>
+                <Margin>False</Margin>
+                <Interval>1</Interval>
+                <ChartMajorGridLines>
+                  <Enabled>False</Enabled>
+                  <Style>
+                    <Border>
+                      <Style>Solid</Style>
+                      <Width>0.75pt</Width>
+                    </Border>
+                  </Style>
+                  <Interval>NaN</Interval>
+                </ChartMajorGridLines>
+                <ChartMinorGridLines>
+                  <Enabled>False</Enabled>
+                  <Style>
+                    <Border>
+                      <Style>Solid</Style>
+                      <Width>0.75pt</Width>
+                    </Border>
+                  </Style>
+                  <Interval>NaN</Interval>
+                  <IntervalOffset>-1</IntervalOffset>
+                </ChartMinorGridLines>
+                <ChartMajorTickMarks>
+                  <Type>None</Type>
+                </ChartMajorTickMarks>
+                <ChartMinorTickMarks>
+                  <Type>None</Type>
+                </ChartMinorTickMarks>
+                <Minimum>NaN</Minimum>
+                <Maximum>NaN</Maximum>
+                <PreventFontShrink>true</PreventFontShrink>
+                <PreventFontGrow>true</PreventFontGrow>
+                <IncludeZero>false</IncludeZero>
+                <ChartAxisScaleBreak>
+                  <Style />
+                </ChartAxisScaleBreak>
+              </ChartAxis>
+              <ChartAxis Name="Secondary">
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <ChartAxisTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </ChartAxisTitle>
+                <CrossAt>NaN</CrossAt>
+                <Location>Opposite</Location>
+                <Minimum>NaN</Minimum>
+                <Maximum>NaN</Maximum>
+                <ChartAxisScaleBreak>
+                  <Style />
+                </ChartAxisScaleBreak>
+              </ChartAxis>
+            </ChartCategoryAxes>
+            <ChartValueAxes>
+              <ChartAxis Name="Primary">
+                <Style>
+                  <Border>
+                    <Style>None</Style>
+                    <Width>0.75pt</Width>
+                  </Border>
+                  <FontFamily>Verdana</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <Format>0.00 tys zł</Format>
+                </Style>
+                <ChartAxisTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </ChartAxisTitle>
+                <Margin>True</Margin>
+                <ChartMajorGridLines>
+                  <Enabled>True</Enabled>
+                  <Style>
+                    <Border>
+                      <Style>Solid</Style>
+                      <Width>0.75pt</Width>
+                    </Border>
+                  </Style>
+                  <Interval>NaN</Interval>
+                </ChartMajorGridLines>
+                <ChartMinorGridLines>
+                  <Enabled>False</Enabled>
+                  <Style>
+                    <Border>
+                      <Style>Solid</Style>
+                      <Width>0.75pt</Width>
+                    </Border>
+                  </Style>
+                  <Interval>NaN</Interval>
+                </ChartMinorGridLines>
+                <ChartMajorTickMarks>
+                  <Type>None</Type>
+                </ChartMajorTickMarks>
+                <ChartMinorTickMarks>
+                  <Type>None</Type>
+                </ChartMinorTickMarks>
+                <Scalar>true</Scalar>
+                <PreventFontShrink>true</PreventFontShrink>
+                <PreventFontGrow>true</PreventFontGrow>
+                <IncludeZero>false</IncludeZero>
+                <ChartAxisScaleBreak>
+                  <Style />
+                </ChartAxisScaleBreak>
+              </ChartAxis>
+              <ChartAxis Name="Secondary">
+                <Style>
+                  <FontSize>8pt</FontSize>
+                </Style>
+                <ChartAxisTitle>
+                  <Caption />
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                  </Style>
+                </ChartAxisTitle>
+                <CrossAt>NaN</CrossAt>
+                <Location>Opposite</Location>
+                <Minimum>NaN</Minimum>
+                <Maximum>NaN</Maximum>
+                <ChartAxisScaleBreak>
+                  <Style />
+                </ChartAxisScaleBreak>
+              </ChartAxis>
+            </ChartValueAxes>
+            <ChartThreeDProperties>
+              <ProjectionMode>Perspective</ProjectionMode>
+              <Shading>Simple</Shading>
+              <WallThickness>15</WallThickness>
+              <Clustered>true</Clustered>
+            </ChartThreeDProperties>
+            <Style>
+              <Border>
+                <Color>#e7efef</Color>
+                <Style>Solid</Style>
+                <Width>0.75pt</Width>
+              </Border>
+              <BackgroundColor>LightGrey</BackgroundColor>
+            </Style>
+          </ChartArea>
+        </ChartAreas>
+        <ChartLegends>
+          <ChartLegend Name="Default">
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+                <Width>0.75pt</Width>
+              </Border>
+              <FontFamily>Verdana</FontFamily>
+              <FontSize>8pt</FontSize>
+            </Style>
+            <Position>BottomCenter</Position>
+            <ChartLegendTitle>
+              <Caption />
+              <Style>
+                <FontSize>8pt</FontSize>
+                <FontWeight>Bold</FontWeight>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </ChartLegendTitle>
+            <AutoFitTextDisabled>true</AutoFitTextDisabled>
+          </ChartLegend>
+        </ChartLegends>
+        <ChartBorderSkin>
+          <Style>
+            <BackgroundColor>Gray</BackgroundColor>
+            <BackgroundGradientType>None</BackgroundGradientType>
+            <Color>White</Color>
+          </Style>
+        </ChartBorderSkin>
+        <ChartNoDataMessage Name="NoDataMessageTitle">
+          <Caption>No data found for YTD Sales Comparison chart</Caption>
+          <Style>
+            <BackgroundGradientType>None</BackgroundGradientType>
+            <TextAlign>General</TextAlign>
+            <VerticalAlign>Top</VerticalAlign>
+          </Style>
+        </ChartNoDataMessage>
+        <DataSetName>AllSalesByYear</DataSetName>
+        <Height>6.25001cm</Height>
+        <Width>10.25001cm</Width>
+        <CustomProperties>
+          <CustomProperty>
+            <Name>__Upgraded2005__</Name>
+            <Value>__Upgraded2005__</Value>
+          </CustomProperty>
+        </CustomProperties>
+        <Style>
+          <Border>
+            <Color>#e7efef</Color>
+            <Style>Solid</Style>
+          </Border>
+          <BackgroundColor>White</BackgroundColor>
+          <TextAlign>Center</TextAlign>
+          <VerticalAlign>Middle</VerticalAlign>
+        </Style>
+      </Chart>
+    </ReportItems>
+    <Height>6.25001cm</Height>
+    <Style />
+  </Body>
+  <Width>10.25001cm</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2.5cm</LeftMargin>
+    <RightMargin>2.5cm</RightMargin>
+    <TopMargin>2.5cm</TopMargin>
+    <BottomMargin>2.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource1">
-      <rd:DataSourceID>ffcc01a8-ca93-45be-83ac-b62d9c0cf418</rd:DataSourceID>
       <DataSourceReference>DataSource1</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>ffcc01a8-ca93-45be-83ac-b62d9c0cf418</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <InteractiveHeight>29.7cm</InteractiveHeight>
-  <ReportParameters>
-    <ReportParameter Name="ReportYear">
-      <DataType>String</DataType>
-      <DefaultValue>
-        <Values>
-          <Value>2009</Value>
-        </Values>
-      </DefaultValue>
-      <Prompt>ReportYear</Prompt>
-    </ReportParameter>
-  </ReportParameters>
-  <rd:DrawGrid>true</rd:DrawGrid>
-  <InteractiveWidth>21cm</InteractiveWidth>
-  <rd:GridSpacing>0.25cm</rd:GridSpacing>
-  <rd:SnapToGrid>true</rd:SnapToGrid>
-  <RightMargin>2.5cm</RightMargin>
-  <LeftMargin>2.5cm</LeftMargin>
-  <BottomMargin>2.5cm</BottomMargin>
-  <rd:ReportID>01a42e40-4b90-49fa-a47a-dbf839f75a99</rd:ReportID>
-  <PageWidth>21cm</PageWidth>
   <DataSets>
     <DataSet Name="AllSalesByYear">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@ReportYear">
+            <Value>=Parameters!ReportYear.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>SELECT       DATEPART(Year, O.OrderDate) AS OrderYear, DATEPART(Month, O.OrderDate) AS OrderMonthNum, DATENAME(Month, O.OrderDate) AS OrderMonth, SUM(O.Total)/1000 AS Sales
+FROM        [Order] O
+WHERE       (DATEPART(Year, O.OrderDate) &lt;= @ReportYear - 1 OR
+            DATEPART(Year, O.OrderDate) = @ReportYear)
+GROUP BY  DATEPART(Year, O.OrderDate),  DATEPART(Month, O.OrderDate), DATENAME(Month, O.OrderDate)</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
       <Fields>
         <Field Name="OrderYear">
           <DataField>OrderYear</DataField>
@@ -47,192 +352,21 @@
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
-      <Query>
-        <DataSourceName>DataSource1</DataSourceName>
-        <CommandText>SELECT       DATEPART(Year, O.OrderDate) AS OrderYear, DATEPART(Month, O.OrderDate) AS OrderMonthNum, DATENAME(Month, O.OrderDate) AS OrderMonth, SUM(O.Total)/1000 AS Sales
-FROM        [Order] O
-WHERE       (DATEPART(Year, O.OrderDate) &lt;= @ReportYear - 1 OR
-            DATEPART(Year, O.OrderDate) = @ReportYear)
-GROUP BY  DATEPART(Year, O.OrderDate),  DATEPART(Month, O.OrderDate), DATENAME(Month, O.OrderDate)</CommandText>
-        <QueryParameters>
-          <QueryParameter Name="@ReportYear">
-            <Value>=Parameters!ReportYear.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
     </DataSet>
   </DataSets>
-  <Width>10.25001cm</Width>
-  <Body>
-    <ColumnSpacing>1cm</ColumnSpacing>
-    <ReportItems>
-      <Chart Name="SalesComparison">
-        <Legend>
-          <Visible>true</Visible>
-          <Style>
-            <BorderStyle>
-              <Default>Solid</Default>
-            </BorderStyle>
-            <FontFamily>Verdana</FontFamily>
-            <FontSize>8pt</FontSize>
-          </Style>
-          <Position>BottomCenter</Position>
-          <Layout>Table</Layout>
-        </Legend>
-        <CategoryAxis>
-          <Axis>
-            <Title />
-            <Style>
-              <FontFamily>Verdana</FontFamily>
-              <FontSize>8pt</FontSize>
-            </Style>
-            <MajorGridLines>
-              <Style>
-                <BorderStyle>
-                  <Default>Solid</Default>
-                </BorderStyle>
-              </Style>
-            </MajorGridLines>
-            <MinorGridLines>
-              <Style>
-                <BorderStyle>
-                  <Default>Solid</Default>
-                </BorderStyle>
-              </Style>
-            </MinorGridLines>
-            <Visible>true</Visible>
-          </Axis>
-        </CategoryAxis>
-        <NoRows>No data found for YTD Sales Comparison chart</NoRows>
-        <DataSetName>AllSalesByYear</DataSetName>
-        <PlotArea>
-          <Style>
-            <BackgroundColor>LightGrey</BackgroundColor>
-            <BorderColor>
-              <Default>#e7efef</Default>
-            </BorderColor>
-            <BorderStyle>
-              <Default>Solid</Default>
-            </BorderStyle>
-          </Style>
-        </PlotArea>
-        <ThreeDProperties>
-          <Rotation>30</Rotation>
-          <Inclination>30</Inclination>
-          <Shading>Simple</Shading>
-          <WallThickness>50</WallThickness>
-        </ThreeDProperties>
-        <PointWidth>0</PointWidth>
-        <SeriesGroupings>
-          <SeriesGrouping>
-            <DynamicSeries>
-              <Grouping Name="SalesComparison_OrderYear">
-                <GroupExpressions>
-                  <GroupExpression>=Fields!OrderYear.Value</GroupExpression>
-                </GroupExpressions>
-              </Grouping>
-              <Label>=Fields!OrderYear.Value</Label>
-            </DynamicSeries>
-          </SeriesGrouping>
-          <SeriesGrouping>
-            <StaticSeries>
-              <StaticMember>
-                <Label>Sprzedaż</Label>
-              </StaticMember>
-            </StaticSeries>
-          </SeriesGrouping>
-        </SeriesGroupings>
-        <Subtype>Plain</Subtype>
-        <ValueAxis>
-          <Axis>
-            <Title />
-            <Style>
-              <FontFamily>Verdana</FontFamily>
-              <FontSize>8pt</FontSize>
-              <Format>0.00 tys zł</Format>
-            </Style>
-            <MajorGridLines>
-              <ShowGridLines>true</ShowGridLines>
-              <Style>
-                <BorderStyle>
-                  <Default>Solid</Default>
-                </BorderStyle>
-              </Style>
-            </MajorGridLines>
-            <MinorGridLines>
-              <Style>
-                <BorderStyle>
-                  <Default>Solid</Default>
-                </BorderStyle>
-              </Style>
-            </MinorGridLines>
-            <Margin>true</Margin>
-            <Visible>true</Visible>
-            <Scalar>true</Scalar>
-          </Axis>
-        </ValueAxis>
-        <Type>Line</Type>
-        <CategoryGroupings>
-          <CategoryGrouping>
-            <DynamicCategories>
-              <Grouping Name="SalesComparison_OrderMonth">
-                <GroupExpressions>
-                  <GroupExpression>=Fields!OrderMonthNum.Value</GroupExpression>
-                </GroupExpressions>
-              </Grouping>
-              <Sorting>
-                <SortBy>
-                  <SortExpression>=Fields!OrderMonthNum.Value</SortExpression>
-                  <Direction>Ascending</Direction>
-                </SortBy>
-              </Sorting>
-              <Label>=Fields!OrderMonth.Value</Label>
-            </DynamicCategories>
-          </CategoryGrouping>
-        </CategoryGroupings>
-        <Palette>Default</Palette>
-        <ChartData>
-          <ChartSeries>
-            <DataPoints>
-              <DataPoint>
-                <DataValues>
-                  <DataValue>
-                    <Value>=Sum(Fields!Sales.Value)</Value>
-                  </DataValue>
-                </DataValues>
-                <DataLabel>
-                  <Position>Top</Position>
-                </DataLabel>
-                <Marker>
-                  <Type>Diamond</Type>
-                  <Size>5pt</Size>
-                </Marker>
-              </DataPoint>
-            </DataPoints>
-          </ChartSeries>
-        </ChartData>
-        <Style>
-          <BackgroundColor>White</BackgroundColor>
-          <BorderColor>
-            <Default>#e7efef</Default>
-          </BorderColor>
-          <BorderStyle>
-            <Default>Solid</Default>
-          </BorderStyle>
-          <TextAlign>Center</TextAlign>
-          <VerticalAlign>Middle</VerticalAlign>
-        </Style>
-        <Title>
-          <Style>
-            <FontSize>8pt</FontSize>
-          </Style>
-        </Title>
-      </Chart>
-    </ReportItems>
-    <Height>6.25001cm</Height>
-  </Body>
+  <ReportParameters>
+    <ReportParameter Name="ReportYear">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>2009</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ReportYear</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <Language>en-US</Language>
-  <TopMargin>2.5cm</TopMargin>
-  <PageHeight>29.7cm</PageHeight>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>01a42e40-4b90-49fa-a47a-dbf839f75a99</rd:ReportID>
 </Report>

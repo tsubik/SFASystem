@@ -56,6 +56,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFASystem.Services", "SFASy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SFASystem.Test", "Test\SFASystem.Test.csproj", "{5CB07792-C13D-446D-8A29-376AE854B43E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SfaSystem.Database", "SfaSystem.Database\SfaSystem.Database.csproj", "{5D2F31E0-A37A-43FB-B39A-11D368C14CBB}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = SFASystem1.vsmdi
@@ -89,6 +91,10 @@ Global
 		{5CB07792-C13D-446D-8A29-376AE854B43E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CB07792-C13D-446D-8A29-376AE854B43E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CB07792-C13D-446D-8A29-376AE854B43E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D2F31E0-A37A-43FB-B39A-11D368C14CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2F31E0-A37A-43FB-B39A-11D368C14CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2F31E0-A37A-43FB-B39A-11D368C14CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2F31E0-A37A-43FB-B39A-11D368C14CBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

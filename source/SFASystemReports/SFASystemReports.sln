@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SFASystemReports", "SFASystemReports\SFASystemReports.rptproj", "{C0AD3CB9-541D-4E6A-A688-04C8849FA169}"
 EndProject
 Global
