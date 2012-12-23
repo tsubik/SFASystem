@@ -82,7 +82,7 @@ public partial class Administration_Customers_CustomerDetails : System.Web.UI.Pa
             }
             Contact contact = ctrlContactInfo.SaveInfo();
             CustomerFacility customerFacility = BasicService<CustomerFacility, Guid>.GetByID(ctrlSelectFacility.SelectedFacilityId);
-            customerFacility.Contact.Add(contact);
+            customerFacility.Contacts.Add(contact);
             
             if (contact != null)
             {

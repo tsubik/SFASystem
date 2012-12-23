@@ -18,8 +18,8 @@ public partial class Administration_Controls_Product_ProductGroupInfo : System.W
         {
             this.txtName.Text = productGroup.Name;
             this.txtDescription.Text = productGroup.Description;
-            if (productGroup.ProductGroupMember != null)
-                ctrlParentGroup.SelectedProductGroupId = productGroup.ProductGroupMember.ProductGroupID;
+            if (productGroup.ProductGroupParent != null)
+                ctrlParentGroup.SelectedProductGroupId = productGroup.ProductGroupParent.ProductGroupID;
             this.ctrlParentGroup.BindData();
 
         }
@@ -49,7 +49,7 @@ public partial class Administration_Controls_Product_ProductGroupInfo : System.W
         }
         productGroup.Name = txtName.Text;
         productGroup.Description = txtDescription.Text;
-        productGroup.ProductGroupMember = BasicService<ProductGroup, Guid>.GetByID(ctrlParentGroup.SelectedProductGroupId);
+        productGroup.ProductGroupParent = BasicService<ProductGroup, Guid>.GetByID(ctrlParentGroup.SelectedProductGroupId);
         BasicService<ProductGroup, Guid>.SaveOrUpdate(productGroup);
         return productGroup;
     }

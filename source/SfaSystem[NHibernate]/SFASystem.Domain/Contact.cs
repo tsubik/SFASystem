@@ -15,7 +15,7 @@ namespace SFASystem.Domain
     {
         public Contact()
         {
-
+            CustomerFacilities = new List<CustomerFacility>();
         }
 
         public virtual Guid ContactID { get; set; }
@@ -24,6 +24,7 @@ namespace SFASystem.Domain
         public virtual string Email { get; set; }
         public virtual string Phone { get; set; }
         public virtual bool IsDeleted { get; set; }
+        public virtual IList<CustomerFacility> CustomerFacilities { get; set; }
 
         #region Equals And HashCode Overrides
         /// <summary>

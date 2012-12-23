@@ -11,9 +11,19 @@ namespace SFASystem.DataAccess.SqlServerNH.AutoMapping
     {
         public override bool ShouldMap(Type type)
         {
-            return type is IEntity;
+            return typeof(IEntity).IsAssignableFrom(type);
+            //return type.GetInterface(typeof(IEntity).FullName);
         }
-        
+
+        public override bool ShouldMap(FluentNHibernate.Member member)
+        {
+            if (member.IsProperty && !member.CanWrite)
+            {
+                return false;
+            }
+            return base.ShouldMap(member);
+        }
+
         public override bool IsId(FluentNHibernate.Member member)
         {
             return member.Name == member.DeclaringType.Name + "ID";

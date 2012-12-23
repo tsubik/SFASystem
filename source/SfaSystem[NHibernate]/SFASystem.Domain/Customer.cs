@@ -12,7 +12,7 @@ namespace SFASystem.Domain
     {
         public Customer()
         {
-
+            CustomerFacility = new List<CustomerFacility>();
         }
         public virtual Guid CustomerID { get; set; }
         public virtual Contact Contact { get; set; }

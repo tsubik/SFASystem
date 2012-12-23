@@ -8,7 +8,7 @@ namespace SFASystem.Domain
     /// Task object for NHibernate mapped table 'Task'.
     /// </summary>
     [Serializable]
-    public class Task
+    public class Task : IEntity
     {
         public Task()
         {

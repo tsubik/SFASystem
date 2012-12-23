@@ -102,7 +102,7 @@ public partial class Administration_Customers_CustomerFacilityDetails : System.W
     {
         Contact contact = ctrlContactInfo.SaveInfo();
         CustomerFacility customerFacility = BasicService<CustomerFacility, Guid>.GetByID(this.CustomerFacilityID);
-        customerFacility.Contact.Add(contact);
+        customerFacility.Contacts.Add(contact);
 
         BasicService<CustomerFacility, Guid>.SaveOrUpdate(customerFacility);
         BindData();

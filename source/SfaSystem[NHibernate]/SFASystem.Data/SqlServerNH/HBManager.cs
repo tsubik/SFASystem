@@ -12,6 +12,7 @@ using SFASystem.Domain;
 using System.Reflection;
 using FluentNHibernate.Automapping;
 using SFASystem.DataAccess.SqlServerNH.AutoMapping;
+using SFASystem.DataAccess.SqlServerNH.AutoMapping.Overrides;
 
 namespace SFASystem.DataAccess.SqlServerNH
 {
@@ -66,7 +67,8 @@ namespace SFASystem.DataAccess.SqlServerNH
                 .Mappings(cfg =>
                 {
                     cfg.AutoMappings.Add(AutoMap.AssemblyOf<Customer>(automappingConfiguration)
-                            .Conventions.AddFromAssemblyOf<PrimaryKeyConvention>());
+                            .Conventions.AddFromAssemblyOf<PrimaryKeyConvention>()
+                            .UseOverridesFromAssemblyOf<OrderLinesMappingOverride>());
                     //cfg.HbmMappings.AddFromAssembly(Assembly.GetExecutingAssembly());
                 }).BuildConfiguration();
 

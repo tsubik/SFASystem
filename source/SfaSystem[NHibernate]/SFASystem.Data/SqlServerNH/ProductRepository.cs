@@ -19,10 +19,10 @@ namespace SFASystem.DataAccess.SqlServerNH
 
             if(parent==null)
                 result = session.CreateCriteria(typeof(ProductGroup))
-                .Add(Expression.IsNull("ProductGroupMember")).List<ProductGroup>();
+                .Add(Expression.IsNull("ProductGroupParent")).List<ProductGroup>();
             else
                 result = session.CreateCriteria(typeof(ProductGroup))
-                .Add(Expression.Eq("ProductGroupMember", parent)).List<ProductGroup>();
+                .Add(Expression.Eq("ProductGroupParent", parent)).List<ProductGroup>();
             return result;
         }
 

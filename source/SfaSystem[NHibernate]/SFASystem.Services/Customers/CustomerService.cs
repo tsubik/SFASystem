@@ -31,7 +31,7 @@ namespace SFASystem.Services
                 return null;
             Repository<Contact, Guid> contactRep = new Repository<Contact,Guid>();
             IEnumerable<Contact> contacts = new List<Contact>();
-            contacts = contactRep.GetAll().Where(c => fac.Contact.Contains(c));
+            contacts = contactRep.GetAll().Where(c => fac.Contacts.Contains(c));
             return contacts.ToList();
         }
         public static IList<Contact> GetContacts(Customer cust)
@@ -44,7 +44,7 @@ namespace SFASystem.Services
             IEnumerable<Contact> result = new List<Contact>();
             foreach (CustomerFacility fac in customerFacilities)
             {
-                result = result.Concat(fac.Contact);
+                result = result.Concat(fac.Contacts);
             }
             if (cust.Contact != null)
             {
@@ -67,7 +67,7 @@ namespace SFASystem.Services
         public static IList<CustomerFacility> GetFacilitiesForContact(Contact contact)
         {
             Repository<CustomerFacility, Guid> repo = new Repository<CustomerFacility, Guid>();
-            var result = repo.GetQueryable().Where(fac => fac.Contact.Contains(contact));
+            var result = repo.GetQueryable().Where(fac => fac.Contacts.Contains(contact));
             return result.ToList();
         }
 
@@ -117,7 +117,7 @@ namespace SFASystem.Services
         {
             Repository<CustomerFacility, Guid> rep = new Repository<CustomerFacility,Guid>();
             var result = from cf in rep.GetQueryable()
-                         where cf.Contact.Contains(contact)
+                         where cf.Contacts.Contains(contact)
                          select cf;
 
             return result.ToList();

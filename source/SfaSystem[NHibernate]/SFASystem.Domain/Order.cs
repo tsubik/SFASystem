@@ -8,7 +8,7 @@ namespace SFASystem.Domain
 	/// Order object for NHibernate mapped table 'Order'.
 	/// </summary>
 	[Serializable]
-	public class Order
+	public class Order : IEntity
 	{
 		public  virtual Guid OrderID { get; set; }
 		public  virtual CustomerFacility CustomerFacility { get; set; }

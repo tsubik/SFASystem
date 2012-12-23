@@ -12,7 +12,7 @@ namespace SFASystem.Domain
     {
         public Employee()
         {
-
+            Roles = new List<Role>();
         }
         public virtual Guid EmployeeID { get; set; }
         public virtual Territory Territory { get; set; }

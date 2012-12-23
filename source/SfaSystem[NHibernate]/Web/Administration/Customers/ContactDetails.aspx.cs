@@ -60,9 +60,9 @@ public partial class Administration_Customers_ContactDetails : System.Web.UI.Pag
         {
             Contact contact = BasicService<Contact, Guid>.GetByID(this.ContactID);
             CustomerFacility facility = BasicService<CustomerFacility, Guid>.GetByID(ctrlSelectFacility.SelectedFacilityId);
-            if (!facility.Contact.Contains(contact))
+            if (!facility.Contacts.Contains(contact))
             {
-                facility.Contact.Add(contact);
+                facility.Contacts.Add(contact);
                 BasicService<CustomerFacility, Guid>.SaveOrUpdate(facility);
                 BindFacilityList();
             }

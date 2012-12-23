@@ -83,7 +83,7 @@
     <Compile Include="Manufacturer.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderLine.cs" />
-    <Compile Include="OrderLineId.cs" />
+    <Compile Include="Keys\OrderLineId.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="ProductAttribute.cs" />
     <Compile Include="ProductAttributeMapping.cs" />

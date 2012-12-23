@@ -19,9 +19,9 @@ namespace SFASystem.Domain
         public virtual Address Address { get; set; }
         public virtual Territory Territory { get; set; }
         public virtual Customer Customer { get; set; }
-        public virtual IList<Contact> Contact { get; set; }
-        public virtual IList<FieldCall> FieldCall { get; set; }
-        public virtual IList<Order> Order { get; set; }
+        public virtual IList<Contact> Contacts { get; set; }
+        public virtual IList<FieldCall> FieldCalls { get; set; }
+        public virtual IList<Order> Orders { get; set; }
         public virtual string Email { get; set; }
         public virtual string Phone { get; set; }
         public virtual bool IsDeleted { get; set; }

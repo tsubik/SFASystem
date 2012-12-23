@@ -12,10 +12,10 @@ namespace SFASystem.Domain
     {
         public ProductGroup()
         {
-
+            ChildProductGroups = new List<ProductGroup>();
         }
         public virtual Guid ProductGroupID { get; set; }
-        public virtual ProductGroup ProductGroupMember { get; set; }
+        public virtual ProductGroup ProductGroupParent { get; set; }
         public virtual IList<ProductGroup> ChildProductGroups { get; set; }
         public virtual string Name { get; set; }
         public virtual string Description { get; set; }
