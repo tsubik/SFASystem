@@ -77,7 +77,7 @@ public partial class Administration_Controls_Product_ProductPictures : System.We
                 {
                     byte[] productPictureBinary = ImageHelper.GetPictureBits(productPictureFile.InputStream, productPictureFile.ContentLength);
                     picture = new SFASystem.Domain.Image();
-                    picture.File = productPictureBinary;
+                    picture.ImageFile = productPictureBinary;
                     BasicService<SFASystem.Domain.Image, Guid>.SaveOrUpdate(picture);
                 }
                 if (picture != null)

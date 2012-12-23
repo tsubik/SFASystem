@@ -7,11 +7,11 @@ using SFASystem.Domain;
 
 namespace SFASystem.DataAccess.SqlServerNH.AutoMapping.Overrides
 {
-    public class ContactsMappingOverride : IAutoMappingOverride<Contact>
+    public class ProductsMappingOverride : IAutoMappingOverride<Product>
     {
-        public void Override(FluentNHibernate.Automapping.AutoMapping<Contact> mapping)
+        public void Override(FluentNHibernate.Automapping.AutoMapping<Product> mapping)
         {
-            mapping.HasManyToMany(x => x.CustomerFacilities).Table("CustomerFacilitiesToContacts");
+            mapping.HasManyToMany(x => x.Images).Table("ProductsToImages");
         }
     }
 }

@@ -10,6 +10,11 @@ namespace SFASystem.Domain
     [Serializable]
     public class Product : IEntity
     {
+        public Product()
+        {
+            Images = new List<Image>();
+        }
+
         public virtual Guid ProductID { get; set; }
         public virtual ProductGroup ProductGroup { get; set; }
         public virtual Manufacturer Manufacturer { get; set; }

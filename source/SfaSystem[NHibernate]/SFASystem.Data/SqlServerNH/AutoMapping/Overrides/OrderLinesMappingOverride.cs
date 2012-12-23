@@ -12,9 +12,9 @@ namespace SFASystem.DataAccess.SqlServerNH.AutoMapping.Overrides
         public void Override(FluentNHibernate.Automapping.AutoMapping<OrderLine> mapping)
         {
             mapping.CompositeId(x => x.ID)
-                .Mapped()
-                .KeyProperty(x => x.Order, "OrderID")
-                .KeyProperty(x => x.Product, "ProductID");
+                //.Mapped()
+                .KeyReference(x => x.Order, "OrderID")
+                .KeyReference(x => x.Product, "ProductID");
         }
     }
 }

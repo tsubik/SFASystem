@@ -40,7 +40,7 @@ public partial class Administration_Images_GetImage : System.Web.UI.Page
                 if (file != null)
                 {
                     Context.Response.ContentType = "image/jpeg";
-                    Context.Response.BinaryWrite(file.File);
+                    Context.Response.BinaryWrite(file.ImageFile);
                 }
                 else
                 {

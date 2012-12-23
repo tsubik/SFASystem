@@ -94,6 +94,7 @@
     <Compile Include="SqlServerNH\AutoMapping\CascadeConvention.cs" />
     <Compile Include="SqlServerNH\AutoMapping\CustomForeignKeyConvention.cs" />
     <Compile Include="SqlServerNH\AutoMapping\Overrides\ContactsMappingOverride.cs" />
+    <Compile Include="SqlServerNH\AutoMapping\Overrides\ProductsMappingOverride.cs" />
     <Compile Include="SqlServerNH\AutoMapping\Overrides\CustomerFacilitiesMappingOverride.cs" />
     <Compile Include="SqlServerNH\AutoMapping\Overrides\OrderLinesMappingOverride.cs" />
     <Compile Include="SqlServerNH\AutoMapping\PrimaryKeyConvention.cs" />

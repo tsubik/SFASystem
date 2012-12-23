@@ -10,6 +10,10 @@ namespace SFASystem.Domain
     [Serializable]
     public class OrderLine : IEntity
     {
+        public OrderLine()
+        {
+
+        }
         public virtual OrderLineId ID { get; set; }
         public virtual int Quantity { get; set; }
         public virtual decimal ItemPrice { get; set; }

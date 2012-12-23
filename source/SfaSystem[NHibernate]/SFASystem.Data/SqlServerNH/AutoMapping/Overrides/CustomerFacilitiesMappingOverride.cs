@@ -7,7 +7,7 @@ using SFASystem.Domain;
 
 namespace SFASystem.DataAccess.SqlServerNH.AutoMapping.Overrides
 {
-    class CustomerFacilitiesMappingOverride : IAutoMappingOverride<CustomerFacility>
+    public class CustomerFacilitiesMappingOverride : IAutoMappingOverride<CustomerFacility>
     {
         public void Override(FluentNHibernate.Automapping.AutoMapping<CustomerFacility> mapping)
         {

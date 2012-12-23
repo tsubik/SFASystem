@@ -10,8 +10,12 @@ namespace SFASystem.Domain
     [Serializable]
     public class Image : IEntity
     {
+        public Image()
+        {
+
+        }
         public virtual Guid ImageID { get; set; }
-        public virtual byte[] File { get; set; }
+        public virtual byte[] ImageFile { get; set; }
 
         #region Equals And HashCode Overrides
         /// <summary>
