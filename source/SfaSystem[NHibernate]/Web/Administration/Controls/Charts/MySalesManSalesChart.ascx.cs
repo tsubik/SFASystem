@@ -14,7 +14,7 @@ public partial class Administration_Controls_Charts_MySalesManSalesChart : Syste
         ReportParameter[] reportParameters = new ReportParameter[2];
 
         reportParameters[0] = new ReportParameter("ReportYear", DateTime.Now.Year.ToString());
-        reportParameters[1] = new ReportParameter("ManID", SFAContext.Current.Employee.Employeeid.ToString());
+        reportParameters[1] = new ReportParameter("ManID", SFAContext.Current.Employee.EmployeeID.ToString());
         rvSales.ServerReport.SetParameters(reportParameters);
     }
 

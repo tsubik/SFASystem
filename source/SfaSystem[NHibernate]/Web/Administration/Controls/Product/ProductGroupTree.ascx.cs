@@ -69,13 +69,13 @@ public partial class Administration_Controls_ProductGroupList : System.Web.UI.Us
             for (int i = 0; i < productsGroups.Count; i++)
             {
                 ProductGroup productGroup = productsGroups[i];
-                string prodgroupDetailsURL = "~/Administration/Products/ProductGroupDetails.aspx?ProductGroupID=" + productGroup.ProductGroupid.ToString();
+                string prodgroupDetailsURL = "~/Administration/Products/ProductGroupDetails.aspx?ProductGroupID=" + productGroup.ProductGroupID.ToString();
                 tmpS.Append("<siteMapNode  title=\"" + XmlHelper.XmlEncodeAttribute(productGroup.Name)
                     + "\" url=\"" + prodgroupDetailsURL + "\">");
                 if (CatalogService.GetSubProductsGroups(productGroup).Count > 0)
-                    tmpS.Append(GetCategories(productGroup.ProductGroupid));
+                    tmpS.Append(GetCategories(productGroup.ProductGroupID));
 
-                string prodgroupAddURL = "~/Administration/Products/ProductGroupAdd.aspx?ParentproductGroupID=" + productGroup.ProductGroupid.ToString();
+                string prodgroupAddURL = "~/Administration/Products/ProductGroupAdd.aspx?ParentproductGroupID=" + productGroup.ProductGroupID.ToString();
                 if(this.Mode == ControlMode.EditMode)
                     tmpS.Append("<siteMapNode  title=\"Dodaj nową grupę:\" url=\"" + prodgroupAddURL + "\"></siteMapNode>");
 

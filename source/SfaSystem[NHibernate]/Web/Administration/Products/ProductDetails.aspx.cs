@@ -35,7 +35,7 @@ public partial class Administration_Products_ProductDetails : System.Web.UI.Page
             {
                 Product product = ctrlProductInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Zmiany wprowadzono");
-                Response.Redirect(string.Format("ProductDetails.aspx?ProductID={0}", product.Productid));
+                Response.Redirect(string.Format("ProductDetails.aspx?ProductID={0}", product.ProductID));
             }
             catch (Exception exc)
             {

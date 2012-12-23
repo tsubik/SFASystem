@@ -18,7 +18,7 @@ public partial class Administration_Customers_CustomerDetails : System.Web.UI.Pa
             {
                 Customer customer = ctrlCustomerInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Zmiany wprowadzono");
-                Response.Redirect(string.Format("~/Administration/Customers/CustomerDetails.aspx?CustomerID={0}", customer.Customerid));
+                Response.Redirect(string.Format("~/Administration/Customers/CustomerDetails.aspx?CustomerID={0}", customer.CustomerID));
             }
             catch (Exception exc)
             {

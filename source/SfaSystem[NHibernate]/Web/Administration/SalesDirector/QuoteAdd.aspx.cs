@@ -17,7 +17,7 @@ public partial class Administration_SalesDirector_QuoteAdd : System.Web.UI.Page
             {
                 Quote quote = ctrlQuoteInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Dodano nowy cytat ");
-                Response.Redirect(string.Format("QuoteDetails.aspx?QuoteID={0}", quote.Quoteid));
+                Response.Redirect(string.Format("QuoteDetails.aspx?QuoteID={0}", quote.QuoteID));
             }
             catch (Exception exc)
             {

@@ -31,12 +31,12 @@ public partial class Administration_Controls_SelectProductGroupControl : System.
         {
             foreach (ProductGroup productGroup in productGroupList)
             {
-                ListItem item = new ListItem(prefix + productGroup.Name, productGroup.ProductGroupid.ToString());
+                ListItem item = new ListItem(prefix + productGroup.Name, productGroup.ProductGroupID.ToString());
                 this.ddlProductGroups.Items.Add(item);
-                if (productGroup.ProductGroupid == this.selectedProductGroupId)
+                if (productGroup.ProductGroupID == this.selectedProductGroupId)
                     item.Selected = true;
                 if (CatalogService.GetSubProductsGroups(productGroup).Count > 0)
-                    BindData(productGroup.ProductGroupid, prefix + "--");
+                    BindData(productGroup.ProductGroupID, prefix + "--");
             }
         }
     }

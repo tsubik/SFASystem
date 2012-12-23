@@ -14,7 +14,7 @@ public partial class Administration_Controls_Charts_SalesRepBestCustomers : Syst
         ReportParameter[] reportParameters = new ReportParameter[1];
 
         //reportParameters[0] = new ReportParameter("ReportYear", DateTime.Now.Year.ToString());
-        reportParameters[0] = new ReportParameter("EmpID", SFAContext.Current.Employee.Employeeid.ToString());
+        reportParameters[0] = new ReportParameter("EmpID", SFAContext.Current.Employee.EmployeeID.ToString());
         rvSales.ServerReport.SetParameters(reportParameters);
     }
 

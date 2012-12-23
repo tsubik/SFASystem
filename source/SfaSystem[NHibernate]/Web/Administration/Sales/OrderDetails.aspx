@@ -229,7 +229,7 @@
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Produkt">
                         <ItemTemplate>
-                            <a href="<%#ResolveUrl("~/Administration/Products/ProductDetails.aspx?ProductID="+((OrderLine)Container.DataItem).Product.Productid.ToString())%>">
+                            <a href="<%#ResolveUrl("~/Administration/Products/ProductDetails.aspx?ProductID="+((OrderLine)Container.DataItem).Product.ProductID.ToString())%>">
                                 <%# ((OrderLine)Container.DataItem).Product.Name %>
                             </a>
                         </ItemTemplate>

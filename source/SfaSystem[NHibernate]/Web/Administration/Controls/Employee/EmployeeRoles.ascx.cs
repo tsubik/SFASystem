@@ -46,10 +46,10 @@ public partial class Administration_Controls_EmployeeRoles : System.Web.UI.UserC
             lstEmployeeRoles.Items.Clear();
             lstRoles.Items.Clear();
             foreach (Role role in employeeRoles)
-                lstEmployeeRoles.Items.Add(new ListItem(role.Name, role.Roleid.ToString()));
+                lstEmployeeRoles.Items.Add(new ListItem(role.Name, role.RoleID.ToString()));
             foreach (Role role in roles)
                 if (!employeeRoles.Contains(role))
-                    lstRoles.Items.Add(new ListItem(role.Name, role.Roleid.ToString()));
+                    lstRoles.Items.Add(new ListItem(role.Name, role.RoleID.ToString()));
             
         }
     }

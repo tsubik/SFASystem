@@ -24,7 +24,7 @@ public partial class Administration_Sales_TerritoryAdd : System.Web.UI.Page
             {
                 Territory territory = ctrlTerritoryInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Dodano nowy region sprzedaży");
-                Response.Redirect(string.Format("~/Administration/Sales/TerritoryDetails.aspx?TerritoryID={0}", territory.Territoryid));
+                Response.Redirect(string.Format("~/Administration/Sales/TerritoryDetails.aspx?TerritoryID={0}", territory.TerritoryID));
             }
             catch (Exception exc)
             {

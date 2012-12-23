@@ -10,7 +10,7 @@
     OnPageIndexChanging="gvContacts_PageIndexChanging" AllowPaging="true" RowStyle-Height="30"
     PageSize="15" onrowdatabound="gvContacts_RowDataBound">
     <Columns>
-        <asp:BoundField ReadOnly="true" DataField="Contactid" HeaderText="ID" Visible="false" />  
+        <asp:BoundField ReadOnly="true" DataField="ContactID" HeaderText="ID" Visible="false" />  
         <asp:TemplateField HeaderText="Imię, Nazwisko" HeaderStyle-HorizontalAlign="Center" ItemStyle-Width="150"
             ItemStyle-HorizontalAlign="Center">
             <ItemTemplate>
@@ -34,7 +34,7 @@
         <asp:TemplateField HeaderText="Edycja" HeaderStyle-HorizontalAlign="Center" ItemStyle-Width="60"
             ItemStyle-HorizontalAlign="Center">
             <ItemTemplate>
-                <a href='<%#ResolveUrl("~/Administration/Customers/ContactDetails.aspx")%>?ContactID=<%#Eval("Contactid")%>' title="Edycja kontaktu">
+                <a href='<%#ResolveUrl("~/Administration/Customers/ContactDetails.aspx")%>?ContactID=<%#Eval("ContactID")%>' title="Edycja kontaktu">
                     Edycja </a>
             </ItemTemplate>
         </asp:TemplateField>

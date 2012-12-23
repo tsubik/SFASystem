@@ -28,7 +28,7 @@ public partial class Administration_Controls_Employee_SelectTaskStatus : System.
         {
             foreach (Dictionary status in statuses)
             {
-                ListItem item = new ListItem(status.Value, status.Dictionaryid.ToString());
+                ListItem item = new ListItem(status.Value, status.DictionaryID.ToString());
                 this.ddlTaskStatus.Items.Add(item);
             }
 

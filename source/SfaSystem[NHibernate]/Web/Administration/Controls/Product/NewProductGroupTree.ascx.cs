@@ -45,13 +45,13 @@ public partial class Administration_Controls_Product_NewProductGroupTree : Syste
             for (int i = 0; i < productsGroups.Count; i++)
             {
                 ProductGroup productGroup = productsGroups[i];
-                string prodgroupDetailsURL = "~/Administration/Products/ProductGroupDetails.aspx?ProductGroupID=" + productGroup.ProductGroupid.ToString();
+                string prodgroupDetailsURL = "~/Administration/Products/ProductGroupDetails.aspx?ProductGroupID=" + productGroup.ProductGroupID.ToString();
                 tmpS.Append("<siteMapNode  title=\"" + XmlHelper.XmlEncodeAttribute(productGroup.Name)
-                    + "\" url=\"" + string.Empty + "\" ID=\""+productGroup.ProductGroupid.ToString()+"\" >");
+                    + "\" url=\"" + string.Empty + "\" ID=\""+productGroup.ProductGroupID.ToString()+"\" >");
                 if (CatalogService.GetSubProductsGroups(productGroup).Count > 0)
-                    tmpS.Append(GetCategories(productGroup.ProductGroupid));
+                    tmpS.Append(GetCategories(productGroup.ProductGroupID));
                 
-                string prodgroupAddURL = "~/Administration/Products/ProductGroupAdd.aspx?ParentproductGroupID=" + productGroup.ProductGroupid.ToString();
+                string prodgroupAddURL = "~/Administration/Products/ProductGroupAdd.aspx?ParentproductGroupID=" + productGroup.ProductGroupID.ToString();
                 tmpS.Append("<siteMapNode  title=\"Add new productGroup:\" url=\"" + String.Empty + "\" ID=\"" + Guid.Empty + "\" ></siteMapNode>");
 
                 //tmpS.Append("<siteMapNode  title=\"Products:\" url=\"" + string.Empty + "\">");

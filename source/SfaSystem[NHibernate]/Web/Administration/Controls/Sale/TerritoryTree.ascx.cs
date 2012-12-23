@@ -62,13 +62,13 @@ public partial class Administration_Controls_TerritoryList : System.Web.UI.UserC
             for (int i = 0; i < territoryList.Count; i++)
             {
                 Territory territory = territoryList[i];
-                string prodgroupDetailsURL = "~/Administration/Sales/TerritoryDetails.aspx?TerritoryID=" + territory.Territoryid.ToString();
+                string prodgroupDetailsURL = "~/Administration/Sales/TerritoryDetails.aspx?TerritoryID=" + territory.TerritoryID.ToString();
                 tmpS.Append("<siteMapNode  title=\"" + XmlHelper.XmlEncodeAttribute(territory.Name)
                     + "\" url=\"" + prodgroupDetailsURL + "\">");
                 if (SalesService.GetSubTerritories(territory).Count > 0)
-                    tmpS.Append(GetCategories(territory.Territoryid));
+                    tmpS.Append(GetCategories(territory.TerritoryID));
 
-                string territoryAddURL = "~/Administration/Sales/TerritoryAdd.aspx?ParentTerritoryID=" + territory.Territoryid.ToString();
+                string territoryAddURL = "~/Administration/Sales/TerritoryAdd.aspx?ParentTerritoryID=" + territory.TerritoryID.ToString();
                 if(this.Mode == ControlMode.EditMode)
                     tmpS.Append("<siteMapNode  title=\"Dodaj nowy region:\" url=\"" + territoryAddURL + "\"></siteMapNode>");
 

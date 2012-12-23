@@ -28,7 +28,7 @@ public partial class Administration_Controls_Sale_SelectOrderStatus : System.Web
         {
             foreach (Dictionary status in statuses)
             {
-                ListItem item = new ListItem(status.Value, status.Dictionaryid.ToString());
+                ListItem item = new ListItem(status.Value, status.DictionaryID.ToString());
                 this.ddlOrderStatus.Items.Add(item);
             }
 

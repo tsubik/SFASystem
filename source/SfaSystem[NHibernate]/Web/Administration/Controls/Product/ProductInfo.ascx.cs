@@ -86,13 +86,13 @@ public partial class Administration_Controls_Product_ProductInfo : System.Web.UI
             txtCode.Text = product.Code;
             txtName.Text = product.Name;
             txtPrice.Text = product.Price.ToString("0.00##");
-            lblProductID.Text = product.Productid.ToString();
+            lblProductID.Text = product.ProductID.ToString();
             txtDescription.Text = product.FullDescription;
             txtShortDescription.Text = product.ShortDescription;
             if(product.Manufacturer != null)
                 ctrlSelectManufacturer.SelectedManufacturerID = product.Manufacturer.ManufacturerID;
-            ctrlSelectProductGroup.SelectedProductGroupId = product.ProductGroup.ProductGroupid;
-            ctrlSelectTax.SelectedStatusID = product.Tax.Dictionaryid;
+            ctrlSelectProductGroup.SelectedProductGroupId = product.ProductGroup.ProductGroupID;
+            ctrlSelectTax.SelectedStatusID = product.Tax.DictionaryID;
         }
         ctrlSelectProductGroup.BindData();
         ctrlSelectTax.BindData();

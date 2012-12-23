@@ -123,7 +123,7 @@ public partial class Administration_Controls_Product_ProductPictures : System.We
             SFASystem.Domain.Image productPicture = (SFASystem.Domain.Image)e.Row.DataItem;
             System.Web.UI.WebControls.Image iProductPicture = e.Row.FindControl("iProductPicture") as System.Web.UI.WebControls.Image;
             if (iProductPicture != null)
-                iProductPicture.ImageUrl = new ImageService().GetImageUrl(productPicture.Imageid);
+                iProductPicture.ImageUrl = new ImageService().GetImageUrl(productPicture.ImageID);
 
             Button btnUpdate = e.Row.FindControl("btnUpdate") as Button;
             if (btnUpdate != null)

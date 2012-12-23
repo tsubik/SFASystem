@@ -21,7 +21,7 @@ public partial class Administration_Customers_CustomerFacilityAdd : System.Web.U
             {
                 CustomerFacility customerFac = ctrlFacilityInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Zmiany wprowadzono");
-                Response.Redirect(string.Format("~/Administration/Customers/CustomerFacilityDetails.aspx?CustomerFacilityID={0}", customerFac.CustomerFacilityid));
+                Response.Redirect(string.Format("~/Administration/Customers/CustomerFacilityDetails.aspx?CustomerFacilityID={0}", customerFac.CustomerFacilityID));
             }
             catch (Exception exc)
             {

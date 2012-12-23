@@ -36,7 +36,7 @@ public partial class Administration_Customers_CustomerFacilityDetails : System.W
             {
                 CustomerFacility facility = ctrlFacilityInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Zmiany wprowadzono");
-                Response.Redirect(string.Format("CustomerFacilityDetails.aspx?CustomerFacilityID={0}", facility.CustomerFacilityid));
+                Response.Redirect(string.Format("CustomerFacilityDetails.aspx?CustomerFacilityID={0}", facility.CustomerFacilityID));
             }
             catch (Exception exc)
             {

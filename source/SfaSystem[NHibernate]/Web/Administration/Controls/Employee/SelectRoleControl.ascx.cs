@@ -27,7 +27,7 @@ public partial class Administration_Controls_Employee_SelectRoleStatus : System.
         {
             foreach (Role role in roles)
             {
-                ListItem item = new ListItem(role.Name, role.Roleid.ToString());
+                ListItem item = new ListItem(role.Name, role.RoleID.ToString());
                 this.ddlRoles.Items.Add(item);
             }
 

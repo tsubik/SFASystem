@@ -32,7 +32,7 @@ public partial class Administration_Controls_Customer_SelectCustomerFacility : S
         {
             foreach (CustomerFacility facility in facilityList)
             {
-                ListItem item = new ListItem(facility.Name, facility.CustomerFacilityid.ToString());
+                ListItem item = new ListItem(facility.Name, facility.CustomerFacilityID.ToString());
                 this.ddlCustomersFacility.Items.Add(item);
             }
 

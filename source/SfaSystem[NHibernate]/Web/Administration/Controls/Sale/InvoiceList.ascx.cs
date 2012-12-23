@@ -40,7 +40,7 @@ public partial class Administration_Controls_Sale_InvoiceList : System.Web.UI.Us
     public void BindList(Dictionary status)
     {
         if (status != null)
-            this.DictID = status.Dictionaryid;
+            this.DictID = status.DictionaryID;
         else
             this.DictID = Guid.Empty;
         gvInvoices.Columns[0].Visible = true;
@@ -74,7 +74,7 @@ public partial class Administration_Controls_Sale_InvoiceList : System.Web.UI.Us
             if (invoice.IsPaid)
                 btnMarkAsPaid.Visible = false;
             e.Row.Cells[0].Visible = false;
-            btnPrint.OnClientClick = string.Format(btnPrint.OnClientClick, ResolveUrl("~/Administration/Sales/InvoicePrint.aspx") + "?InvoiceID=" + invoice.Invoiceid.ToString());
+            btnPrint.OnClientClick = string.Format(btnPrint.OnClientClick, ResolveUrl("~/Administration/Sales/InvoicePrint.aspx") + "?InvoiceID=" + invoice.InvoiceID.ToString());
         }
     }
 

@@ -25,7 +25,7 @@ public partial class Administration_Controls_Employee_SelectEmployeeControl : Sy
         {
             foreach (Employee Employee in employees)
             {
-                ListItem item = new ListItem(Employee.FriendlyName, Employee.Employeeid.ToString());
+                ListItem item = new ListItem(Employee.FriendlyName, Employee.EmployeeID.ToString());
                 this.ddlEmployees.Items.Add(item);
             }
 

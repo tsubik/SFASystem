@@ -19,7 +19,7 @@ public partial class Administration_Controls_Product_ProductGroupInfo : System.W
             this.txtName.Text = productGroup.Name;
             this.txtDescription.Text = productGroup.Description;
             if (productGroup.ProductGroupMember != null)
-                ctrlParentGroup.SelectedProductGroupId = productGroup.ProductGroupMember.ProductGroupid;
+                ctrlParentGroup.SelectedProductGroupId = productGroup.ProductGroupMember.ProductGroupID;
             this.ctrlParentGroup.BindData();
 
         }

@@ -30,7 +30,7 @@ public class LoginService : System.Web.Services.WebService
             Employee emp = EmployeeService.GetEmployeeByLogin(username);
             if(emp.Roles.Contains(EmployeeService.GetRoleByName("SalesRep")))
             {
-                return emp.Employeeid;
+                return emp.EmployeeID;
             }
         }
         return Guid.Empty;

@@ -76,13 +76,13 @@ namespace SFASystem.Web.Administration.Controls
 
         public void BindData(Address address)
         {
-            this.AddressID = address.Addressid;
+            this.AddressID = address.AddressID;
             txtStreet.Text = address.Street;
             txtHouseNr.Text = address.HouseNr;
             txtApartmentNr.Text = address.ApartmentNr;
             txtCity.Text = address.City.Name;
             txtZipCode.Text = address.ZipCode;
-            ctrlSelectCountry.SelectedCountryId = address.Country.Countryid;
+            ctrlSelectCountry.SelectedCountryId = address.Country.CountryID;
             ctrlSelectCountry.BindData();
 
             lblCity.Text = address.City.Name;

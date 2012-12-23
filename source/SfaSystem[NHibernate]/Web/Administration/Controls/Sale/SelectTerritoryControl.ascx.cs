@@ -26,12 +26,12 @@ public partial class Administration_Controls_Sale_SelectTerritoryControl : Syste
         {
             foreach (Territory territory in territoryList)
             {
-                ListItem item = new ListItem(prefix + territory.Name, territory.Territoryid.ToString());
+                ListItem item = new ListItem(prefix + territory.Name, territory.TerritoryID.ToString());
                 this.ddlTerritories.Items.Add(item);
-                if (territory.Territoryid == this.selectedTerritoryId)
+                if (territory.TerritoryID == this.selectedTerritoryId)
                     item.Selected = true;
                 if (SalesService.GetSubTerritories(territory).Count > 0)
-                    BindData(territory.Territoryid, prefix + "--");
+                    BindData(territory.TerritoryID, prefix + "--");
             }
 
 

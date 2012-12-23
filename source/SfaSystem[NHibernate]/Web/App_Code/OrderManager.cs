@@ -29,7 +29,7 @@ public class OrderManager
         if (StateItems.IsInOrderMode)
         {
             Order order = StateItems.CurrentOrder;
-            OrderLine orderLine = order.OrderLines.Where(o => o.Product.Productid == productID).FirstOrDefault();
+            OrderLine orderLine = order.OrderLines.Where(o => o.Product.ProductID == productID).FirstOrDefault();
             if (orderLine != null)
             {
                 Product prod = BasicService<Product, Guid>.GetByID(productID);
@@ -56,7 +56,7 @@ public class OrderManager
         {
             Order order = StateItems.CurrentOrder;
             order.CustomerFacility = facility;
-            order.Territory = BasicService<Territory, Guid>.GetByID(facility.Territory.Territoryid);
+            order.Territory = BasicService<Territory, Guid>.GetByID(facility.Territory.TerritoryID);
         }
     }
 
@@ -67,12 +67,12 @@ public class OrderManager
             Order order = StateItems.CurrentOrder;
             if (order.OrderLines == null)
                 order.OrderLines = new List<OrderLine>();
-            int count = order.OrderLines.Where(o => o.Product.Productid == prod.Productid).Count();
+            int count = order.OrderLines.Where(o => o.Product.ProductID == prod.ProductID).Count();
             if (count > 0)
                 return;
 
             OrderLine orderLine = new OrderLine();
-            orderLine.Id = new OrderLineId(order, prod);
+            orderLine.ID = new OrderLineId(order, prod);
             orderLine.ItemPrice = prod.Price;
             orderLine.ItemPriceDiscount = new decimal(0.0f);
             orderLine.Quantity = 1;
@@ -93,7 +93,7 @@ public class OrderManager
         {
             Order order = StateItems.CurrentOrder;
 
-            OrderLine line = order.OrderLines.Where(o => o.Product.Productid == prod.Productid).FirstOrDefault();
+            OrderLine line = order.OrderLines.Where(o => o.Product.ProductID == prod.ProductID).FirstOrDefault();
             if (line != null)
             {
                 order.OrderLines.Remove(line);

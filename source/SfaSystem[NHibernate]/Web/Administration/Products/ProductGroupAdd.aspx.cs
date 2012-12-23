@@ -29,7 +29,7 @@ public partial class Administration_Products_ProductGroupAdd : System.Web.UI.Pag
             {
                 ProductGroup productGroup = ctrlProductGroupInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Zmiany wprowadzono");
-                Response.Redirect(string.Format("ProductGroupDetails.aspx?ProductGroupID={0}", productGroup.ProductGroupid));
+                Response.Redirect(string.Format("ProductGroupDetails.aspx?ProductGroupID={0}", productGroup.ProductGroupID));
             }
             catch (Exception exc)
             {

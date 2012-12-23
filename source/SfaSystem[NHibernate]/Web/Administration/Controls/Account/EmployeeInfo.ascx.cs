@@ -47,7 +47,7 @@ namespace SFASystem.Web.Administration.Controls
             if (employee != null)
             {
                 if (employee.Manager != null)
-                    ctrlSelectEmployee.SelectedEmployeeID = employee.Manager.Employeeid;
+                    ctrlSelectEmployee.SelectedEmployeeID = employee.Manager.EmployeeID;
                 ctrlSelectEmployee.BindData(EmployeeService.GetManagerEmployees());
                 lblLogin.Text = employee.Login;
                 if (employee.Contact != null)
@@ -71,7 +71,7 @@ namespace SFASystem.Web.Administration.Controls
                     this.txtCity.Text = employee.Address.City.Name;
                     this.txtHouse.Text = employee.Address.HouseNr;
                     this.txtApartment.Text = employee.Address.ApartmentNr;
-                    ctrlSelectCountry.SelectedCountryId = employee.Address.Country.Countryid;
+                    ctrlSelectCountry.SelectedCountryId = employee.Address.Country.CountryID;
                 }
                 else
                 {

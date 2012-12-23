@@ -23,7 +23,7 @@ public partial class Administration_Employees_EmployeeTaskDetails : System.Web.U
             {
                 Task task = ctrlTaskInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Zmiany wprowadzono");
-                Response.Redirect(string.Format("TaskDetails.aspx?TaskID={0}", task.Taskid));
+                Response.Redirect(string.Format("TaskDetails.aspx?TaskID={0}", task.TaskID));
             }
             catch (Exception exc)
             {

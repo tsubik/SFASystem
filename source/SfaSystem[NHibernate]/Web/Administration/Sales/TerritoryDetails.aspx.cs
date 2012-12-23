@@ -35,7 +35,7 @@ public partial class Administration_Sales_TerritoryDetails : System.Web.UI.Page
             {
                 Territory territory = ctrlTerritoryInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Zmiany wprowadzono");
-                Response.Redirect(string.Format("TerritoryDetails.aspx?TerritoryID={0}", territory.Territoryid));
+                Response.Redirect(string.Format("TerritoryDetails.aspx?TerritoryID={0}", territory.TerritoryID));
             }
             catch (Exception exc)
             {

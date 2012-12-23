@@ -5,7 +5,8 @@
     void Application_Start(object sender, EventArgs e) 
     {
         // Code that runs on application startup
-        HibernatingRhinos.NHibernate.Profiler.Appender.NHibernateProfiler.Initialize();
+        //HibernatingRhinos.NHibernate.Profiler.Appender.NHibernateProfiler.Initialize();
+        
         log4net.Config.XmlConfigurator.Configure();
         CreateDefaultRoles();
         CreateDefaultUserIfNotExists();

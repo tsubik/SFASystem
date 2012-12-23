@@ -28,7 +28,7 @@ public partial class Administration_Controls_Product_SelectTaxControl : System.W
         {
             foreach (Dictionary tax in taxes)
             {
-                ListItem item = new ListItem(tax.Value, tax.Dictionaryid.ToString());
+                ListItem item = new ListItem(tax.Value, tax.DictionaryID.ToString());
                 this.ddlTaxes.Items.Add(item);
             }
 

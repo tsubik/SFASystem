@@ -71,7 +71,7 @@ namespace SFASystem.Web.Administration.Controls
 
         public void BindData(Contact contact)
         {
-            this.ContactID = contact.Contactid;
+            this.ContactID = contact.ContactID;
             txtImie.Text = contact.FirstName;
             txtNazwisko.Text = contact.LastName;
             txtEmail.Text = contact.Email;

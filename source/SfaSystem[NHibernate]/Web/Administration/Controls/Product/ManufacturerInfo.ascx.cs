@@ -23,7 +23,7 @@ public partial class Administration_Controls_Product_ManufacturerInfo : System.W
                 txtNrMieszkania.Text = manufacturer.Address.ApartmentNr;
                 txtKodPocztowy.Text = manufacturer.Address.ZipCode;
                 txtMiasto.Text = manufacturer.Address.City.Name;
-                ctrlSelectCountry.SelectedCountryId = manufacturer.Address.Country.Countryid;
+                ctrlSelectCountry.SelectedCountryId = manufacturer.Address.Country.CountryID;
             }
             txtName.Text = manufacturer.Name;
             txtDescription.Text = manufacturer.Description;

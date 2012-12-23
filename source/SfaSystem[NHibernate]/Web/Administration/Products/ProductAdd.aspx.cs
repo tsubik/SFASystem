@@ -29,7 +29,7 @@ public partial class Administration_Products_ProductAdd : System.Web.UI.Page
             {
                 Product product = ctrlProductInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Dodano nowy produkt");
-                Response.Redirect(string.Format("~/Administration/Products/ProductDetails.aspx?ProductID={0}", product.Productid));
+                Response.Redirect(string.Format("~/Administration/Products/ProductDetails.aspx?ProductID={0}", product.ProductID));
             }
             catch (Exception exc)
             {

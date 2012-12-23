@@ -27,7 +27,7 @@ public partial class Administration_Controls_Customer_SelectCustomerControl : Sy
         {
             foreach (Customer customer in customerList)
             {
-                ListItem item = new ListItem(customer.Code+" - "+customer.Name, customer.Customerid.ToString());
+                ListItem item = new ListItem(customer.Code+" - "+customer.Name, customer.CustomerID.ToString());
                 this.ddlCustomers.Items.Add(item);
             }
             this.ddlCustomers.DataBind();

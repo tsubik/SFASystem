@@ -18,7 +18,7 @@ public partial class Administration_Sales_OrderDetails : System.Web.UI.Page
             this.lblOrderStatus.Text = order.OrderStatus.Value;
             //TODO czy można anulować zamówienie
 
-            this.lblOrderID.Text = order.Orderid.ToString();
+            this.lblOrderID.Text = order.OrderID.ToString();
             this.lblIdentyfikator.Text = order.Identifier;    //TODO - uzupełnić
 
             this.lblKlient.Text = order.CustomerFacility.Customer.Name;
@@ -73,7 +73,7 @@ public partial class Administration_Sales_OrderDetails : System.Web.UI.Page
                 btnPrintInvoice.Visible = true;
                 Invoice invoice = BasicService<Invoice, Guid>.GetAll().Where(i => i.Order == order).SingleOrDefault();
                 if (invoice != null)
-                    btnPrintInvoice.OnClientClick = string.Format(btnPrintInvoice.OnClientClick, ResolveUrl("~/Administration/Sales/InvoicePrint.aspx") + "?InvoiceID=" + invoice.Invoiceid.ToString());
+                    btnPrintInvoice.OnClientClick = string.Format(btnPrintInvoice.OnClientClick, ResolveUrl("~/Administration/Sales/InvoicePrint.aspx") + "?InvoiceID=" + invoice.InvoiceID.ToString());
             }
             else
             {

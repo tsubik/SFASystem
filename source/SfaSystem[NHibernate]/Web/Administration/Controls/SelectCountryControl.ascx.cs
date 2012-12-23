@@ -31,7 +31,7 @@ public partial class Administration_Controls_SelectCountryControl : System.Web.U
         {
             foreach (Country country in countryList)
             {
-                ListItem ddlCountryItem = new ListItem(country.Name, country.Countryid.ToString());
+                ListItem ddlCountryItem = new ListItem(country.Name, country.CountryID.ToString());
                 ddlCountry.Items.Add(ddlCountryItem);
             }
 

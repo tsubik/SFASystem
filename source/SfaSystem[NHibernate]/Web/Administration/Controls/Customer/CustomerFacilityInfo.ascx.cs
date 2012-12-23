@@ -72,13 +72,13 @@ public partial class Administration_Controls_Customer_CustomerFacilityInfo : Sys
                 txtNrMieszkania.Text = customerFacility.Address.ApartmentNr;
                 txtKodPocztowy.Text = customerFacility.Address.ZipCode;
                 txtMiasto.Text = customerFacility.Address.City.Name;
-                ctrlSelectCountry.SelectedCountryId = customerFacility.Address.Country.Countryid;
+                ctrlSelectCountry.SelectedCountryId = customerFacility.Address.Country.CountryID;
             }
             txtNazwa.Text = customerFacility.Name;
             txtPhone.Text = customerFacility.Phone;
             txtEmail.Text = customerFacility.Email;
-            ctrlSelectTerritory.SelectedTerritoryId = customerFacility.Territory.Territoryid;
-            ctrlSelectCustomer.SelectedCustomerId = customerFacility.Customer.Customerid;
+            ctrlSelectTerritory.SelectedTerritoryId = customerFacility.Territory.TerritoryID;
+            ctrlSelectCustomer.SelectedCustomerId = customerFacility.Customer.CustomerID;
             btnCustomerDetails.Visible = true;
         }
         else

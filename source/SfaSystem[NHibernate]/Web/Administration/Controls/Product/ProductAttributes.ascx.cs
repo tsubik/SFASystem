@@ -30,7 +30,7 @@ public partial class Administration_Controls_Product_ProductAttributes : System.
         IList<ProductAttribute> attributes = BasicService<ProductAttribute, Guid>.GetAll();
         foreach (ProductAttribute attribute in attributes)
         {
-            ddlAttributes.Items.Add(new ListItem(attribute.Name, attribute.ProductAttributeid.ToString()));
+            ddlAttributes.Items.Add(new ListItem(attribute.Name, attribute.ProductAttributeID.ToString()));
         }
 
     }

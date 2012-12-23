@@ -23,7 +23,7 @@ public partial class Administration_Account : System.Web.UI.Page
     private void BindData()
     {
         Employee employee = SFAContext.Current.Employee;
-        employeeInfo.EmployeeID = employee.Employeeid;
+        employeeInfo.EmployeeID = employee.EmployeeID;
         employeeAdditional.Employee = employee;
     }
 

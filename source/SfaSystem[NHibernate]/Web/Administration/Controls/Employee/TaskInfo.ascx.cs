@@ -31,14 +31,14 @@ public partial class Administration_Controls_Employee_EmployeeTaskInfo : System.
             txtName.Text = task.Name;
             txtName.Enabled = false;
             txtDescription.Text = task.FullDescription;
-            ctrlSelectAssignedTo.SelectedEmployeeID = task.AssignedTo.Employeeid;
+            ctrlSelectAssignedTo.SelectedEmployeeID = task.AssignedTo.EmployeeID;
             lblCreatedBy.Text = task.CreatedBy.FriendlyName;
             lblCreatedDate.Text = task.DateCreated.ToString();
             lblGivenBy.Text = task.GivenBy.FriendlyName;
 
             if (!task.IsApproved)
                 trApprovedBy.Visible = false;
-            ctrlSelectStatus.SelectedStatusID = task.TaskStatus.Dictionaryid;
+            ctrlSelectStatus.SelectedStatusID = task.TaskStatus.DictionaryID;
             if (task.TaskStatus.Value == "Zakończone" || task.TaskStatus.Value == "Anulowane")
             {
                 ctrlSelectStatus.Enabled = false;
@@ -103,7 +103,7 @@ public partial class Administration_Controls_Employee_EmployeeTaskInfo : System.
         task.FullDescription = txtDescription.Text;
         task.AssignedTo = BasicService<Employee, Guid>.GetByID(ctrlSelectAssignedTo.SelectedEmployeeID);
         task.DateModified = DateTime.Now;
-        if(task.AssignedTo.Employeeid != ctrlSelectAssignedTo.SelectedEmployeeID)    
+        if(task.AssignedTo.EmployeeID != ctrlSelectAssignedTo.SelectedEmployeeID)    
             task.GivenBy = SFAContext.Current.Employee;
         task.TaskStatus = BasicService<Dictionary, Guid>.GetByID(ctrlSelectStatus.SelectedStatusID);
         if (task.TaskStatus == null)

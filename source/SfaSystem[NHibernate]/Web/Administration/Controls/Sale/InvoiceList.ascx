@@ -56,7 +56,7 @@
         <asp:TemplateField HeaderText="Szczegóły" HeaderStyle-HorizontalAlign="Center" ItemStyle-Width="60"
             ItemStyle-HorizontalAlign="Center">
             <ItemTemplate>
-                <a href='<%#ResolveUrl("~/Administration/Sales/OrderDetails.aspx")%>?OrderID=<%#((Invoice)Container.DataItem).Order.Orderid%>'
+                <a href='<%#ResolveUrl("~/Administration/Sales/OrderDetails.aspx")%>?OrderID=<%#((Invoice)Container.DataItem).Order.OrderID%>'
                     title="Edycja zadania">Szczegóły zamówienia</a>
             </ItemTemplate>
         </asp:TemplateField>

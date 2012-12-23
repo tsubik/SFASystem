@@ -19,7 +19,7 @@ public partial class Administration_Controls_Sale_TerritoryInfo : System.Web.UI.
             this.txtName.Text = territory.Name;
             this.txtDescription.Text = territory.FullDescription;
             if (territory.ParentTerritory != null)
-                ctrlParentTerritory.SelectedTerritoryId = territory.ParentTerritory.Territoryid;
+                ctrlParentTerritory.SelectedTerritoryId = territory.ParentTerritory.TerritoryID;
             this.ctrlParentTerritory.BindData();
 
         }

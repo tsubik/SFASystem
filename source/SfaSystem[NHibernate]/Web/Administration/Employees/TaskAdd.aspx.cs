@@ -22,7 +22,7 @@ public partial class Administration_Employees_EmployeeTaskAdd : System.Web.UI.Pa
             {
                 Task task = ctrlTaskInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Dodano nowe zadanie");
-                Response.Redirect(string.Format("~/Administration/Employees/TaskDetails.aspx?TaskID={0}", task.Taskid));
+                Response.Redirect(string.Format("~/Administration/Employees/TaskDetails.aspx?TaskID={0}", task.TaskID));
             }
             catch (Exception exc)
             {

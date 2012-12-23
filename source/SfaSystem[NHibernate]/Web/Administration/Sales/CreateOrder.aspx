@@ -54,10 +54,10 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Produkt">
                     <ItemTemplate>
-                        <a href="<%#ResolveUrl("~/Administration/Products/ProductDetails.aspx?ProductID="+((OrderLine)Container.DataItem).Product.Productid.ToString())%>">
+                        <a href="<%#ResolveUrl("~/Administration/Products/ProductDetails.aspx?ProductID="+((OrderLine)Container.DataItem).Product.ProductID.ToString())%>">
                             <%# ((OrderLine)Container.DataItem).Product.Name %>
                         </a>
-                        <asp:HiddenField ID="hiddenID" runat="server" Value='<%# ((OrderLine)Container.DataItem).Product.Productid%>' />
+                        <asp:HiddenField ID="hiddenID" runat="server" Value='<%# ((OrderLine)Container.DataItem).Product.ProductID%>' />
                     </ItemTemplate>
                 </asp:TemplateField>
                  <asp:TemplateField HeaderText="Ilość" ItemStyle-Width="60">

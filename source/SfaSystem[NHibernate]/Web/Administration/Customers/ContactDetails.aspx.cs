@@ -17,7 +17,7 @@ public partial class Administration_Customers_ContactDetails : System.Web.UI.Pag
             try
             {
                 Contact contact = ctrlContactInfo.SaveInfo();
-                Response.Redirect(string.Format("ContactDetails.aspx?ContactID={0}", contact.Contactid));
+                Response.Redirect(string.Format("ContactDetails.aspx?ContactID={0}", contact.ContactID));
             }
             catch (Exception exc)
             {

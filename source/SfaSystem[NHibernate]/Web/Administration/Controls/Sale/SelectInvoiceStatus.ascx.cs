@@ -28,7 +28,7 @@ public partial class Administration_Controls_Sale_SelectInvoiceStatus : System.W
         {
             foreach (Dictionary status in statuses)
             {
-                ListItem item = new ListItem(status.Value, status.Dictionaryid.ToString());
+                ListItem item = new ListItem(status.Value, status.DictionaryID.ToString());
                 this.ddlInvoiceStatus.Items.Add(item);
             }
 

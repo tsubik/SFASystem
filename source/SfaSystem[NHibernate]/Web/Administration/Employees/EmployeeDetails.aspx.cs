@@ -35,7 +35,7 @@ public partial class Administration_EmployeeDetails : System.Web.UI.Page
         {
             AddressDisplay.BindData(employee.Address);
             ContactDisplay.BindData(employee.Contact);
-            lblEmployeeID.Text = employee.Employeeid.ToString();
+            lblEmployeeID.Text = employee.EmployeeID.ToString();
             lblEmployeeCreationDate.Text = employee.CreationDate.ToString();
             if (employee.Contact != null)
                 lblEmployeeFullName.Text = employee.Contact.FirstName + " " + employee.Contact.LastName;
@@ -48,7 +48,7 @@ public partial class Administration_EmployeeDetails : System.Web.UI.Page
 
             if (employee.Manager != null)
             {
-                ctrlSelectEmployee.SelectedEmployeeID = employee.Manager.Employeeid;
+                ctrlSelectEmployee.SelectedEmployeeID = employee.Manager.EmployeeID;
             }
             ctrlSelectEmployee.BindData(EmployeeService.GetManagerEmployees());
         }

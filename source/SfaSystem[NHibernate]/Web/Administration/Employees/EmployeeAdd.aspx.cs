@@ -29,7 +29,7 @@ public partial class Administration_Employees_EmployeeAdd : System.Web.UI.Page
             {
                 Employee employee = ctrlEmployeeInfo.SaveInfo();
                 StateItems.Message = new Message(MessageType.Success, "Dodano nowego pracownika");
-                Response.Redirect(string.Format("~/Administration/Employees/EmployeeDetails.aspx?EmployeeID={0}", employee.Employeeid));
+                Response.Redirect(string.Format("~/Administration/Employees/EmployeeDetails.aspx?EmployeeID={0}", employee.EmployeeID));
             }
             catch (Exception exc)
             {
