@@ -7,6 +7,11 @@ using NHibernate.Cache;
 using NHibernate.Cfg;
 using System.Web;
 using System.Runtime.Remoting.Messaging;
+using FluentNHibernate.Cfg;
+using SFASystem.Domain;
+using System.Reflection;
+using FluentNHibernate.Automapping;
+using SFASystem.DataAccess.SqlServerNH.AutoMapping;
 
 namespace SFASystem.DataAccess.SqlServerNH
 {
@@ -54,7 +59,18 @@ namespace SFASystem.DataAccess.SqlServerNH
 
         private void InitSessionFactory()
         {
-            sessionFactory = new Configuration().Configure().BuildSessionFactory();
+            var automappingConfiguration = new AutoMappingConfiguration();
+            var configuration = new Configuration().Configure();
+           
+            configuration = Fluently.Configure(configuration)
+                .Mappings(cfg =>
+                {
+                    cfg.AutoMappings.Add(AutoMap.AssemblyOf<Customer>(automappingConfiguration)
+                            .Conventions.AddFromAssemblyOf<PrimaryKeyConvention>());
+                    //cfg.HbmMappings.AddFromAssembly(Assembly.GetExecutingAssembly());
+                }).BuildConfiguration();
+
+            sessionFactory = configuration.BuildSessionFactory();
         }
 
         /// <summary>

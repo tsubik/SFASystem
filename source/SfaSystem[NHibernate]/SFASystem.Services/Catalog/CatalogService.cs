@@ -65,10 +65,10 @@ namespace SFASystem.Services
                 IList<ProductGroup> allProductsGroups = GetAllChildProductsGroup(productGroup);
                 allProductsGroups.Add(productGroup);
                 var productGroupsId = from pG in allProductsGroups
-                                      select pG.ProductGroupid;
+                                      select pG.ProductGroupID;
 
                 result = from p in result
-                         where productGroupsId.Contains(p.ProductGroup.ProductGroupid)
+                         where productGroupsId.Contains(p.ProductGroup.ProductGroupID)
                          select p;
             }
             return result.ToList();    

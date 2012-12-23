@@ -60,7 +60,7 @@ namespace SFASystem.Services
         }
         public static IList<Employee> GetEmployeeByRoleId(Guid roleId)
         {
-            return employeeRepository.GetQueryable().Where(e => e.Roles.Where(r => r.Roleid == roleId).Count() > 0).ToList();
+            return employeeRepository.GetQueryable().Where(e => e.Roles.Where(r => r.RoleID == roleId).Count() > 0).ToList();
         }
 
 

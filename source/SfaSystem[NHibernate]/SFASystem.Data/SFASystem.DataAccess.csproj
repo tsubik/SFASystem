@@ -60,7 +60,7 @@
     </Reference>
     <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NHibernate.3.3.1.4000\lib\Net35\NHibernate.dll</HintPath>
+      <HintPath>..\packages\NHibernate.3.3.2.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -87,6 +87,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerNH\AutoMapping\AutoMappingConfiguration.cs" />
+    <Compile Include="SqlServerNH\AutoMapping\CustomForeignKeyConvention.cs" />
+    <Compile Include="SqlServerNH\AutoMapping\PrimaryKeyConvention.cs" />
     <Compile Include="SqlServerNH\BaseRepository.cs" />
     <Compile Include="SqlServerNH\CityRepository.cs" />
     <Compile Include="SqlServerNH\CustomerRepository.cs" />
@@ -162,9 +165,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SqlServerNH\FluentMappings\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

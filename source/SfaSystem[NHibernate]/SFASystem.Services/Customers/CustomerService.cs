@@ -27,7 +27,7 @@ namespace SFASystem.Services
         {
             if (fac == null)
                 return null;
-            if (fac.CustomerFacilityid == Guid.Empty)
+            if (fac.CustomerFacilityID == Guid.Empty)
                 return null;
             Repository<Contact, Guid> contactRep = new Repository<Contact,Guid>();
             IEnumerable<Contact> contacts = new List<Contact>();
@@ -38,7 +38,7 @@ namespace SFASystem.Services
         {
             if (cust == null)
                 return null;
-            if (cust.Customerid == Guid.Empty)
+            if (cust.CustomerID == Guid.Empty)
                 return null;
             IList<CustomerFacility> customerFacilities = GetFacilities(string.Empty, cust, null);
             IEnumerable<Contact> result = new List<Contact>();
@@ -61,7 +61,7 @@ namespace SFASystem.Services
                 return null;
             Repository<CustomerFacility, Guid> repo = new Repository<CustomerFacility, Guid>();
             var result = repo.GetAll();
-            return result.Where(fac => fac.Customer.Customerid == customer.Customerid).ToList();
+            return result.Where(fac => fac.Customer.CustomerID == customer.CustomerID).ToList();
         }
 
         public static IList<CustomerFacility> GetFacilitiesForContact(Contact contact)
@@ -77,18 +77,18 @@ namespace SFASystem.Services
             var result = repo.GetAll()
                 .Where(fac => fac.Name.Contains(name));
             if (customer != null)
-                result = result.Where(fac => fac.Customer.Customerid == customer.Customerid);
+                result = result.Where(fac => fac.Customer.CustomerID == customer.CustomerID);
             if (territory != null)
             {
-                result = result.Where(fac => fac.Territory.Territoryid == territory.Territoryid);
+                result = result.Where(fac => fac.Territory.TerritoryID == territory.TerritoryID);
 
                 IList<Territory> allTerr = GetAllChildTerritories(territory);
                 allTerr.Add(territory);
                 var allTerrId = from pG in allTerr
-                                      select pG.Territoryid;
+                                      select pG.TerritoryID;
 
                 result = from p in result
-                         where allTerrId.Contains(p.Territory.Territoryid)
+                         where allTerrId.Contains(p.Territory.TerritoryID)
                          select p;
             }
             return result.ToList();
