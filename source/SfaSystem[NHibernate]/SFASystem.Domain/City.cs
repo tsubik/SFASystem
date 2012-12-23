@@ -1,6 +1,3 @@
-/*
-using MyGeneration/Template/NHibernate (c) by lujan99@usa.net
-*/
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,38 +8,14 @@ namespace SFASystem.Domain
 	/// City object for NHibernate mapped table 'City'.
 	/// </summary>
 	[Serializable]
-	public class City
+	public class City : IEntity
 	{
-		#region Member Variables
-		protected Guid cityid;
-		protected string name;
-		#endregion
-		#region Constructors
-			
 		public City() {
-            //this.cityid = Guid.NewGuid();
-            //this.name = string.Empty;
-        }
-					
-		public City(Guid cityid, string name) 
-		{
-			this.cityid= cityid;
-			this.name= name;
-		}
 
-		#endregion
-		#region Public Properties
-		public  virtual Guid Cityid
-		{
-			get { return cityid; }
-			set {cityid= value; }
-		}
-		public  virtual string Name
-		{
-			get { return name; }
-			set {name= value; }
-		}
-		#endregion
+        }
+
+        public virtual Guid CityID { get; set; }
+        public virtual string Name { get; set; }
 		
 		#region Equals And HashCode Overrides
 		/// <summary>
@@ -54,7 +27,7 @@ namespace SFASystem.Domain
 			if( ( obj == null ) || ( obj.GetType() != this.GetType() ) ) return false;
 			City castObj = (City)obj;
 			return ( castObj != null ) &&
-			this.cityid == castObj.Cityid;
+			this.CityID == castObj.CityID;
 		}
 		/// <summary>
 		/// local implementation of GetHashCode based on unique value members
@@ -62,7 +35,7 @@ namespace SFASystem.Domain
 		public override int GetHashCode()
 		{
 			int hash = 57;
-			hash = 27 * hash * cityid.GetHashCode();
+			hash = 27 * hash * CityID.GetHashCode();
 			return hash;
 		}
 		#endregion

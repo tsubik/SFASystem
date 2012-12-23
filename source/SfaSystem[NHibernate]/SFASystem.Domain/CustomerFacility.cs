@@ -1,135 +1,58 @@
-/*
-using MyGeneration/Template/NHibernate (c) by lujan99@usa.net
-*/
 using System;
 using System.Collections;
 using System.Collections.Generic;
 
 namespace SFASystem.Domain
 {
-	/// <summary>
-	/// CustomerFacility object for NHibernate mapped table 'CustomerFacility'.
-	/// </summary>
-	[Serializable]
-	public class CustomerFacility
-	{
-		#region Member Variables
-		protected Guid customerfacilityid;
-        protected string name;
-        protected string email;
-        protected string phone;
-		protected Address address;
-		protected Territory territory;
-		protected Customer customer;
-		protected IList<Contact> contact;
-		protected IList<FieldCall> fieldcall;
-		protected IList<Order> order;
-        protected bool isdeleted;
-		#endregion
-		#region Constructors
-			
-		public CustomerFacility() {
-            //this.customerfacilityid = Guid.NewGuid();
-            //this.address = null;
-            //this.territory = null;
-            //this.customer = null;
-        }   
-					
-		public CustomerFacility(Guid customerfacilityid, Address address, Territory territory, Customer customer) 
-		{
-			this.customerfacilityid= customerfacilityid;
-			this.address= address;
-			this.territory= territory;
-			this.customer= customer;
-		}
+    /// <summary>
+    /// CustomerFacility object for NHibernate mapped table 'CustomerFacility'.
+    /// </summary>
+    [Serializable]
+    public class CustomerFacility : IEntity
+    {
+        public CustomerFacility()
+        {
 
-		#endregion
-		#region Public Properties
-		public  virtual Guid CustomerFacilityid
-		{
-			get { return customerfacilityid; }
-			set {customerfacilityid= value; }
-		}
-        public virtual string Name
-        {
-            get { return name; }
-            set { name = value; }
         }
+        public virtual Guid CustomerFacilityID { get; set; }
+        public virtual string Name { get; set; }
+        public virtual Address Address { get; set; }
+        public virtual Territory Territory { get; set; }
+        public virtual Customer Customer { get; set; }
+        public virtual IList<Contact> Contact { get; set; }
+        public virtual IList<FieldCall> FieldCall { get; set; }
+        public virtual IList<Order> Order { get; set; }
+        public virtual string Email { get; set; }
+        public virtual string Phone { get; set; }
+        public virtual bool IsDeleted { get; set; }
 
-		public  virtual Address Address
-		{
-			get { return address; }
-			set {address= value; }
-		}
-		public  virtual Territory Territory
-		{
-			get { return territory; }
-			set {territory= value; }
-		}
-		public  virtual Customer Customer
-		{
-			get { return customer; }
-			set {customer= value; }
-		}
-		public  virtual IList<Contact> Contact
-		{
-			get { return contact; }
-			set {contact= value; }
-		}
-		public  virtual IList<FieldCall> FieldCall
-		{
-			get { return fieldcall; }
-			set {fieldcall= value; }
-		}
-		public  virtual IList<Order> Order
-		{
-			get { return order; }
-			set {order= value; }
-		}
-        public virtual string Email
+        #region Equals And HashCode Overrides
+        /// <summary>
+        /// local implementation of Equals based on unique value members
+        /// </summary>
+        public override bool Equals(object obj)
         {
-            get { return email; }
-            set { email = value; }
+            if (this == obj) return true;
+            if ((obj == null) || (obj.GetType() != this.GetType())) return false;
+            CustomerFacility castObj = (CustomerFacility)obj;
+            return (castObj != null) &&
+            this.CustomerFacilityID == castObj.CustomerFacilityID;
         }
-        public virtual string Phone
+        /// <summary>
+        /// local implementation of GetHashCode based on unique value members
+        /// </summary>
+        public override int GetHashCode()
         {
-            get { return phone; }
-            set { phone = value; }
+            int hash = 57;
+            hash = 27 * hash * CustomerFacilityID.GetHashCode();
+            return hash;
         }
-        public virtual bool IsDeleted
-        {
-            get { return isdeleted; }
-            set { isdeleted = value; }
-        }
-		#endregion
-		
-		#region Equals And HashCode Overrides
-		/// <summary>
-		/// local implementation of Equals based on unique value members
-		/// </summary>
-		public override bool Equals( object obj )
-		{
-			if( this == obj ) return true;
-			if( ( obj == null ) || ( obj.GetType() != this.GetType() ) ) return false;
-			CustomerFacility castObj = (CustomerFacility)obj;
-			return ( castObj != null ) &&
-			this.customerfacilityid == castObj.CustomerFacilityid;
-		}
-		/// <summary>
-		/// local implementation of GetHashCode based on unique value members
-		/// </summary>
-		public override int GetHashCode()
-		{
-			int hash = 57;
-			hash = 27 * hash * customerfacilityid.GetHashCode();
-			return hash;
-		}
-		#endregion
+        #endregion
 
         public override string ToString()
         {
             return this.Name;
         }
 
-	}
+    }
 }

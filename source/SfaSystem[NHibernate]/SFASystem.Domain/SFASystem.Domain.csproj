@@ -77,8 +77,8 @@
     <Compile Include="DictionaryType.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="FieldCall.cs" />
+    <Compile Include="IEntity.cs" />
     <Compile Include="Image.cs" />
-    <Compile Include="ImageType.cs" />
     <Compile Include="Invoice.cs" />
     <Compile Include="Manufacturer.cs" />
     <Compile Include="Order.cs" />

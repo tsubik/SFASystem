@@ -9,58 +9,14 @@ namespace SFASystem.Domain
     /// Manufacturer object for NHibernate mapped table 'Manufacturer'.
     /// </summary>
     [Serializable]
-    public class Manufacturer
+    public class Manufacturer : IEntity
     {
-        #region Member Variables
-        protected Guid manufacturerid;
-        protected Address address;
-        protected bool isdeleted;
-        protected string name;
-        protected string description;
-        protected string email;
-        protected string phone;
-        #endregion
-        #region Constructors
-
-        public Manufacturer()
-        {
-            
-        }
-
-        #endregion
-        #region Public Properties
-        public virtual Guid ManufacturerID
-        {
-            get { return manufacturerid; }
-            set { manufacturerid = value; }
-        }
-        public virtual Address Address
-        {
-            get { return address; }
-            set { address = value; }
-        }
-        public virtual string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-        public virtual string Description
-        {
-            get { return description; }
-            set { description = value; }
-        }
-        public virtual string Email
-        {
-            get { return email; }
-            set { email = value; }
-        }
-        public virtual string Phone
-        {
-            get { return phone; }
-            set { phone = value; }
-        }
-       
-        #endregion
+        public virtual Guid ManufacturerID { get; set; }
+        public virtual Address Address { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string Description { get; set; }
+        public virtual string Email { get; set; }
+        public virtual string Phone { get; set; }
 
         #region Equals And HashCode Overrides
         /// <summary>
@@ -72,7 +28,7 @@ namespace SFASystem.Domain
             if ((obj == null) || (obj.GetType() != this.GetType())) return false;
             Manufacturer castObj = (Manufacturer)obj;
             return (castObj != null) &&
-            this.manufacturerid == castObj.ManufacturerID;
+            this.ManufacturerID == castObj.ManufacturerID;
         }
         /// <summary>
         /// local implementation of GetHashCode based on unique value members
@@ -80,7 +36,7 @@ namespace SFASystem.Domain
         public override int GetHashCode()
         {
             int hash = 57;
-            hash = 27 * hash * manufacturerid.GetHashCode();
+            hash = 27 * hash * ManufacturerID.GetHashCode();
             return hash;
         }
         #endregion
