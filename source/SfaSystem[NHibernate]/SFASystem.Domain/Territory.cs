@@ -12,7 +12,10 @@ namespace SFASystem.Domain
     {
         public Territory()
         {
-
+            SubTerritories = new List<Territory>();
+            Employees = new List<Employee>();
+            Orders = new List<Order>();
+            CustomerFacilities = new List<CustomerFacility>();
         }
         public virtual Guid TerritoryID { get; set; }
         public virtual Territory ParentTerritory { get; set; }
